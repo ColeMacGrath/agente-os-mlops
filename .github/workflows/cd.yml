@@ -69,6 +69,7 @@ jobs:
           name: despliegue-${{ env.ENTORNO }}
           path: |
             reports/canary_*.json
+            reports/verificacion_*.json
             gitops/historial.md
             gitops/estado/bitacora_despliegues.jsonl
 
@@ -82,12 +83,38 @@ jobs:
       - uses: actions/setup-python@v6
         with: {python-version: "3.13"}
       - run: pip install PyYAML
-      - name: Proponer el release de staging como canary de producción al 10%
-        run: python gitops/actualizar_release.py --entorno produccion --desde staging --canary 10
+      - name: Fijar en staging la revisión aprobada y proponerla como canary de producción al 10%
+        run: |
+          python gitops/actualizar_release.py --entorno staging --finalizar
+          python gitops/actualizar_release.py --entorno produccion --desde staging --canary 10
       - uses: peter-evans/create-pull-request@v8
         with:
           branch: gitops/produccion-${{ github.sha }}
           title: "deploy(produccion): canary al 10%"
           commit-message: "deploy(produccion): canary al 10% desde staging"
-          body: Requiere aprobación del dueño del producto y de Seguridad. El análisis de canary decide los pasos 50% y 100%.
+          body: |
+            Staging aprobó el análisis de canary: su revisión queda fija al 100% y se propone como canary de producción al 10%.
+            Requiere aprobación del dueño del producto y de Seguridad. El análisis de canary decide los pasos 50% y 100%.
+          add-paths: |
+            deploy/entornos/staging/release.yaml
+            deploy/entornos/produccion/release.yaml
+
+  fijar-produccion:
+    name: PR para fijar producción al 100%
+    needs: [detectar, desplegar]
+    if: needs.detectar.outputs.entorno == 'produccion'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with: {python-version: "3.13"}
+      - run: pip install PyYAML
+      - name: Dejar al 100% la revisión canary que aprobó el análisis
+        run: python gitops/actualizar_release.py --entorno produccion --finalizar
+      - uses: peter-evans/create-pull-request@v8
+        with:
+          branch: gitops/produccion-fijar-${{ github.sha }}
+          title: "deploy(produccion): fijar la revisión aprobada al 100%"
+          commit-message: "deploy(produccion): fijar la revisión aprobada al 100%"
+          body: El análisis de canary aprobó los pasos 10, 50 y 100% en producción. Este PR deja el estado deseado igual a lo desplegado.
           add-paths: deploy/entornos/produccion/release.yaml

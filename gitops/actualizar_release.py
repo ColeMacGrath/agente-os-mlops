@@ -1,8 +1,11 @@
 """Actualiza el estado deseado de un entorno (lo usa CI para abrir el pull request GitOps).
 
-- Con --imagen y --revision: nueva revisión al 100% (staging).
-- Con --desde y --canary: toma la revisión vigente de otro entorno y la agrega
-  como canary con el porcentaje indicado (promoción a producción).
+- Con --imagen y --revision: nueva revisión como canary (--canary %) frente a la
+  estable vigente; si el entorno no tiene estable o se pasa --canary 100, queda al 100%.
+- Con --desde y --canary: toma la revisión aprobada de otro entorno (la canary o la
+  que está al 100%) y la agrega como canary en este entorno (promoción a producción).
+- Con --finalizar: deja al 100% la revisión canary del entorno (después de que el
+  análisis de canary la aprobó) y retira la anterior.
 """
 
 import argparse
@@ -23,6 +26,25 @@ def escribir(entorno: str, release: dict) -> None:
     (RAIZ / "deploy" / "entornos" / entorno / "release.yaml").write_text(CABECERA + yaml.safe_dump(release, allow_unicode=True, sort_keys=False))
 
 
+def estable_de(release: dict) -> dict | None:
+    fijas = [r for r in release.get("revisiones", []) if not r.get("canary")]
+    return max(fijas, key=lambda r: r["trafico"]) if fijas else None
+
+
+def aprobada_de(release: dict) -> dict:
+    """Revisión que se promueve: la canary si existe; si no, la que está al 100%."""
+    revs = release["revisiones"]
+    r = next((x for x in revs if x.get("canary")), None) or next(x for x in revs if x["trafico"] == 100)
+    return {k: v for k, v in r.items() if k != "canary"}
+
+
+def con_canary(release: dict, nueva: dict, pct: int) -> list[dict]:
+    estable = estable_de(release)
+    if estable is None or estable["nombre"] == nueva["nombre"] or pct >= 100:
+        return [dict(nueva, trafico=100)]
+    return [dict(estable, trafico=100 - pct), dict(nueva, trafico=pct, canary=True)]
+
+
 def main() -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument("--entorno", required=True)
@@ -30,19 +52,21 @@ def main() -> None:
     ap.add_argument("--revision")
     ap.add_argument("--desde")
     ap.add_argument("--canary", type=int, default=10)
+    ap.add_argument("--finalizar", action="store_true")
     a = ap.parse_args()
     release = leer(a.entorno)
-    if a.desde:
-        nueva = next(r for r in leer(a.desde)["revisiones"] if r["trafico"] == 100)
-        estable = next(r for r in release["revisiones"] if r["trafico"] == max(x["trafico"] for x in release["revisiones"]))
-        release["revisiones"] = [dict(estable, trafico=100 - a.canary), dict(nueva, trafico=a.canary, canary=True)]
+    if a.finalizar:
+        release["revisiones"] = [dict(aprobada_de(release), trafico=100)]
+    elif a.desde:
+        release["revisiones"] = con_canary(release, aprobada_de(leer(a.desde)), a.canary)
     else:
         modos = json.loads((RAIZ / "models" / "release.json").read_text())
         man = json.loads((RAIZ / "models" / "manifest.json").read_text())
-        release["revisiones"] = [{"nombre": a.revision, "descripcion": "Release generado por CI", "imagen": a.imagen,
-                                  "modelos": {"riesgo": f"{man['riesgo']['version']} ({modos['riesgo']})",
-                                              "inyeccion": f"{man['inyeccion']['version']} ({modos['inyeccion']})"},
-                                  "entorno": {}, "trafico": 100}]
+        nueva = {"nombre": a.revision, "descripcion": "Release generado por CI", "imagen": a.imagen,
+                 "modelos": {"riesgo": f"{man['riesgo']['version']} ({modos['riesgo']})",
+                             "inyeccion": f"{man['inyeccion']['version']} ({modos['inyeccion']})"},
+                 "entorno": {}}
+        release["revisiones"] = con_canary(release, nueva, a.canary)
     escribir(a.entorno, release)
     print(yaml.safe_dump(release, allow_unicode=True, sort_keys=False))
 

@@ -1,5 +1,7 @@
 # Agente OS · Capa Nube · pipeline MLOps / GitOps (Fase III)
 
+[![CI · pipeline MLOps](https://github.com/ColeMacGrath/agente-os-mlops/actions/workflows/ci.yml/badge.svg)](https://github.com/ColeMacGrath/agente-os-mlops/actions/workflows/ci.yml) [![CD · despliegue GitOps](https://github.com/ColeMacGrath/agente-os-mlops/actions/workflows/cd.yml/badge.svg)](https://github.com/ColeMacGrath/agente-os-mlops/actions/workflows/cd.yml)
+
 Solución lista para producción de la Capa Nube del Agente OS: el gateway que recibe tareas ya enmascaradas desde la app de macOS, aplica tres barreras de seguridad (Filtro Ciego, validador de inyección y semáforo de riesgo), elige el modelo de Claude según la complejidad y registra cada decisión en una bitácora auditable.
 
 Este repositorio continúa el proyecto: la **Fase I** definió el caso de negocio, la **Fase II** construyó el MVP, la **Actividad 9** rediseñó la arquitectura para 2,000 usuarios y auditó la equidad de las barreras, y la **Fase III** lo lleva a producción con integración continua, pruebas de código y datos, versionado de modelos y artefactos, despliegue continuo GitOps, monitoreo, auditoría y optimización.
@@ -10,13 +12,14 @@ Este repositorio continúa el proyecto: la **Fase I** definió el caso de negoci
 
 | Indicador | Resultado | Evidencia |
 |---|---|---|
-| Pipeline reproducible | 5 etapas DVC; 54 pruebas; lint limpio | `dvc.lock`, `docs/evidencias/capturas/terminal_*.png` |
+| Pipeline reproducible | 5 etapas DVC; 59 pruebas; lint limpio; CI en GitHub Actions en ~4 min | `dvc.lock`, `docs/evidencias/capturas/terminal_*.png` |
 | Iteraciones del modelo | v1 (Fase II) → v2 (Actividad 9) → v3.0 (rechazada) → v3.1 | `docs/evidencias/capturas/iteraciones_modelo.png` |
 | Semáforo de riesgo v3.1 (ciego F4) | recall de riesgo alto 0.97, impacto dispar 0.83 | `reports/evaluacion.json` |
 | Filtro Ciego v3 (ciego F4) | 100% de datos personales protegidos en seis países | `reports/evaluacion.json` |
 | Inyección v3.1 (ciego F4) | detección 0.93 (campeón 0.53), FPR 0.17 → **en sombra** | `reports/compuerta.json`, ADR-0002 |
 | Despliegue progresivo | r-2-0 → r-3-1-0 al 10/50/100%, costo por tarea $0.0149 → $0.0040 | `reports/canary_produccion.json` |
 | Rollback automático | canary con 28% de errores revertido al 10% | `reports/canary_staging_rollback.json` |
+| Análisis de canary estadístico | muestra pareada + Mann-Whitney: 0 rollbacks falsos en 5 corridas; detecta una canary 15% más lenta | ADR-0003 (revisión 2) |
 | Operación (30 días simulados) | disponibilidad 100%, p95 ≤ 11.7 s, 23 alertas, 6 acciones | `operacion/salida/`, `docs/evidencias/capturas/tablero_*.png` |
 | Optimización basada en datos | ajuste del router: costo por tarea −24% | ADR-0004 |
 | Auditoría | 12,029 entradas íntegras; 0 acciones de riesgo alto sin Touch ID | `reports/auditoria.md` |

@@ -46,4 +46,12 @@ Registro de decisiones, iteraciones y problemas encontrados durante la construcc
 
 - Documento explicativo del pipeline y documento técnico de operación (Word), con las cifras de `reports/` y las capturas de `docs/evidencias/capturas/`.
 - Portfolio técnico-estratégico (PowerPoint, 19 diapositivas con notas del presentador) y simulación de entrevista (Word, modo conversacional de Claude).
-- Revisión final: `ruff` sin errores, 54 pruebas aprobadas y `dvc status` sin cambios pendientes. Se volvió a capturar `api_openapi.png` con la versión 3.1.0.
+- Revisión final (antes de publicar): `ruff` sin errores, 54 pruebas aprobadas y `dvc status` sin cambios pendientes. Se volvió a capturar `api_openapi.png` con la versión 3.1.0.
+
+## Publicación en GitHub (ColeMacGrath/agente-os-mlops)
+
+- Antes del primer push: el nombre de la imagen se calcula en minúsculas (`ghcr.io` rechaza `ColeMacGrath`) y `.gitattributes` evita que Git convierta los saltos de línea de los CSV: la conversión habría roto el sello SHA-256 del conjunto ciego F4.
+- **CI #1** en verde en 3 min 58 s (lint y pruebas 85 s, DVC y compuertas 74 s, imagen y prueba de humo 59 s, PR GitOps 12 s). Mostró 4 advertencias de Node.js 20: se actualizaron las acciones (checkout v5, setup-python v6, upload-artifact v6, download-artifact v7, github-script v8, create-pull-request v8) y el CI #3 quedó sin advertencias.
+- Los PR de GitOps que abre el bot sí corren el CI (con aprobación del maintainer la primera vez): el PR #2 se fusionó con los 3 checks obligatorios en verde, sin saltar la protección de `main`.
+- **Primer CD real: falló.** El CI dejaba la revisión nueva de staging al 100% y el análisis esperaba una canary. Además, cada merge de GitOps volvía a disparar el CI (otro PR de staging) y el CD por push siempre usaba `staging`. Correcciones: el CI ignora `deploy/entornos/**`, propone la revisión como canary; el CD detecta el entorno que cambió.
+- Al probar la corrección, una canary con el mismo código se revirtió 3 de 3 veces por diferencias de costo y latencia entre muestras distintas. Se pasó a una muestra pareada y a la prueba de Mann-Whitney (ADR-0003, revisión 2): 5 de 5 canaries idénticas promovidas, canaries 15% y 30% más lentas revertidas. Se agregaron 5 pruebas (59 en total).

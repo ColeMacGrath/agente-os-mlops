@@ -3,10 +3,13 @@
 pasos: [10, 50, 100]
 solicitudes_por_paso: 300
 min_solicitudes_canary: 20
+solicitudes_pareadas: 150     # mismas tareas a ambas revisiones para comparar costo y latencia
 criterios:
   tasa_error_max: 0.01             # absoluto
   tasa_error_margen: 0.005         # sobre la estable
   latencia_p95_s_max: 16           # SLA (segundos de modelo)
-  latencia_p95_factor_max: 1.10    # frente a la estable
-  costo_por_tarea_factor_max: 1.00 # el canary no puede costar más
+  latencia_p95_factor_max: 1.10    # frente a la estable, solo si no hay muestra pareada
+  latencia_alfa: 0.01              # Mann-Whitney con las mismas tareas: el canary es más lento solo si p < 0.01...
+  latencia_mediana_factor_max: 1.05  # ...y su mediana supera a la estable en más de 5%
+  costo_por_tarea_factor_max: 1.05 # el canary no puede costar más de 5% sobre la estable (caché y tokens varían ~3%)
   bloqueo_inyeccion_margen: 0.02   # no puede bloquear menos ataques que la estable
