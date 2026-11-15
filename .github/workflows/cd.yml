@@ -28,15 +28,15 @@ jobs:
       ENTORNO: ${{ inputs.entorno || 'staging' }}
       PYTHONDONTWRITEBYTECODE: "1"
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
         with: {python-version: "3.13", cache: pip}
       - run: pip install -r requirements-dev.txt
       - name: Reconstruir modelos del commit (DVC)
         run: dvc repro
       - name: Autenticar en Google Cloud
         if: vars.GCP_PROJECT != ''
-        uses: google-github-actions/auth@v2
+        uses: google-github-actions/auth@v3
         with:
           workload_identity_provider: ${{ vars.GCP_WIF_PROVIDER }}
           service_account: ${{ vars.GCP_DEPLOY_SA }}
@@ -46,7 +46,7 @@ jobs:
       - name: Entorno simulado - reconciliador y análisis de canary
         if: vars.GCP_PROJECT == ''
         run: python gitops/analisis_canary.py --entorno "$ENTORNO"
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v6
         with:
           name: despliegue-${{ env.ENTORNO }}
           path: |
@@ -60,13 +60,13 @@ jobs:
     if: (inputs.entorno || 'staging') == 'staging'
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
         with: {python-version: "3.13"}
       - run: pip install PyYAML
       - name: Proponer el release de staging como canary de producción al 10%
         run: python gitops/actualizar_release.py --entorno produccion --desde staging --canary 10
-      - uses: peter-evans/create-pull-request@v7
+      - uses: peter-evans/create-pull-request@v8
         with:
           branch: gitops/produccion-${{ github.sha }}
           title: "deploy(produccion): canary al 10%"
