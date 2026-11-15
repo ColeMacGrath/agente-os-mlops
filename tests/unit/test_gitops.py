@@ -18,6 +18,12 @@ def test_nueva_revision_entra_como_canary_frente_a_la_estable():
     assert [(r["nombre"], r["trafico"], r.get("canary", False)) for r in revs] == [("r-1", 90, False), ("r-2", 10, True)]
 
 
+def test_la_configuracion_del_entorno_se_conserva_al_promover():
+    estable = dict(ESTABLE, entorno={"ROUTER_IGNORE_PARTICIPLES": "1"})
+    revs = con_canary({"revisiones": [estable]}, dict(NUEVA, entorno={}), 10)
+    assert revs[1]["entorno"] == {"ROUTER_IGNORE_PARTICIPLES": "1"}
+
+
 def test_sin_estable_o_misma_revision_queda_al_100():
     assert con_canary({"revisiones": []}, NUEVA, 10) == [dict(NUEVA, trafico=100)]
     assert con_canary({"revisiones": [ESTABLE]}, dict(NUEVA, nombre="r-1"), 10)[0]["trafico"] == 100

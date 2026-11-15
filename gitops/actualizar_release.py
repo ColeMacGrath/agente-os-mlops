@@ -40,6 +40,8 @@ def aprobada_de(release: dict) -> dict:
 
 def con_canary(release: dict, nueva: dict, pct: int) -> list[dict]:
     estable = estable_de(release)
+    if estable is not None:   # la configuración del entorno (p. ej. el router del ADR-0004) se conserva al promover
+        nueva = dict(nueva, entorno={**(estable.get("entorno") or {}), **(nueva.get("entorno") or {})})
     if estable is None or estable["nombre"] == nueva["nombre"] or pct >= 100:
         return [dict(nueva, trafico=100)]
     return [dict(estable, trafico=100 - pct), dict(nueva, trafico=pct, canary=True)]
