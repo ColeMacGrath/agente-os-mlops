@@ -3,9 +3,9 @@
 entorno: staging
 servicio: agente-os-cloud
 revisiones:
-- nombre: r-79c24b9
+- nombre: r-87a64f2
   descripcion: Release generado por CI
-  imagen: ghcr.io/colemacgrath/agente-os-cloud:79c24b9
+  imagen: ghcr.io/colemacgrath/agente-os-cloud:87a64f2
   modelos:
     riesgo: riesgo-3.1.0 (aplicar)
     inyeccion: inyeccion-3.1.0 (sombra)
