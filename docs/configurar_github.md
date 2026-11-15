@@ -2,7 +2,7 @@
 
 Guía para subir el repositorio y dejar funcionando los tres workflows: **CI** (pipeline MLOps), **CD** (despliegue GitOps) y **monitoreo semanal**. Los pasos 1 a 8 son obligatorios; el 9 (Google Cloud) es opcional: sin él, el CD usa el entorno simulado.
 
-> **Estado:** en este repositorio ya se aplicaron los pasos 1 a 3 (DVC con Git, usuario `colemacgrath` en las imágenes y commits por etapas). El nombre de la imagen se calcula en minúsculas dentro del CI, porque `ghcr.io` no acepta mayúsculas.
+> **Estado:** en este repositorio ya se aplicaron los pasos 1 a 8: DVC con Git, usuario `colemacgrath` en las imágenes, commits por etapas, permisos de Actions, entornos `staging` y `produccion`, protección de `main` y el ciclo completo CI → CD → producción con su evidencia en `docs/evidencias/capturas/github_*.png`. El nombre de la imagen se calcula en minúsculas dentro del CI, porque `ghcr.io` no acepta mayúsculas.
 
 ---
 

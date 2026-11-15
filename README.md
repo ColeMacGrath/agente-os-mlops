@@ -12,7 +12,7 @@ Este repositorio continúa el proyecto: la **Fase I** definió el caso de negoci
 
 | Indicador | Resultado | Evidencia |
 |---|---|---|
-| Pipeline reproducible | 5 etapas DVC; 59 pruebas; lint limpio; CI en GitHub Actions en ~4 min | `dvc.lock`, `docs/evidencias/capturas/terminal_*.png` |
+| Pipeline reproducible | 5 etapas DVC; 60 pruebas; lint limpio; CI en GitHub Actions en ~4 min | `dvc.lock`, `docs/evidencias/capturas/terminal_*.png` |
 | Iteraciones del modelo | v1 (Fase II) → v2 (Actividad 9) → v3.0 (rechazada) → v3.1 | `docs/evidencias/capturas/iteraciones_modelo.png` |
 | Semáforo de riesgo v3.1 (ciego F4) | recall de riesgo alto 0.97, impacto dispar 0.83 | `reports/evaluacion.json` |
 | Filtro Ciego v3 (ciego F4) | 100% de datos personales protegidos en seis países | `reports/evaluacion.json` |

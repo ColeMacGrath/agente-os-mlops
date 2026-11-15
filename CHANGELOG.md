@@ -3,7 +3,7 @@
 ## 3.1.1 · Publicación en GitHub
 - CI/CD funcionando en GitHub Actions; acciones actualizadas a Node.js 24; nombre de imagen en minúsculas para `ghcr.io`.
 - El CI propone la revisión nueva como canary de staging y no se dispara con los merges de GitOps; el CD detecta el entorno que cambió y cierra el ciclo con PR de promoción y de fijación al 100%.
-- Análisis de canary con muestra pareada y prueba de Mann-Whitney (ADR-0003, revisión 2). 59 pruebas.
+- Análisis de canary con muestra pareada y prueba de Mann-Whitney (ADR-0003, revisión 2). La configuración del entorno se conserva al promover. 60 pruebas.
 - `.gitattributes`: los CSV sellados con SHA-256 no cambian sus saltos de línea.
 
 ## 3.1.0 · Fase III
