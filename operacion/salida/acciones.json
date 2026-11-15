@@ -1,0 +1,81 @@
+[
+  {
+    "tipo": "filtro_dispositivo",
+    "valor": 0.001,
+    "aplicar_dia": 3,
+    "alerta": "PRIV-PII",
+    "decision": "Publicar en la app de macOS el Filtro Ciego v2 (formatos internacionales)",
+    "evidencia": "0.51% de las solicitudes traen datos personales sin enmascarar (DNI, SSN, CPF, IBAN): el servidor los tapa (segunda barrera), pero salen del dispositivo.",
+    "validacion": "El Filtro Ciego v2 protege 100% de los datos de seis países en los conjuntos de evaluación, sin falsos positivos.",
+    "adr": "docs/adr/0006-filtro-dispositivo.md",
+    "cambia_sistema": true,
+    "aplicada_dia": 3
+  },
+  {
+    "tipo": "instancias",
+    "valor": 11,
+    "aplicar_dia": 11,
+    "alerta": "revisión FinOps semanal",
+    "decision": "Mantener la instancia mínima solo de 7:00 a 18:00 (11 h) en lugar de 24 h",
+    "evidencia": "Diez días de tráfico: el 100% de las tareas ocurre en horario laboral; fuera de él la instancia mínima solo genera costo.",
+    "validacion": "Fuera de horario el arranque en frío medido (1.3 s) no afecta el SLA de 16 s.",
+    "adr": "docs/adr/0005-instancias-minimas.md",
+    "cambia_sistema": true,
+    "aplicada_dia": 11
+  },
+  {
+    "tipo": "etiquetado_f5",
+    "valor": null,
+    "aplicar_dia": 15,
+    "alerta": "SEG-SOMBRA",
+    "decision": "Solicitar al Comité de IA el etiquetado del conjunto F5 con textos reales para decidir la promoción del clasificador",
+    "evidencia": "Ventana de 7 días: el campeón (reglas) bloquea 72% de los ataques y el clasificador en sombra 97%, con 0.0% de falsos positivos en tráfico benigno.",
+    "validacion": "La promoción requiere pasar todas las compuertas en F5; mientras tanto el clasificador sigue en sombra.",
+    "adr": null,
+    "cambia_sistema": false,
+    "aplicada_dia": 15
+  },
+  {
+    "tipo": "router",
+    "valor": {
+      "ROUTER_TASK_LEN_MEDIUM": "120",
+      "ROUTER_IGNORE_PARTICIPLES": "1"
+    },
+    "aplicar_dia": 17,
+    "alerta": "FIN-MEZCLA",
+    "decision": "Ajustar el router: no contar participios como verbos y subir el umbral de longitud de 70 a 120 caracteres (cambio vía GitOps)",
+    "evidencia": "Sonnet pasó de 45% a 64% de las llamadas con el flujo de conciliación (116 tareas en la muestra). Causa raíz: el router contaba ['Copia', 'conciliado'] como verbos y la tarea mide 114 caracteres; con el ajuste se clasifica como 'simple'.",
+    "validacion": "Las barreras no dependen del router: el semáforo de riesgo y Touch ID siguen aplicando a toda acción planeada.",
+    "adr": "docs/adr/0004-ajuste-router.md",
+    "cambia_sistema": true,
+    "aplicada_dia": 17
+  },
+  {
+    "tipo": "incidente_api",
+    "valor": null,
+    "aplicar_dia": 22,
+    "alerta": "OPS-DEG",
+    "decision": "Incidente INC-F3-021 cerrado: caída de 50 min de la API del modelo atendida en modo degradado",
+    "evidencia": "2.8% de las respuestas del día salieron del planificador determinista; disponibilidad del servicio 100.00%.",
+    "validacion": "Sin violación del SLA; el runbook de la Actividad 8 se cumplió sin intervención manual.",
+    "adr": null,
+    "cambia_sistema": false,
+    "aplicada_dia": 22
+  },
+  {
+    "tipo": "linea_base_idioma",
+    "valor": {
+      "es": 0.7975,
+      "en": 0.1025,
+      "pt": 0.1
+    },
+    "aplicar_dia": 23,
+    "alerta": "DRIFT-IDIOMA",
+    "decision": "Confirmar que el cambio es el piloto de Brasil y fijar una nueva línea base de idioma",
+    "evidencia": "PSI 0.75: 10% de las tareas en portugués desde el día 22.",
+    "validacion": "El semáforo de riesgo v3.1 tiene recall 1.00 en portugués (conjunto ciego F4); el grupo se agrega al reporte semanal de fairness.",
+    "adr": null,
+    "cambia_sistema": false,
+    "aplicada_dia": 23
+  }
+]

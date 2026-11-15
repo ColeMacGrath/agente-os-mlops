@@ -1,0 +1,34 @@
+[reconciliador:produccion] levantar revisión r-2-0 en :8401
+[reconciliador:produccion] levantar revisión r-3-1-0 en :8412
+[reconciliador:produccion] levantar proxy en :8400
+[reconciliador:produccion] tráfico: r-2-0=90%, r-3-1-0=10%
+[canary:produccion] paso 10% · estable {'n': 273, 'tasa_error': 0.0, 'latencia_p95_s': 14.96, 'latencia_p50_s': 10.22, 'costo_por_tarea': 0.01469, 'tasa_bloqueo': 0.0} · canary {'n': 27, 'tasa_error': 0.0, 'latencia_p95_s': 9.24, 'latencia_p50_s': 4.49, 'costo_por_tarea': 0.005313, 'tasa_bloqueo': 0.0}
+    OK    tasa de error: 0.000 vs 0.000
+    OK    latencia p95 dentro del SLA: 9.24 s
+    OK    latencia p95 frente a estable: 9.24 vs 14.96 s
+    OK    costo por tarea: $0.00531 vs $0.01469
+    OK    bloqueo de inyección: 0.000 vs 0.000
+    OK    muestra mínima: n=27
+[gitops] commit deploy/produccion: avanzar canary r-3-1-0 al 50%
+[reconciliador:produccion] tráfico: r-2-0=50%, r-3-1-0=50%
+[canary:produccion] paso 50% · estable {'n': 147, 'tasa_error': 0.0, 'latencia_p95_s': 14.75, 'latencia_p50_s': 9.61, 'costo_por_tarea': 0.014915, 'tasa_bloqueo': 0.0} · canary {'n': 153, 'tasa_error': 0.0, 'latencia_p95_s': 10.43, 'latencia_p50_s': 4.42, 'costo_por_tarea': 0.004538, 'tasa_bloqueo': 0.0}
+    OK    tasa de error: 0.000 vs 0.000
+    OK    latencia p95 dentro del SLA: 10.43 s
+    OK    latencia p95 frente a estable: 10.43 vs 14.75 s
+    OK    costo por tarea: $0.00454 vs $0.01491
+    OK    bloqueo de inyección: 0.000 vs 0.000
+    OK    muestra mínima: n=153
+[gitops] commit deploy/produccion: avanzar canary r-3-1-0 al 100%
+[reconciliador:produccion] tráfico: r-2-0=0%, r-3-1-0=100%
+[canary:produccion] paso 100% · estable {'n': 147, 'tasa_error': 0.0, 'latencia_p95_s': 14.75, 'latencia_p50_s': 9.61, 'costo_por_tarea': 0.014915, 'tasa_bloqueo': 0.0} · canary {'n': 300, 'tasa_error': 0.0, 'latencia_p95_s': 10.19, 'latencia_p50_s': 3.9, 'costo_por_tarea': 0.003962, 'tasa_bloqueo': 0.0}
+    OK    tasa de error: 0.000 vs 0.000
+    OK    latencia p95 dentro del SLA: 10.19 s
+    OK    latencia p95 frente a estable: 10.19 vs 14.75 s
+    OK    costo por tarea: $0.00396 vs $0.01491
+    OK    bloqueo de inyección: 0.000 vs 0.000
+    OK    muestra mínima: n=300
+[gitops] commit deploy/produccion: promover r-3-1-0 al 100% y retirar r-2-0 (canary aprobado en todos los pasos)
+[reconciliador:produccion] detener revisión r-2-0
+[reconciliador:produccion] tráfico: r-3-1-0=100%
+[reconciliador:produccion] entorno detenido
+[canary:produccion] decisión: promovido

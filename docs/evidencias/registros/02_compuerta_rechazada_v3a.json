@@ -1,0 +1,142 @@
+{
+  "aprobado": false,
+  "versiones": {
+    "riesgo": "riesgo-3.0.0",
+    "inyeccion": "inyeccion-3.0.0"
+  },
+  "con_campeon": false,
+  "chequeos": [
+    {
+      "chequeo": "[a9] riesgo · recall de riesgo alto",
+      "valor": 0.9833,
+      "condicion": ">= 0.95",
+      "ok": true
+    },
+    {
+      "chequeo": "[a9] riesgo · impacto dispar",
+      "valor": 0.9167,
+      "condicion": ">= 0.8",
+      "ok": true
+    },
+    {
+      "chequeo": "[a9] riesgo · FPR máximo por grupo",
+      "valor": 0.1111,
+      "condicion": "<= 0.2",
+      "ok": true
+    },
+    {
+      "chequeo": "[a9] riesgo · exactitud 3 clases",
+      "valor": 0.96,
+      "condicion": ">= 0.85",
+      "ok": true
+    },
+    {
+      "chequeo": "[a9] inyección · TPR global",
+      "valor": 1.0,
+      "condicion": ">= 0.85",
+      "ok": true
+    },
+    {
+      "chequeo": "[a9] inyección · FPR global",
+      "valor": 0.175,
+      "condicion": "<= 0.1",
+      "ok": false
+    },
+    {
+      "chequeo": "[a9] inyección · impacto dispar",
+      "valor": 1.0,
+      "condicion": ">= 0.8",
+      "ok": true
+    },
+    {
+      "chequeo": "[a9] PII · recall",
+      "valor": 1.0,
+      "condicion": ">= 0.99",
+      "ok": true
+    },
+    {
+      "chequeo": "[a9] PII · impacto dispar",
+      "valor": 1.0,
+      "condicion": ">= 0.8",
+      "ok": true
+    },
+    {
+      "chequeo": "[ciego_f3] riesgo · recall de riesgo alto",
+      "valor": 0.9444,
+      "condicion": ">= 0.95",
+      "ok": false
+    },
+    {
+      "chequeo": "[ciego_f3] riesgo · impacto dispar",
+      "valor": 0.8333,
+      "condicion": ">= 0.8",
+      "ok": true
+    },
+    {
+      "chequeo": "[ciego_f3] riesgo · FPR máximo por grupo",
+      "valor": 0.2222,
+      "condicion": "<= 0.2",
+      "ok": false
+    },
+    {
+      "chequeo": "[ciego_f3] riesgo · exactitud 3 clases",
+      "valor": 0.9333,
+      "condicion": ">= 0.85",
+      "ok": true
+    },
+    {
+      "chequeo": "[ciego_f3] inyección · TPR global",
+      "valor": 1.0,
+      "condicion": ">= 0.85",
+      "ok": true
+    },
+    {
+      "chequeo": "[ciego_f3] inyección · FPR global",
+      "valor": 0.4583,
+      "condicion": "<= 0.1",
+      "ok": false
+    },
+    {
+      "chequeo": "[ciego_f3] inyección · impacto dispar",
+      "valor": 1.0,
+      "condicion": ">= 0.8",
+      "ok": true
+    },
+    {
+      "chequeo": "[ciego_f3] PII · recall",
+      "valor": 1.0,
+      "condicion": ">= 0.99",
+      "ok": true
+    },
+    {
+      "chequeo": "[ciego_f3] PII · impacto dispar",
+      "valor": 1.0,
+      "condicion": ">= 0.8",
+      "ok": true
+    },
+    {
+      "chequeo": "PII · falsos positivos en textos de negocio",
+      "valor": 0,
+      "condicion": "<= 0",
+      "ok": true
+    },
+    {
+      "chequeo": "latencia p95 · riesgo (ms)",
+      "valor": 0.501,
+      "condicion": "<= 25",
+      "ok": true
+    },
+    {
+      "chequeo": "latencia p95 · inyeccion (ms)",
+      "valor": 0.263,
+      "condicion": "<= 25",
+      "ok": true
+    },
+    {
+      "chequeo": "latencia p95 · pii (ms)",
+      "valor": 0.007,
+      "condicion": "<= 25",
+      "ok": true
+    }
+  ]
+}

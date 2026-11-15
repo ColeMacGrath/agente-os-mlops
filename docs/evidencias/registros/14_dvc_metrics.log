@@ -1,0 +1,2 @@
+Path                   a9.inyeccion_fpr    a9.inyeccion_tpr    a9.pii_recall    a9.riesgo_impacto_dispar    a9.riesgo_recall_alto    ciego_f4.inyeccion_fpr    ciego_f4.inyeccion_tpr    ciego_f4.pii_recall    ciego_f4.riesgo_impacto_dispar    ciego_f4.riesgo_recall_alto
+reports/metricas.json  0.0                 1.0                 1.0              1.0                         1.0                      0.1667                    0.9333                    1.0                    0.8333                            0.9722

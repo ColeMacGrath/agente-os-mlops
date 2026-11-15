@@ -1,0 +1,13 @@
+# Reglas de alerta de la operación. La simulación las evalúa al cierre de cada día;
+# en producción son políticas de Cloud Monitoring sobre las métricas de /metrics.
+reglas:
+  - {id: SLO-LAT, metrica: latencia_p95_s, op: ">", umbral: 16, severidad: P2, dueno: SRE, descripcion: "Latencia p95 de planificación sobre el SLA"}
+  - {id: SLO-DISP, metrica: disponibilidad, op: "<", umbral: 0.999, severidad: P1, dueno: SRE, descripcion: "Disponibilidad diaria bajo el SLA"}
+  - {id: SLO-ERR, metrica: tasa_error, op: ">", umbral: 0.01, severidad: P2, dueno: SRE, descripcion: "Tasa de error sobre el SLA"}
+  - {id: OPS-DEG, metrica: tasa_degradado, op: ">", umbral: 0.0, severidad: P2, dueno: SRE, descripcion: "Respuestas en modo degradado (API del modelo no disponible)"}
+  - {id: FIN-COSTO, metrica: costo_por_tarea, op: ">", umbral: 0.006, severidad: P3, dueno: FinOps, descripcion: "Costo por tarea sobre el umbral FinOps", dias_consecutivos: 2}
+  - {id: FIN-PRES, metrica: costo_diario_vs_presupuesto, op: ">", umbral: 1.0, severidad: P3, dueno: FinOps, descripcion: "Gasto diario sobre el presupuesto prorrateado"}
+  - {id: FIN-MEZCLA, metrica: mix_sonnet, op: ">", umbral: 0.55, severidad: P3, dueno: FinOps, descripcion: "Cambio en la mezcla del router: más tareas a Sonnet que la línea base (45%)", dias_consecutivos: 2}
+  - {id: DRIFT-IDIOMA, metrica: psi_idioma, op: ">", umbral: 0.2, severidad: P3, dueno: Líder de ML, descripcion: "Cambio en la mezcla de idiomas frente a la línea base (PSI)"}
+  - {id: SEG-SOMBRA, metrica: inyeccion_tpr_brecha_sombra, op: ">", umbral: 0.15, severidad: P3, dueno: Seguridad, descripcion: "El clasificador en sombra detecta muchos más ataques que el campeón (ventana de 7 días)"}
+  - {id: PRIV-PII, metrica: tasa_pii_servidor, op: ">", umbral: 0.005, severidad: P3, dueno: DPO, descripcion: "Datos personales que llegan sin enmascarar desde el dispositivo", dias_consecutivos: 2}

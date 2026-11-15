@@ -1,0 +1,4 @@
+2026-11-14T20:10:21Z conjunto ciego F4 escrito antes de la iteración v3.1
+e07bbe6e8c5ff421e2d91f951eca803fc44bb1305483cd45b19917cbbcb4955e  data/evaluacion/inyeccion_ciego_f4.csv
+64c2e39c407f64807e3bcb216261ac3a1bb1749f86bdcc4d999bca688b5d1de2  data/evaluacion/pii_ciego_f4.csv
+ef223b29db5edab95e85a2a7e4676f1d9242df899de859c093eefe7668bf7476  data/evaluacion/riesgo_ciego_f4.csv

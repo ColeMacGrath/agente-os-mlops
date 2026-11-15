@@ -1,0 +1,17 @@
+[gitops] commit deploy/staging: desplegar canary r-3-1-1-defectuosa al 10% (prueba de rollback)
+[reconciliador:staging] levantar revisión r-3-1-0 en :8301
+[reconciliador:staging] levantar revisión r-3-1-1-defectuosa en :8312
+[reconciliador:staging] levantar proxy en :8300
+[reconciliador:staging] tráfico: r-3-1-0=90%, r-3-1-1-defectuosa=10%
+[canary:staging] paso 10% · estable {'n': 268, 'tasa_error': 0.0, 'latencia_p95_s': 10.22, 'latencia_p50_s': 4.35, 'costo_por_tarea': 0.004176, 'tasa_bloqueo': 0.0} · canary {'n': 32, 'tasa_error': 0.2812, 'latencia_p95_s': 6.13, 'latencia_p50_s': 3.99, 'costo_por_tarea': 0.004081, 'tasa_bloqueo': 0.0}
+    FALLA tasa de error: 0.281 vs 0.000
+    OK    latencia p95 dentro del SLA: 6.13 s
+    OK    latencia p95 frente a estable: 6.13 vs 10.22 s
+    OK    costo por tarea: $0.00408 vs $0.00418
+    OK    bloqueo de inyección: 0.000 vs 0.000
+    OK    muestra mínima: n=32
+[gitops] commit deploy/staging: rollback: r-3-1-1-defectuosa no cumplió el análisis al 10% (tasa de error)
+[reconciliador:staging] detener revisión r-3-1-1-defectuosa
+[reconciliador:staging] tráfico: r-3-1-0=100%
+[reconciliador:staging] entorno detenido
+[canary:staging] decisión: rollback

@@ -1,0 +1,209 @@
+[
+  {
+    "dia": 2,
+    "id": "PRIV-PII",
+    "severidad": "P3",
+    "dueno": "DPO",
+    "descripcion": "Datos personales que llegan sin enmascarar desde el dispositivo",
+    "valor": 0.0051,
+    "umbral": 0.005
+  },
+  {
+    "dia": 8,
+    "id": "SEG-SOMBRA",
+    "severidad": "P3",
+    "dueno": "Seguridad",
+    "descripcion": "El clasificador en sombra detecta muchos más ataques que el campeón (ventana de 7 días)",
+    "valor": 0.17,
+    "umbral": 0.15
+  },
+  {
+    "dia": 9,
+    "id": "SEG-SOMBRA",
+    "severidad": "P3",
+    "dueno": "Seguridad",
+    "descripcion": "El clasificador en sombra detecta muchos más ataques que el campeón (ventana de 7 días)",
+    "valor": 0.185,
+    "umbral": 0.15
+  },
+  {
+    "dia": 10,
+    "id": "SEG-SOMBRA",
+    "severidad": "P3",
+    "dueno": "Seguridad",
+    "descripcion": "El clasificador en sombra detecta muchos más ataques que el campeón (ventana de 7 días)",
+    "valor": 0.257,
+    "umbral": 0.15
+  },
+  {
+    "dia": 11,
+    "id": "SEG-SOMBRA",
+    "severidad": "P3",
+    "dueno": "Seguridad",
+    "descripcion": "El clasificador en sombra detecta muchos más ataques que el campeón (ventana de 7 días)",
+    "valor": 0.277,
+    "umbral": 0.15
+  },
+  {
+    "dia": 11,
+    "id": "PRIV-PII",
+    "severidad": "P3",
+    "dueno": "DPO",
+    "descripcion": "Datos personales que llegan sin enmascarar desde el dispositivo",
+    "valor": 0.0051,
+    "umbral": 0.005
+  },
+  {
+    "dia": 12,
+    "id": "SEG-SOMBRA",
+    "severidad": "P3",
+    "dueno": "Seguridad",
+    "descripcion": "El clasificador en sombra detecta muchos más ataques que el campeón (ventana de 7 días)",
+    "valor": 0.258,
+    "umbral": 0.15
+  },
+  {
+    "dia": 13,
+    "id": "SEG-SOMBRA",
+    "severidad": "P3",
+    "dueno": "Seguridad",
+    "descripcion": "El clasificador en sombra detecta muchos más ataques que el campeón (ventana de 7 días)",
+    "valor": 0.242,
+    "umbral": 0.15
+  },
+  {
+    "dia": 14,
+    "id": "SEG-SOMBRA",
+    "severidad": "P3",
+    "dueno": "Seguridad",
+    "descripcion": "El clasificador en sombra detecta muchos más ataques que el campeón (ventana de 7 días)",
+    "valor": 0.254,
+    "umbral": 0.15
+  },
+  {
+    "dia": 15,
+    "id": "SEG-SOMBRA",
+    "severidad": "P3",
+    "dueno": "Seguridad",
+    "descripcion": "El clasificador en sombra detecta muchos más ataques que el campeón (ventana de 7 días)",
+    "valor": 0.197,
+    "umbral": 0.15
+  },
+  {
+    "dia": 16,
+    "id": "FIN-MEZCLA",
+    "severidad": "P3",
+    "dueno": "FinOps",
+    "descripcion": "Cambio en la mezcla del router: más tareas a Sonnet que la línea base (45%)",
+    "valor": 0.645,
+    "umbral": 0.55
+  },
+  {
+    "dia": 16,
+    "id": "SEG-SOMBRA",
+    "severidad": "P3",
+    "dueno": "Seguridad",
+    "descripcion": "El clasificador en sombra detecta muchos más ataques que el campeón (ventana de 7 días)",
+    "valor": 0.171,
+    "umbral": 0.15
+  },
+  {
+    "dia": 19,
+    "id": "SEG-SOMBRA",
+    "severidad": "P3",
+    "dueno": "Seguridad",
+    "descripcion": "El clasificador en sombra detecta muchos más ataques que el campeón (ventana de 7 días)",
+    "valor": 0.169,
+    "umbral": 0.15
+  },
+  {
+    "dia": 20,
+    "id": "SEG-SOMBRA",
+    "severidad": "P3",
+    "dueno": "Seguridad",
+    "descripcion": "El clasificador en sombra detecta muchos más ataques que el campeón (ventana de 7 días)",
+    "valor": 0.178,
+    "umbral": 0.15
+  },
+  {
+    "dia": 21,
+    "id": "OPS-DEG",
+    "severidad": "P2",
+    "dueno": "SRE",
+    "descripcion": "Respuestas en modo degradado (API del modelo no disponible)",
+    "valor": 0.0275,
+    "umbral": 0.0
+  },
+  {
+    "dia": 21,
+    "id": "SEG-SOMBRA",
+    "severidad": "P3",
+    "dueno": "Seguridad",
+    "descripcion": "El clasificador en sombra detecta muchos más ataques que el campeón (ventana de 7 días)",
+    "valor": 0.185,
+    "umbral": 0.15
+  },
+  {
+    "dia": 22,
+    "id": "DRIFT-IDIOMA",
+    "severidad": "P3",
+    "dueno": "Líder de ML",
+    "descripcion": "Cambio en la mezcla de idiomas frente a la línea base (PSI)",
+    "valor": 0.7494,
+    "umbral": 0.2
+  },
+  {
+    "dia": 22,
+    "id": "SEG-SOMBRA",
+    "severidad": "P3",
+    "dueno": "Seguridad",
+    "descripcion": "El clasificador en sombra detecta muchos más ataques que el campeón (ventana de 7 días)",
+    "valor": 0.16,
+    "umbral": 0.15
+  },
+  {
+    "dia": 23,
+    "id": "SEG-SOMBRA",
+    "severidad": "P3",
+    "dueno": "Seguridad",
+    "descripcion": "El clasificador en sombra detecta muchos más ataques que el campeón (ventana de 7 días)",
+    "valor": 0.17,
+    "umbral": 0.15
+  },
+  {
+    "dia": 25,
+    "id": "SEG-SOMBRA",
+    "severidad": "P3",
+    "dueno": "Seguridad",
+    "descripcion": "El clasificador en sombra detecta muchos más ataques que el campeón (ventana de 7 días)",
+    "valor": 0.166,
+    "umbral": 0.15
+  },
+  {
+    "dia": 26,
+    "id": "SEG-SOMBRA",
+    "severidad": "P3",
+    "dueno": "Seguridad",
+    "descripcion": "El clasificador en sombra detecta muchos más ataques que el campeón (ventana de 7 días)",
+    "valor": 0.16,
+    "umbral": 0.15
+  },
+  {
+    "dia": 29,
+    "id": "SEG-SOMBRA",
+    "severidad": "P3",
+    "dueno": "Seguridad",
+    "descripcion": "El clasificador en sombra detecta muchos más ataques que el campeón (ventana de 7 días)",
+    "valor": 0.172,
+    "umbral": 0.15
+  },
+  {
+    "dia": 30,
+    "id": "SEG-SOMBRA",
+    "severidad": "P3",
+    "dueno": "Seguridad",
+    "descripcion": "El clasificador en sombra detecta muchos más ataques que el campeón (ventana de 7 días)",
+    "valor": 0.193,
+    "umbral": 0.15
+  }
+]

@@ -1,0 +1,16 @@
+preparar_datos:
+	changed deps:
+		modified:           pipelines/preparar_datos.py
+		modified:           src/agente_os/datos
+validar_datos:
+	changed deps:
+		modified:           pipelines/validar_datos.py
+entrenar:
+	changed deps:
+		modified:           pipelines/entrenar.py
+evaluar:
+	changed deps:
+		modified:           pipelines/evaluar.py
+compuerta:
+	changed deps:
+		modified:           reports/campeon.json

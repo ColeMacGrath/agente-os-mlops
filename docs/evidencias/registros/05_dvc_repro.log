@@ -1,0 +1,77 @@
+Running stage 'preparar_datos':
+> python pipelines/preparar_datos.py
+riesgo: 2543 filas · inyeccion: 5600 filas
+Updating lock file 'dvc.lock'
+
+Running stage 'validar_datos':
+> python pipelines/validar_datos.py
+OK    [riesgo] columnas del contrato: ['texto', 'etiqueta', 'idioma', 'marco']
+OK    [riesgo] sin nulos: 0
+OK    [riesgo] sin duplicados exactos: 0
+OK    [riesgo] mínimo 2000 filas: 2543
+OK    [riesgo] etiquetas válidas: ['alto', 'bajo', 'medio']
+OK    [riesgo] balance de etiquetas: {'alto': 0.352, 'bajo': 0.332, 'medio': 0.315}
+OK    [riesgo] cobertura mínima por idioma: {'es': 842, 'en': 533, 'pt': 483, 'es_mx': 438, 'spanglish': 247}
+OK    [riesgo] largo de texto en rango: min 16, max 82
+OK    [riesgo] sin fuga hacia los conjuntos de evaluación: 0 textos compartidos
+OK    [riesgo] corpus sin datos personales: 0
+OK    [inyeccion] columnas del contrato: ['texto', 'etiqueta', 'idioma', 'variante']
+OK    [inyeccion] sin nulos: 0
+OK    [inyeccion] sin duplicados exactos: 0
+OK    [inyeccion] mínimo 2000 filas: 5600
+OK    [inyeccion] etiquetas válidas: ['0', '1']
+OK    [inyeccion] balance de etiquetas: {'0': 0.5, '1': 0.5}
+OK    [inyeccion] cobertura mínima por idioma: {'en': 1400, 'es': 1400, 'spanglish': 1400, 'pt': 1400}
+OK    [inyeccion] largo de texto en rango: min 33, max 175
+OK    [inyeccion] sin fuga hacia los conjuntos de evaluación: 0 textos compartidos
+Updating lock file 'dvc.lock'
+
+Running stage 'entrenar':
+> python pipelines/entrenar.py
+riesgo {'accuracy': 0.9969, 'f1_macro': 0.9969, 'recall_alto': 1.0} | inyeccion {'accuracy': 1.0, 'f1': 1.0, 'recall': 1.0}
+Updating lock file 'dvc.lock'
+
+Running stage 'evaluar':
+> python pipelines/evaluar.py
+[a9] riesgo recall_alto=1.0 DI=1.0 exact=0.9867 | inyeccion tpr=1.0 fpr=0.0 DI=1.0 | pii recall=1.0
+[ciego_a9] riesgo recall_alto=1.0 DI=1.0 exact=1.0 | inyeccion tpr=0.75 fpr=0.1875 DI=0.5 | pii recall=1.0
+[ciego_f3] riesgo recall_alto=0.9722 DI=0.8333 exact=0.9778 | inyeccion tpr=0.8667 fpr=0.125 DI=0.8333 | pii recall=1.0
+[ciego_f4] riesgo recall_alto=0.9722 DI=0.8333 exact=0.9167 | inyeccion tpr=0.9333 fpr=0.1667 DI=0.8333 | pii recall=1.0
+Updating lock file 'dvc.lock'
+
+Running stage 'compuerta':
+> python pipelines/compuerta.py
+OK    [a9] riesgo · recall de riesgo alto: 1.0 (>= 0.95)
+OK    [a9] riesgo · impacto dispar: 1.0 (>= 0.8)
+OK    [a9] riesgo · FPR máximo por grupo: 0.0556 (<= 0.2)
+OK    [a9] riesgo · exactitud 3 clases: 0.9867 (>= 0.85)
+OK    [a9] inyección · TPR global: 1.0 (>= 0.85)
+OK    [a9] inyección · FPR global: 0.0 (<= 0.1)
+OK    [a9] inyección · impacto dispar: 1.0 (>= 0.8)
+OK    [a9] PII · recall: 1.0 (>= 0.99)
+OK    [a9] PII · impacto dispar: 1.0 (>= 0.8)
+OK    [ciego_f4] riesgo · recall de riesgo alto: 0.9722 (>= 0.95)
+OK    [ciego_f4] riesgo · impacto dispar: 0.8333 (>= 0.8)
+OK    [ciego_f4] riesgo · FPR máximo por grupo: 0.1667 (<= 0.2)
+OK    [ciego_f4] riesgo · exactitud 3 clases: 0.9167 (>= 0.85)
+OK    [ciego_f4] inyección · TPR global: 0.9333 (>= 0.85)
+FALLA [ciego_f4] inyección · FPR global: 0.1667 (<= 0.1)
+OK    [ciego_f4] inyección · impacto dispar: 0.8333 (>= 0.8)
+OK    [ciego_f4] PII · recall: 1.0 (>= 0.99)
+OK    [ciego_f4] PII · impacto dispar: 1.0 (>= 0.8)
+OK    PII · falsos positivos en textos de negocio: 0 (<= 0)
+OK    latencia p95 · riesgo (ms): 0.522 (<= 25)
+OK    latencia p95 · inyeccion (ms): 0.272 (<= 25)
+OK    latencia p95 · pii (ms): 0.007 (<= 25)
+OK    [a9] no regresión · recall riesgo alto: 1.0 (>= 0.98)
+OK    [a9] no regresión · TPR inyección: 1.0 (>= 0.9)
+OK    [a9] no regresión · recall PII: 1.0 (>= 0.98)
+OK    [ciego_f4] no regresión · recall riesgo alto: 0.9722 (>= 0.9522)
+OK    [ciego_f4] no regresión · TPR inyección: 0.9333 (>= 0.5133)
+OK    [ciego_f4] no regresión · recall PII: 1.0 (>= 0.98)
+COMPONENTE riesgo: APROBADO -> modo aplicar
+COMPONENTE inyeccion: RECHAZADO -> modo sombra
+COMPONENTE pii: APROBADO -> modo aplicar
+COMPUERTA: RELEASE PARCIAL (componentes rechazados en sombra o con el campeón)
+Updating lock file 'dvc.lock'
+Use `dvc push` to send your updates to remote storage.
