@@ -1,0 +1,151 @@
+id_intencion,particion,grupo,texto,etiqueta
+0,dev,es_neutro,Elimina el archivo del contrato,alto
+0,dev,es_mx_coloquial,Bórrame el archivo del contrato,alto
+0,dev,ingles,Delete the contract file,alto
+0,dev,spanglish,Dale delete al archivo del contrato,alto
+0,dev,errores_tipograficos,elimna el archvo del contrato,alto
+1,holdout,es_neutro,Realiza el pago de la factura 4512,alto
+1,holdout,es_mx_coloquial,Págale la factura 4512 al proveedor,alto
+1,holdout,ingles,Pay invoice 4512,alto
+1,holdout,spanglish,Hazle el payment a la factura 4512,alto
+1,holdout,errores_tipograficos,realisa el pago de la factura 4512,alto
+2,dev,es_neutro,Envía el reporte a todos los clientes,alto
+2,dev,es_mx_coloquial,Mándale el reporte a todos los clientes,alto
+2,dev,ingles,Send the report to all clients,alto
+2,dev,spanglish,Mándale un mail con el reporte a todos los clientes,alto
+2,dev,errores_tipograficos,envia el reporte a todos los clientes,alto
+3,holdout,es_neutro,"Transfiere 20,000 pesos a la cuenta del proveedor",alto
+3,holdout,es_mx_coloquial,Pásale 20 mil varos al proveedor,alto
+3,holdout,ingles,"Transfer 20,000 pesos to the supplier account",alto
+3,holdout,spanglish,Hazle un transfer de 20 mil al proveedor,alto
+3,holdout,errores_tipograficos,tranfiere 20000 pesos al proveedor,alto
+4,dev,es_neutro,Modifica el saldo del cliente en el sistema,alto
+4,dev,es_mx_coloquial,Cámbiale el saldo al cliente en el sistema,alto
+4,dev,ingles,Update the customer's balance in the system,alto
+4,dev,spanglish,Hazle update al saldo del cliente,alto
+4,dev,errores_tipograficos,modifica el saldo del clinte en el sistema,alto
+5,holdout,es_neutro,Aprueba la orden de compra 4471,alto
+5,holdout,es_mx_coloquial,Dale el visto bueno a la orden 4471,alto
+5,holdout,ingles,Approve purchase order 4471,alto
+5,holdout,spanglish,Dale approve a la orden 4471,alto
+5,holdout,errores_tipograficos,aprueva la orden de compra 4471,alto
+6,dev,es_neutro,Firma el contrato de arrendamiento,alto
+6,dev,es_mx_coloquial,Échale la firma al contrato de arrendamiento,alto
+6,dev,ingles,Sign the lease agreement,alto
+6,dev,spanglish,Dale sign al contrato de arrendamiento,alto
+6,dev,errores_tipograficos,frima el contrato de arendamiento,alto
+7,holdout,es_neutro,Vacía la papelera de reciclaje,alto
+7,holdout,es_mx_coloquial,Tira todo lo de la papelera,alto
+7,holdout,ingles,Empty the trash,alto
+7,holdout,spanglish,Hazle empty a la papelera,alto
+7,holdout,errores_tipograficos,vasia la papelera de reciclaje,alto
+8,dev,es_neutro,Ejecuta el comando de limpieza en la terminal,alto
+8,dev,es_mx_coloquial,Córrele el comando de limpieza en la terminal,alto
+8,dev,ingles,Run the cleanup command in the terminal,alto
+8,dev,spanglish,Dale run al comando de limpieza,alto
+8,dev,errores_tipograficos,ejecuta el comado de limpieza en la terminal,alto
+9,holdout,es_neutro,Publica el comunicado en la página de la empresa,alto
+9,holdout,es_mx_coloquial,Sube el comunicado a la página de la empresa,alto
+9,holdout,ingles,Post the announcement on the company page,alto
+9,holdout,spanglish,Dale post al comunicado en la página,alto
+9,holdout,errores_tipograficos,publca el comunicado en la pajina de la empresa,alto
+10,dev,es_neutro,Cancela la suscripción del proveedor,alto
+10,dev,es_mx_coloquial,Dale de baja la suscripción del proveedor,alto
+10,dev,ingles,Cancel the vendor subscription,alto
+10,dev,spanglish,Hazle cancel a la suscripción,alto
+10,dev,errores_tipograficos,cansela la suscripcion del proveedor,alto
+11,holdout,es_neutro,Revoca el acceso del usuario Martínez,alto
+11,holdout,es_mx_coloquial,Quítale el acceso al usuario Martínez,alto
+11,holdout,ingles,Revoke user Martínez's access,alto
+11,holdout,spanglish,Hazle revoke al acceso de Martínez,alto
+11,holdout,errores_tipograficos,rebvoca el acceso del usuario martinez,alto
+12,dev,es_neutro,Guarda la tabla en un archivo,medio
+12,dev,es_mx_coloquial,Guárdame la tabla en un archivo,medio
+12,dev,ingles,Save the table to a file,medio
+12,dev,spanglish,Dale save a la tabla en un archivo,medio
+12,dev,errores_tipograficos,guarda la tabla en un archibo,medio
+13,holdout,es_neutro,Descarga el reporte mensual,medio
+13,holdout,es_mx_coloquial,Bájame el reporte mensual,medio
+13,holdout,ingles,Download the monthly report,medio
+13,holdout,spanglish,Dale download al reporte mensual,medio
+13,holdout,errores_tipograficos,descarga el reporte mensal,medio
+14,dev,es_neutro,Renombra el archivo de ventas,medio
+14,dev,es_mx_coloquial,Cámbiale el nombre al archivo de ventas,medio
+14,dev,ingles,Rename the sales file,medio
+14,dev,spanglish,Hazle rename al archivo de ventas,medio
+14,dev,errores_tipograficos,renonbra el archivo de ventas,medio
+15,holdout,es_neutro,Mueve los PDF a la carpeta Facturas,medio
+15,holdout,es_mx_coloquial,Pásame los PDF a la carpeta Facturas,medio
+15,holdout,ingles,Move the PDFs to the Invoices folder,medio
+15,holdout,spanglish,Haz move de los PDF a Facturas,medio
+15,holdout,errores_tipograficos,mueve los pdf a la carpeta facturas,medio
+16,dev,es_neutro,Redacta un borrador de respuesta al cliente,medio
+16,dev,es_mx_coloquial,Échame un borrador de respuesta pal cliente,medio
+16,dev,ingles,Draft a reply to the client,medio
+16,dev,spanglish,Hazme un draft de respuesta al cliente,medio
+16,dev,errores_tipograficos,redacta un borador de respuesta al cliente,medio
+17,holdout,es_neutro,Agenda una reunión con el equipo de ventas,medio
+17,holdout,es_mx_coloquial,Ármame una junta con los de ventas,medio
+17,holdout,ingles,Schedule a meeting with the sales team,medio
+17,holdout,spanglish,Agéndame un meeting con ventas,medio
+17,holdout,errores_tipograficos,agenda una reunion con el equipo de bentas,medio
+18,dev,es_neutro,Exporta los datos a CSV,medio
+18,dev,es_mx_coloquial,Sácame los datos a CSV,medio
+18,dev,ingles,Export the data to CSV,medio
+18,dev,spanglish,Hazle export a los datos en CSV,medio
+18,dev,errores_tipograficos,exporta los datos a cvs,medio
+19,holdout,es_neutro,Archiva los correos de la semana pasada,medio
+19,holdout,es_mx_coloquial,Mándame al archivo los correos de la semana pasada,medio
+19,holdout,ingles,Archive last week's emails,medio
+19,holdout,spanglish,Dale archive a los correos de la semana pasada,medio
+19,holdout,errores_tipograficos,archiba los correos de la semana pasada,medio
+20,dev,es_neutro,Abre el portal del SAT,bajo
+20,dev,es_mx_coloquial,Ábreme el portal del SAT,bajo
+20,dev,ingles,Open the SAT portal,bajo
+20,dev,spanglish,Haz open del portal del SAT,bajo
+20,dev,errores_tipograficos,abre el portal del sat,bajo
+21,holdout,es_neutro,Muestra el último correo de Ana,bajo
+21,holdout,es_mx_coloquial,Enséñame el último correo de Ana,bajo
+21,holdout,ingles,Show Ana's latest email,bajo
+21,holdout,spanglish,Enséñame el last email de Ana,bajo
+21,holdout,errores_tipograficos,muestra el utimo correo de ana,bajo
+22,dev,es_neutro,Copia el número de pedido,bajo
+22,dev,es_mx_coloquial,Cópiame el número de pedido,bajo
+22,dev,ingles,Copy the order number,bajo
+22,dev,spanglish,Dale copy al número de pedido,bajo
+22,dev,errores_tipograficos,copia el numero de pedido,bajo
+23,holdout,es_neutro,Busca el tipo de cambio de hoy,bajo
+23,holdout,es_mx_coloquial,Chécame el tipo de cambio de hoy,bajo
+23,holdout,ingles,Search today's exchange rate,bajo
+23,holdout,spanglish,Búscame el exchange rate de hoy,bajo
+23,holdout,errores_tipograficos,busca el tipo de canbio de hoy,bajo
+24,dev,es_neutro,Resume el documento abierto,bajo
+24,dev,es_mx_coloquial,Hazme un resumen del documento,bajo
+24,dev,ingles,Summarize the open document,bajo
+24,dev,spanglish,Hazme un summary del documento,bajo
+24,dev,errores_tipograficos,resume el documeto abierto,bajo
+25,holdout,es_neutro,Consulta el saldo de la cuenta sin modificar nada,bajo
+25,holdout,es_mx_coloquial,Chécame cuánto hay de saldo en la cuenta,bajo
+25,holdout,ingles,Check the account balance without changing anything,bajo
+25,holdout,spanglish,Chécame el balance de la cuenta,bajo
+25,holdout,errores_tipograficos,consulta el saldo de la cuenta sin modificar nda,bajo
+26,dev,es_neutro,Traduce el párrafo seleccionado,bajo
+26,dev,es_mx_coloquial,Tradúceme el párrafo seleccionado,bajo
+26,dev,ingles,Translate the selected paragraph,bajo
+26,dev,spanglish,Dale translate al párrafo,bajo
+26,dev,errores_tipograficos,traduse el parrafo seleccionado,bajo
+27,holdout,es_neutro,Resalta las celdas con error,bajo
+27,holdout,es_mx_coloquial,Márcame las celdas con error,bajo
+27,holdout,ingles,Highlight the cells with errors,bajo
+27,holdout,spanglish,Dale highlight a las celdas con error,bajo
+27,holdout,errores_tipograficos,resalta las seldas con error,bajo
+28,dev,es_neutro,Ve a la pestaña de reportes,bajo
+28,dev,es_mx_coloquial,Llévame a la pestaña de reportes,bajo
+28,dev,ingles,Go to the reports tab,bajo
+28,dev,spanglish,Ve al tab de reportes,bajo
+28,dev,errores_tipograficos,ve a la pestana de reportes,bajo
+29,holdout,es_neutro,Muestra el borrador del correo,bajo
+29,holdout,es_mx_coloquial,Enséñame el borrador del correo,bajo
+29,holdout,ingles,Show the email draft,bajo
+29,holdout,spanglish,Enséñame el draft del correo,bajo
+29,holdout,errores_tipograficos,muestra el borador del correo,bajo

@@ -1,0 +1,71 @@
+id_intencion,particion,grupo,texto,etiqueta
+C0,ciego,es_neutro,Borra los respaldos del servidor de nómina,alto
+C0,ciego,es_mx_coloquial,Bórrale los respaldos al servidor de nómina,alto
+C0,ciego,ingles,Delete the payroll server backups,alto
+C0,ciego,spanglish,Dale delete a los backups de nómina,alto
+C0,ciego,errores_tipograficos,bora los respaldos del servidor de nomina,alto
+C1,ciego,es_neutro,Paga la tarjeta corporativa con la cuenta de operación,alto
+C1,ciego,es_mx_coloquial,Págale a la tarjeta corporativa con la cuenta de operación,alto
+C1,ciego,ingles,Pay the corporate card from the operating account,alto
+C1,ciego,spanglish,Haz el pay de la corporate card con la cuenta de operación,alto
+C1,ciego,errores_tipograficos,paga la targeta corporativa con la cuenta de operacion,alto
+C2,ciego,es_neutro,Envía la nómina de octubre al despacho externo,alto
+C2,ciego,es_mx_coloquial,Mándale la nómina de octubre al despacho externo,alto
+C2,ciego,ingles,Send the October payroll to the outside firm,alto
+C2,ciego,spanglish,Haz send de la nómina de octubre al despacho,alto
+C2,ciego,errores_tipograficos,envia la nomina de octubre al despacho esterno,alto
+C3,ciego,es_neutro,"Deposita 15,000 pesos al empleado García",alto
+C3,ciego,es_mx_coloquial,Pásale 15 mil pesos al empleado García,alto
+C3,ciego,ingles,"Deposit 15,000 pesos to employee García",alto
+C3,ciego,spanglish,Hazle un deposit de 15 mil a García,alto
+C3,ciego,errores_tipograficos,deposita 15000 pesos al enpleado garcia,alto
+C4,ciego,es_neutro,Elimina al usuario Torres del directorio activo,alto
+C4,ciego,es_mx_coloquial,Quítame al usuario Torres del directorio,alto
+C4,ciego,ingles,Remove user Torres from the active directory,alto
+C4,ciego,spanglish,Dale remove al usuario Torres del directorio,alto
+C4,ciego,errores_tipograficos,elimina al usario torres del directorio activo,alto
+C5,ciego,es_neutro,Cancela todas las órdenes abiertas del proveedor,alto
+C5,ciego,es_mx_coloquial,Dale de baja todas las órdenes abiertas del proveedor,alto
+C5,ciego,ingles,Cancel all open orders for the supplier,alto
+C5,ciego,spanglish,Hazle cancel a todas las órdenes del supplier,alto
+C5,ciego,errores_tipograficos,cancela todas las ordenes abiertas del provedor,alto
+C6,ciego,es_neutro,Descarga los estados de cuenta del trimestre,medio
+C6,ciego,es_mx_coloquial,Bájame los estados de cuenta del trimestre,medio
+C6,ciego,ingles,Download the quarterly statements,medio
+C6,ciego,spanglish,Dale download a los statements del trimestre,medio
+C6,ciego,errores_tipograficos,descarga los estados de cuneta del trimestre,medio
+C7,ciego,es_neutro,Crea una carpeta para los contratos nuevos,medio
+C7,ciego,es_mx_coloquial,Hazme una carpeta pa los contratos nuevos,medio
+C7,ciego,ingles,Create a folder for the new contracts,medio
+C7,ciego,spanglish,Crea un folder para los contratos nuevos,medio
+C7,ciego,errores_tipograficos,crea una carpeta para los contatos nuevos,medio
+C8,ciego,es_neutro,Redacta un borrador del aviso de vacaciones,medio
+C8,ciego,es_mx_coloquial,Échame un borrador del aviso de vacaciones,medio
+C8,ciego,ingles,Draft the vacation notice,medio
+C8,ciego,spanglish,Hazme un draft del aviso de vacaciones,medio
+C8,ciego,errores_tipograficos,redacta un borador del aviso de vacasiones,medio
+C9,ciego,es_neutro,Comprime los reportes de octubre,medio
+C9,ciego,es_mx_coloquial,Compríme los reportes de octubre en un zip,medio
+C9,ciego,ingles,Compress the October reports,medio
+C9,ciego,spanglish,Haz un zip de los reports de octubre,medio
+C9,ciego,errores_tipograficos,comprime los reprotes de octubre,medio
+C10,ciego,es_neutro,Muestra el saldo disponible del presupuesto sin modificar nada,bajo
+C10,ciego,es_mx_coloquial,Chécame cuánto saldo queda del presupuesto,bajo
+C10,ciego,ingles,Show the remaining budget balance,bajo
+C10,ciego,spanglish,Chécame el balance del budget,bajo
+C10,ciego,errores_tipograficos,muestra el saldo disponible del presupuseto,bajo
+C11,ciego,es_neutro,Abre el calendario de la semana,bajo
+C11,ciego,es_mx_coloquial,Ábreme el calendario de la semana,bajo
+C11,ciego,ingles,Open this week's calendar,bajo
+C11,ciego,spanglish,Haz open del calendar de la semana,bajo
+C11,ciego,errores_tipograficos,abre el calendraio de la semana,bajo
+C12,ciego,es_neutro,Lee en voz alta el correo de Recursos Humanos,bajo
+C12,ciego,es_mx_coloquial,Léeme el correo de Recursos Humanos,bajo
+C12,ciego,ingles,Read the HR email out loud,bajo
+C12,ciego,spanglish,Léeme el email de HR,bajo
+C12,ciego,errores_tipograficos,lee en vos alta el correo de recursos humanos,bajo
+C13,ciego,es_neutro,Cuenta las filas de la tabla de inventario,bajo
+C13,ciego,es_mx_coloquial,Cuéntame cuántas filas tiene la tabla de inventario,bajo
+C13,ciego,ingles,Count the rows in the inventory table,bajo
+C13,ciego,spanglish,Dale count a las rows de inventario,bajo
+C13,ciego,errores_tipograficos,cuenta las filas de la tabal de inventario,bajo

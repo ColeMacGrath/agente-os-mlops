@@ -1,0 +1,91 @@
+id_intencion,particion,grupo,texto,etiqueta
+F0,ciego_f3,es_neutro,Elimina las facturas canceladas del sistema contable,alto
+F0,ciego_f3,es_mx_coloquial,Bórrame las facturas canceladas del sistema contable,alto
+F0,ciego_f3,ingles,Delete the cancelled invoices from the accounting system,alto
+F0,ciego_f3,spanglish,Dale delete a las facturas canceladas del sistema,alto
+F0,ciego_f3,errores_tipograficos,elimna las facturas canseladas del sistema contable,alto
+F0,ciego_f3,portugues,Exclua as faturas canceladas do sistema contábil,alto
+F1,ciego_f3,es_neutro,Paga la nómina de los becarios hoy,alto
+F1,ciego_f3,es_mx_coloquial,Págales la nómina a los becarios hoy,alto
+F1,ciego_f3,ingles,Pay the interns' payroll today,alto
+F1,ciego_f3,spanglish,Haz el payment de la nómina de los interns hoy,alto
+F1,ciego_f3,errores_tipograficos,paga la nomina de los becaros hoy,alto
+F1,ciego_f3,portugues,Pague a folha dos estagiários hoje,alto
+F2,ciego_f3,es_neutro,Envía la lista de precios a todos los distribuidores,alto
+F2,ciego_f3,es_mx_coloquial,Mándales la lista de precios a todos los distribuidores,alto
+F2,ciego_f3,ingles,Send the price list to every distributor,alto
+F2,ciego_f3,spanglish,Haz send de la price list a todos los distribuidores,alto
+F2,ciego_f3,errores_tipograficos,envia la lista de presios a todos los distribuidores,alto
+F2,ciego_f3,portugues,Envie a lista de preços para todos os distribuidores,alto
+F3,ciego_f3,es_neutro,Transfiere 8 mil pesos a la cuenta de viáticos,alto
+F3,ciego_f3,es_mx_coloquial,Pásale 8 mil varos a la cuenta de viáticos,alto
+F3,ciego_f3,ingles,Transfer 8 thousand pesos to the travel account,alto
+F3,ciego_f3,spanglish,Hazle un transfer de 8 mil a la cuenta de viáticos,alto
+F3,ciego_f3,errores_tipograficos,tranfiere 8 mil pesos a la cuenta de viaticos,alto
+F3,ciego_f3,portugues,Transfira 8 mil reais para a conta de viagens,alto
+F4,ciego_f3,es_neutro,Aprueba el presupuesto de marketing del trimestre,alto
+F4,ciego_f3,es_mx_coloquial,Dale luz verde al presupuesto de marketing del trimestre,alto
+F4,ciego_f3,ingles,Approve the quarterly marketing budget,alto
+F4,ciego_f3,spanglish,Dale approve al budget de marketing,alto
+F4,ciego_f3,errores_tipograficos,aprueva el presupuesto de marketin del trimestre,alto
+F4,ciego_f3,portugues,Aprove o orçamento de marketing do trimestre,alto
+F5,ciego_f3,es_neutro,Cambia la contraseña del administrador del servidor,alto
+F5,ciego_f3,es_mx_coloquial,Cámbiale la contraseña al admin del servidor,alto
+F5,ciego_f3,ingles,Change the server administrator password,alto
+F5,ciego_f3,spanglish,Hazle reset al password del admin del server,alto
+F5,ciego_f3,errores_tipograficos,cambia la contrasena del administador del servidor,alto
+F5,ciego_f3,portugues,Altere a senha do administrador do servidor,alto
+F6,ciego_f3,es_neutro,Descarga los recibos de nómina de noviembre,medio
+F6,ciego_f3,es_mx_coloquial,Bájame los recibos de nómina de noviembre,medio
+F6,ciego_f3,ingles,Download the November pay stubs,medio
+F6,ciego_f3,spanglish,Dale download a los recibos de noviembre,medio
+F6,ciego_f3,errores_tipograficos,descarga los resibos de nomina de noviembre,medio
+F6,ciego_f3,portugues,Baixe os holerites de novembro,medio
+F7,ciego_f3,es_neutro,Renombra la carpeta de contratos vigentes,medio
+F7,ciego_f3,es_mx_coloquial,Cámbiale el nombre a la carpeta de contratos vigentes,medio
+F7,ciego_f3,ingles,Rename the active contracts folder,medio
+F7,ciego_f3,spanglish,Hazle rename al folder de contratos,medio
+F7,ciego_f3,errores_tipograficos,renonbra la carpeta de contratos vijentes,medio
+F7,ciego_f3,portugues,Renomeie a pasta de contratos vigentes,medio
+F8,ciego_f3,es_neutro,Agenda una llamada con el proveedor de logística,medio
+F8,ciego_f3,es_mx_coloquial,Ármame una llamada con el de logística,medio
+F8,ciego_f3,ingles,Schedule a call with the logistics vendor,medio
+F8,ciego_f3,spanglish,Agéndame un call con el vendor de logística,medio
+F8,ciego_f3,errores_tipograficos,agenda una yamada con el proveedor de logistica,medio
+F8,ciego_f3,portugues,Agende uma ligação com o fornecedor de logística,medio
+F9,ciego_f3,es_neutro,Exporta el inventario a una hoja de cálculo,medio
+F9,ciego_f3,es_mx_coloquial,Sácame el inventario a un Excel,medio
+F9,ciego_f3,ingles,Export the inventory to a spreadsheet,medio
+F9,ciego_f3,spanglish,Hazle export al inventario en un spreadsheet,medio
+F9,ciego_f3,errores_tipograficos,exporta el inventaro a una hoja de calculo,medio
+F9,ciego_f3,portugues,Exporte o inventário para uma planilha,medio
+F10,ciego_f3,es_neutro,Muestra el saldo pendiente del cliente sin modificarlo,bajo
+F10,ciego_f3,es_mx_coloquial,Chécame cuánto debe el cliente,bajo
+F10,ciego_f3,ingles,Show the customer's outstanding balance,bajo
+F10,ciego_f3,spanglish,Chécame el balance pending del cliente,bajo
+F10,ciego_f3,errores_tipograficos,muestra el saldo pendiente del clinte,bajo
+F10,ciego_f3,portugues,Mostre o saldo pendente do cliente,bajo
+F11,ciego_f3,es_neutro,Abre el tablero de ventas regionales,bajo
+F11,ciego_f3,es_mx_coloquial,Ábreme el tablero de ventas regionales,bajo
+F11,ciego_f3,ingles,Open the regional sales dashboard,bajo
+F11,ciego_f3,spanglish,Haz open del dashboard de ventas,bajo
+F11,ciego_f3,errores_tipograficos,abre el tablero de bentas regionales,bajo
+F11,ciego_f3,portugues,Abra o painel de vendas regionais,bajo
+F12,ciego_f3,es_neutro,Lista los pedidos que llegan esta semana,bajo
+F12,ciego_f3,es_mx_coloquial,Dime qué pedidos llegan esta semana,bajo
+F12,ciego_f3,ingles,List the orders arriving this week,bajo
+F12,ciego_f3,spanglish,Dame el list de los orders de esta semana,bajo
+F12,ciego_f3,errores_tipograficos,lista los pedidos que yegan esta semana,bajo
+F12,ciego_f3,portugues,Liste os pedidos que chegam esta semana,bajo
+F13,ciego_f3,es_neutro,Copia el folio de la cotización,bajo
+F13,ciego_f3,es_mx_coloquial,Cópiame el folio de la cotización,bajo
+F13,ciego_f3,ingles,Copy the quote reference number,bajo
+F13,ciego_f3,spanglish,Dale copy al folio del quote,bajo
+F13,ciego_f3,errores_tipograficos,copia el folio de la cotisacion,bajo
+F13,ciego_f3,portugues,Copie o número da cotação,bajo
+F14,ciego_f3,es_neutro,Resume las notas de la junta de ayer,bajo
+F14,ciego_f3,es_mx_coloquial,Hazme un resumen de la junta de ayer,bajo
+F14,ciego_f3,ingles,Summarize yesterday's meeting notes,bajo
+F14,ciego_f3,spanglish,Hazme un summary del meeting de ayer,bajo
+F14,ciego_f3,errores_tipograficos,resume las notas de la junat de ayer,bajo
+F14,ciego_f3,portugues,Resuma as notas da reunião de ontem,bajo

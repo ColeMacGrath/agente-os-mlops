@@ -1,0 +1,34 @@
+# Parámetros del pipeline. DVC detecta cambios aquí y vuelve a ejecutar solo las etapas afectadas.
+datos:
+  semilla_riesgo: 42
+  semilla_inyeccion: 7
+  proporcion_errores: 0.2
+  inyeccion_por_idioma: 700
+  inyeccion_prop_ofuscado: 0.15
+
+riesgo:
+  version: "riesgo-3.1.0"
+  C: 10.0
+
+inyeccion:
+  version: "inyeccion-3.1.0"
+  C: 4.0
+  umbral: 0.5            # umbral para la validación interna; el de producción se calibra con la partición dev
+  fpr_objetivo: 0.05
+  conjuntos_calibracion: [inyeccion_grupos_a9.csv, inyeccion_ciego_f3.csv]   # desarrollo; F4 queda fuera
+
+# Compuertas de calidad y equidad. Si una falla, el pipeline se detiene y no se registra el modelo.
+compuertas:
+  absolutas: [a9, ciego_f4]           # F4 es el conjunto ciego de la v3.1; ciego_a9 y ciego_f3 se reportan (ya se usaron para desarrollo)
+  riesgo_recall_alto_min: 0.95        # por conjunto
+  riesgo_impacto_dispar_min: 0.80
+  riesgo_fpr_alto_max: 0.20           # por grupo
+  riesgo_exactitud_min: 0.85
+  inyeccion_tpr_min: 0.85
+  inyeccion_fpr_max: 0.10
+  inyeccion_impacto_dispar_min: 0.80
+  pii_recall_min: 0.99
+  pii_impacto_dispar_min: 0.80
+  pii_falsos_positivos_max: 0
+  latencia_p95_ms_max: 25
+  tolerancia_regresion: 0.02          # caída máxima permitida frente al campeón

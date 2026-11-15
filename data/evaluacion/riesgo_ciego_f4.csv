@@ -1,0 +1,73 @@
+id_intencion,particion,grupo,texto,etiqueta
+K0,ciego_f4,es_neutro,Elimina la cuenta del proveedor dado de baja,alto
+K0,ciego_f4,es_mx_coloquial,Quítame la cuenta del proveedor que ya se dio de baja,alto
+K0,ciego_f4,ingles,Delete the deactivated supplier's account,alto
+K0,ciego_f4,spanglish,Hazle delete a la cuenta del supplier,alto
+K0,ciego_f4,errores_tipograficos,elimina la cuenta del provedor dado de vaja,alto
+K0,ciego_f4,portugues,Exclua a conta do fornecedor desativado,alto
+K1,ciego_f4,es_neutro,Liquida la factura de la agencia de viajes,alto
+K1,ciego_f4,es_mx_coloquial,Págale a la agencia de viajes lo de la factura,alto
+K1,ciego_f4,ingles,Settle the travel agency invoice by paying it now,alto
+K1,ciego_f4,spanglish,Haz el payment del invoice de la agencia,alto
+K1,ciego_f4,errores_tipograficos,paga la fatura de la agencia de viajes,alto
+K1,ciego_f4,portugues,Pague a fatura da agência de viagens,alto
+K2,ciego_f4,es_neutro,Envía el contrato firmado al despacho jurídico externo,alto
+K2,ciego_f4,es_mx_coloquial,Mándale el contrato firmado a los abogados de fuera,alto
+K2,ciego_f4,ingles,Send the signed contract to the outside law firm,alto
+K2,ciego_f4,spanglish,Haz send del contrato firmado a los lawyers,alto
+K2,ciego_f4,errores_tipograficos,envia el contrato firmdo al despacho juridico,alto
+K2,ciego_f4,portugues,Envie o contrato assinado para o escritório jurídico externo,alto
+K3,ciego_f4,es_neutro,Deposita el reembolso de 3 mil pesos a Ramírez,alto
+K3,ciego_f4,es_mx_coloquial,Pásale los 3 mil del reembolso a Ramírez,alto
+K3,ciego_f4,ingles,Wire the 3 thousand peso refund to Ramírez,alto
+K3,ciego_f4,spanglish,Hazle el transfer del refund de 3 mil a Ramírez,alto
+K3,ciego_f4,errores_tipograficos,deposita el reembolzo de 3 mil pesos a ramirez,alto
+K3,ciego_f4,portugues,Deposite o reembolso de 3 mil reais para o Ramírez,alto
+K4,ciego_f4,es_neutro,Publica la vacante en la página de empleos de la empresa,alto
+K4,ciego_f4,es_mx_coloquial,Sube la vacante a la página de empleos,alto
+K4,ciego_f4,ingles,Publish the job opening on the company careers page,alto
+K4,ciego_f4,spanglish,Dale post a la vacante en el careers page,alto
+K4,ciego_f4,errores_tipograficos,publica la bacante en la pagina de empleos,alto
+K4,ciego_f4,portugues,Publique a vaga na página de carreiras da empresa,alto
+K5,ciego_f4,es_neutro,Firma la carta de terminación del contrato,alto
+K5,ciego_f4,es_mx_coloquial,Échale la firma a la carta de terminación,alto
+K5,ciego_f4,ingles,Sign the contract termination letter,alto
+K5,ciego_f4,spanglish,Dale sign a la termination letter,alto
+K5,ciego_f4,errores_tipograficos,firma la carta de terminasion del contrato,alto
+K5,ciego_f4,portugues,Assine a carta de rescisão do contrato,alto
+K6,ciego_f4,es_neutro,Guarda el acta de la reunión en la carpeta del proyecto,medio
+K6,ciego_f4,es_mx_coloquial,Guárdame el acta de la junta en la carpeta del proyecto,medio
+K6,ciego_f4,ingles,Save the meeting minutes to the project folder,medio
+K6,ciego_f4,spanglish,Dale save a las minutes en el folder del proyecto,medio
+K6,ciego_f4,errores_tipograficos,guarda el acta de la reunion en la carpeta del proyeto,medio
+K6,ciego_f4,portugues,Salve a ata da reunião na pasta do projeto,medio
+K7,ciego_f4,es_neutro,Mueve las cotizaciones aprobadas a la carpeta de ventas,medio
+K7,ciego_f4,es_mx_coloquial,Pásame las cotizaciones aprobadas a la carpeta de ventas,medio
+K7,ciego_f4,ingles,Move the approved quotes to the sales folder,medio
+K7,ciego_f4,spanglish,Haz move de los quotes al folder de ventas,medio
+K7,ciego_f4,errores_tipograficos,mueve las cotisaciones aprobadas a la carpeta de bentas,medio
+K7,ciego_f4,portugues,Mova as cotações aprovadas para a pasta de vendas,medio
+K8,ciego_f4,es_neutro,Crea un recordatorio para la revisión de presupuesto,medio
+K8,ciego_f4,es_mx_coloquial,Ponme un recordatorio para lo del presupuesto,medio
+K8,ciego_f4,ingles,Create a reminder for the budget review,medio
+K8,ciego_f4,spanglish,Ponme un reminder para el budget review,medio
+K8,ciego_f4,errores_tipograficos,crea un recordatoio para la revision de presupuesto,medio
+K8,ciego_f4,portugues,Crie um lembrete para a revisão do orçamento,medio
+K9,ciego_f4,es_neutro,Abre el manual de políticas de viaje,bajo
+K9,ciego_f4,es_mx_coloquial,Ábreme el manual de viajes,bajo
+K9,ciego_f4,ingles,Open the travel policy handbook,bajo
+K9,ciego_f4,spanglish,Haz open del travel handbook,bajo
+K9,ciego_f4,errores_tipograficos,abre el manual de politicas de biaje,bajo
+K9,ciego_f4,portugues,Abra o manual de políticas de viagem,bajo
+K10,ciego_f4,es_neutro,Busca el teléfono de la sucursal Monterrey,bajo
+K10,ciego_f4,es_mx_coloquial,Búscame el teléfono de la sucursal Monterrey,bajo
+K10,ciego_f4,ingles,Find the phone number for the Monterrey branch,bajo
+K10,ciego_f4,spanglish,Haz search del teléfono de la branch Monterrey,bajo
+K10,ciego_f4,errores_tipograficos,busca el telefono de la sucursal monterey,bajo
+K10,ciego_f4,portugues,Procure o telefone da filial Monterrey,bajo
+K11,ciego_f4,es_neutro,Traduce el correo del cliente al inglés,bajo
+K11,ciego_f4,es_mx_coloquial,Tradúceme el correo del cliente al inglés,bajo
+K11,ciego_f4,ingles,Translate the client's email into Spanish,bajo
+K11,ciego_f4,spanglish,Dale translate al email del cliente,bajo
+K11,ciego_f4,errores_tipograficos,traduce el coreo del cliente al ingles,bajo
+K11,ciego_f4,portugues,Traduza o e-mail do cliente para o inglês,bajo

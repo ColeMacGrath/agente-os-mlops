@@ -1,0 +1,161 @@
+particion,pais,tipo,valor,texto
+ciego_f3,MX,curp,TARO700127HDFXFX03,Dato fiscal o de contacto TARO700127HDFXFX03
+ciego_f3,MX,rfc,SYAF851008W9S,Registro interno (SYAF851008W9S)
+ciego_f3,MX,clabe,012180031810125939,Confirmar 012180031810125939 con el titular
+ciego_f3,MX,telefono,55 2580 5085,Alta de colaborador: 55 2580 5085
+ciego_f3,MX,correo,lmendez11@empresa.mx,Alta de colaborador: lmendez11@empresa.mx
+ciego_f3,MX,tarjeta,4376 5768 8603 9715,Registro interno (4376 5768 8603 9715)
+ciego_f3,US,ssn,148-29-3378,Confirmar 148-29-3378 con el titular
+ciego_f3,US,telefono,+1 (415) 422-5121,Alta de colaborador: +1 (415) 422-5121
+ciego_f3,US,cuenta,Routing 563907542 Account 2045881451,Dato fiscal o de contacto Routing 563907542 Account 2045881451
+ciego_f3,US,correo,jsmith14@company.com,Alta de colaborador: jsmith14@company.com
+ciego_f3,US,tarjeta,5163 0404 8911 2589,Alta de colaborador: 5163 0404 8911 2589
+ciego_f3,CO,cedula,1.600.214.771,Confirmar 1.600.214.771 con el titular
+ciego_f3,CO,nit,900.071.133-0,Dato fiscal o de contacto 900.071.133-0
+ciego_f3,CO,telefono,+57 348 597 5718,Alta de colaborador: +57 348 597 5718
+ciego_f3,CO,correo,cgomez84@empresa.co,Alta de colaborador: cgomez84@empresa.co
+ciego_f3,CO,tarjeta,5191 1979 3717 3260,Alta de colaborador: 5191 1979 3717 3260
+ciego_f3,ES,dni,91470054C,Alta de colaborador: 91470054C
+ciego_f3,ES,nie,X6484282F,Confirmar X6484282F con el titular
+ciego_f3,ES,iban,ES88 7724 3674 6763 8405 7545,Alta de colaborador: ES88 7724 3674 6763 8405 7545
+ciego_f3,ES,telefono,+34 648 372 471,Alta de colaborador: +34 648 372 471
+ciego_f3,ES,correo,mruiz18@empresa.es,Confirmar mruiz18@empresa.es con el titular
+ciego_f3,ES,tarjeta,4681 6910 5275 9846,Dato fiscal o de contacto 4681 6910 5275 9846
+ciego_f3,AR,dni,39.197.889,Alta de colaborador: 39.197.889
+ciego_f3,AR,cuit,20-89809615-8,Alta de colaborador: 20-89809615-8
+ciego_f3,AR,cbu,8102481201596701793145,Registro interno (8102481201596701793145)
+ciego_f3,AR,telefono,+54 9 11 3864-4980,Dato fiscal o de contacto +54 9 11 3864-4980
+ciego_f3,AR,correo,plopez62@empresa.com.ar,Registro interno (plopez62@empresa.com.ar)
+ciego_f3,AR,tarjeta,4416 6121 2460 2642,Alta de colaborador: 4416 6121 2460 2642
+ciego_f3,BR,cpf,949.596.205-60,Dato fiscal o de contacto 949.596.205-60
+ciego_f3,BR,telefono,+55 11 91859-9605,Confirmar +55 11 91859-9605 con el titular
+ciego_f3,BR,correo,asilva20@empresa.com.br,Alta de colaborador: asilva20@empresa.com.br
+ciego_f3,BR,tarjeta,5180 5071 9269 9416,Alta de colaborador: 5180 5071 9269 9416
+ciego_f3,MX,curp,NAEN860615HDFGLV08,Dato fiscal o de contacto NAEN860615HDFGLV08
+ciego_f3,MX,rfc,LRJL960601SV8,Alta de colaborador: LRJL960601SV8
+ciego_f3,MX,clabe,012180051876556438,Dato fiscal o de contacto 012180051876556438
+ciego_f3,MX,telefono,55 2262 4718,Dato fiscal o de contacto 55 2262 4718
+ciego_f3,MX,correo,lmendez50@empresa.mx,Confirmar lmendez50@empresa.mx con el titular
+ciego_f3,MX,tarjeta,5537 5860 6348 3266,Dato fiscal o de contacto 5537 5860 6348 3266
+ciego_f3,US,ssn,189-49-2586,Alta de colaborador: 189-49-2586
+ciego_f3,US,telefono,+1 (415) 934-8143,Alta de colaborador: +1 (415) 934-8143
+ciego_f3,US,cuenta,Routing 473512568 Account 3728192946,Confirmar Routing 473512568 Account 3728192946 con el titular
+ciego_f3,US,correo,jsmith32@company.com,Dato fiscal o de contacto jsmith32@company.com
+ciego_f3,US,tarjeta,5553 2753 0413 5351,Registro interno (5553 2753 0413 5351)
+ciego_f3,CO,cedula,1.243.011.684,Dato fiscal o de contacto 1.243.011.684
+ciego_f3,CO,nit,900.263.551-9,Alta de colaborador: 900.263.551-9
+ciego_f3,CO,telefono,+57 319 056 2614,Confirmar +57 319 056 2614 con el titular
+ciego_f3,CO,correo,cgomez13@empresa.co,Alta de colaborador: cgomez13@empresa.co
+ciego_f3,CO,tarjeta,5132 1095 6922 0816,Confirmar 5132 1095 6922 0816 con el titular
+ciego_f3,ES,dni,97040326Z,Dato fiscal o de contacto 97040326Z
+ciego_f3,ES,nie,X2384132K,Alta de colaborador: X2384132K
+ciego_f3,ES,iban,ES09 0228 5718 9581 0532 3531,Confirmar ES09 0228 5718 9581 0532 3531 con el titular
+ciego_f3,ES,telefono,+34 601 877 964,Alta de colaborador: +34 601 877 964
+ciego_f3,ES,correo,mruiz98@empresa.es,Dato fiscal o de contacto mruiz98@empresa.es
+ciego_f3,ES,tarjeta,4017 0538 4837 0880,Registro interno (4017 0538 4837 0880)
+ciego_f3,AR,dni,27.620.034,Dato fiscal o de contacto 27.620.034
+ciego_f3,AR,cuit,20-07827420-5,Registro interno (20-07827420-5)
+ciego_f3,AR,cbu,1409096906285201921828,Registro interno (1409096906285201921828)
+ciego_f3,AR,telefono,+54 9 11 2356-0712,Dato fiscal o de contacto +54 9 11 2356-0712
+ciego_f3,AR,correo,plopez83@empresa.com.ar,Registro interno (plopez83@empresa.com.ar)
+ciego_f3,AR,tarjeta,4108 3280 3835 5952,Alta de colaborador: 4108 3280 3835 5952
+ciego_f3,BR,cpf,964.132.834-40,Dato fiscal o de contacto 964.132.834-40
+ciego_f3,BR,telefono,+55 11 90605-0977,Registro interno (+55 11 90605-0977)
+ciego_f3,BR,correo,asilva92@empresa.com.br,Confirmar asilva92@empresa.com.br con el titular
+ciego_f3,BR,tarjeta,4737 6705 2569 5765,Alta de colaborador: 4737 6705 2569 5765
+ciego_f3,MX,curp,LOJO931001MDFKNS02,Confirmar LOJO931001MDFKNS02 con el titular
+ciego_f3,MX,rfc,TYDV750309X12,Dato fiscal o de contacto TYDV750309X12
+ciego_f3,MX,clabe,012180081434729376,Confirmar 012180081434729376 con el titular
+ciego_f3,MX,telefono,55 6257 5037,Alta de colaborador: 55 6257 5037
+ciego_f3,MX,correo,lmendez38@empresa.mx,Confirmar lmendez38@empresa.mx con el titular
+ciego_f3,MX,tarjeta,4608 1496 0694 1477,Registro interno (4608 1496 0694 1477)
+ciego_f3,US,ssn,224-88-3315,Confirmar 224-88-3315 con el titular
+ciego_f3,US,telefono,+1 (415) 808-1806,Confirmar +1 (415) 808-1806 con el titular
+ciego_f3,US,cuenta,Routing 034973354 Account 9484668081,Registro interno (Routing 034973354 Account 9484668081)
+ciego_f3,US,correo,jsmith72@company.com,Dato fiscal o de contacto jsmith72@company.com
+ciego_f3,US,tarjeta,5559 1806 8523 2385,Dato fiscal o de contacto 5559 1806 8523 2385
+ciego_f3,CO,cedula,1.200.935.791,Alta de colaborador: 1.200.935.791
+ciego_f3,CO,nit,900.015.312-7,Dato fiscal o de contacto 900.015.312-7
+ciego_f3,CO,telefono,+57 370 754 4825,Registro interno (+57 370 754 4825)
+ciego_f3,CO,correo,cgomez34@empresa.co,Confirmar cgomez34@empresa.co con el titular
+ciego_f3,CO,tarjeta,5519 5105 6331 9970,Dato fiscal o de contacto 5519 5105 6331 9970
+ciego_f3,ES,dni,95010097H,Registro interno (95010097H)
+ciego_f3,ES,nie,X8352022D,Alta de colaborador: X8352022D
+ciego_f3,ES,iban,ES34 8556 3101 1947 1441 5638,Dato fiscal o de contacto ES34 8556 3101 1947 1441 5638
+ciego_f3,ES,telefono,+34 625 348 465,Registro interno (+34 625 348 465)
+ciego_f3,ES,correo,mruiz85@empresa.es,Confirmar mruiz85@empresa.es con el titular
+ciego_f3,ES,tarjeta,4313 2500 1323 0045,Confirmar 4313 2500 1323 0045 con el titular
+ciego_f3,AR,dni,26.184.263,Dato fiscal o de contacto 26.184.263
+ciego_f3,AR,cuit,20-74438738-9,Registro interno (20-74438738-9)
+ciego_f3,AR,cbu,0223283215000212402886,Dato fiscal o de contacto 0223283215000212402886
+ciego_f3,AR,telefono,+54 9 11 1033-4501,Alta de colaborador: +54 9 11 1033-4501
+ciego_f3,AR,correo,plopez81@empresa.com.ar,Registro interno (plopez81@empresa.com.ar)
+ciego_f3,AR,tarjeta,4433 3488 8338 4523,Dato fiscal o de contacto 4433 3488 8338 4523
+ciego_f3,BR,cpf,138.422.133-60,Confirmar 138.422.133-60 con el titular
+ciego_f3,BR,telefono,+55 11 90207-0216,Alta de colaborador: +55 11 90207-0216
+ciego_f3,BR,correo,asilva34@empresa.com.br,Dato fiscal o de contacto asilva34@empresa.com.br
+ciego_f3,BR,tarjeta,4251 3683 8669 3294,Confirmar 4251 3683 8669 3294 con el titular
+ciego_f3,MX,curp,KOIH880624HNLVXX09,Dato fiscal o de contacto KOIH880624HNLVXX09
+ciego_f3,MX,rfc,PGYH7610023LQ,Registro interno (PGYH7610023LQ)
+ciego_f3,MX,clabe,012180025269685654,Registro interno (012180025269685654)
+ciego_f3,MX,telefono,55 4616 4552,Dato fiscal o de contacto 55 4616 4552
+ciego_f3,MX,correo,lmendez6@empresa.mx,Dato fiscal o de contacto lmendez6@empresa.mx
+ciego_f3,MX,tarjeta,5566 0073 0566 7941,Alta de colaborador: 5566 0073 0566 7941
+ciego_f3,US,ssn,605-84-1827,Registro interno (605-84-1827)
+ciego_f3,US,telefono,+1 (415) 177-1018,Alta de colaborador: +1 (415) 177-1018
+ciego_f3,US,cuenta,Routing 787713427 Account 6064033477,Alta de colaborador: Routing 787713427 Account 6064033477
+ciego_f3,US,correo,jsmith83@company.com,Dato fiscal o de contacto jsmith83@company.com
+ciego_f3,US,tarjeta,4524 0029 5469 3193,Registro interno (4524 0029 5469 3193)
+ciego_f3,CO,cedula,1.723.602.318,Registro interno (1.723.602.318)
+ciego_f3,CO,nit,900.465.633-4,Alta de colaborador: 900.465.633-4
+ciego_f3,CO,telefono,+57 390 656 8076,Confirmar +57 390 656 8076 con el titular
+ciego_f3,CO,correo,cgomez23@empresa.co,Alta de colaborador: cgomez23@empresa.co
+ciego_f3,CO,tarjeta,4895 4103 1073 9454,Alta de colaborador: 4895 4103 1073 9454
+ciego_f3,ES,dni,50231721C,Alta de colaborador: 50231721C
+ciego_f3,ES,nie,X6492048E,Confirmar X6492048E con el titular
+ciego_f3,ES,iban,ES24 7833 7603 1396 2770 7012,Registro interno (ES24 7833 7603 1396 2770 7012)
+ciego_f3,ES,telefono,+34 672 161 307,Registro interno (+34 672 161 307)
+ciego_f3,ES,correo,mruiz74@empresa.es,Confirmar mruiz74@empresa.es con el titular
+ciego_f3,ES,tarjeta,5125 4213 3064 6958,Alta de colaborador: 5125 4213 3064 6958
+ciego_f3,AR,dni,35.223.159,Confirmar 35.223.159 con el titular
+ciego_f3,AR,cuit,20-81930008-9,Registro interno (20-81930008-9)
+ciego_f3,AR,cbu,3688783040747166141916,Registro interno (3688783040747166141916)
+ciego_f3,AR,telefono,+54 9 11 2135-5263,Confirmar +54 9 11 2135-5263 con el titular
+ciego_f3,AR,correo,plopez37@empresa.com.ar,Registro interno (plopez37@empresa.com.ar)
+ciego_f3,AR,tarjeta,4737 8277 6375 8685,Confirmar 4737 8277 6375 8685 con el titular
+ciego_f3,BR,cpf,367.958.140-84,Dato fiscal o de contacto 367.958.140-84
+ciego_f3,BR,telefono,+55 11 97758-5672,Confirmar +55 11 97758-5672 con el titular
+ciego_f3,BR,correo,asilva97@empresa.com.br,Alta de colaborador: asilva97@empresa.com.br
+ciego_f3,BR,tarjeta,4208 6642 7870 2118,Alta de colaborador: 4208 6642 7870 2118
+ciego_f3,MX,curp,KASV820916HDFZTX03,Confirmar KASV820916HDFZTX03 con el titular
+ciego_f3,MX,rfc,YBYV600428AL9,Dato fiscal o de contacto YBYV600428AL9
+ciego_f3,MX,clabe,012180029560268378,Alta de colaborador: 012180029560268378
+ciego_f3,MX,telefono,55 0834 9192,Registro interno (55 0834 9192)
+ciego_f3,MX,correo,lmendez29@empresa.mx,Registro interno (lmendez29@empresa.mx)
+ciego_f3,MX,tarjeta,5543 4483 9982 3321,Confirmar 5543 4483 9982 3321 con el titular
+ciego_f3,US,ssn,256-20-6599,Registro interno (256-20-6599)
+ciego_f3,US,telefono,+1 (415) 587-5803,Registro interno (+1 (415) 587-5803)
+ciego_f3,US,cuenta,Routing 735104195 Account 8381611332,Registro interno (Routing 735104195 Account 8381611332)
+ciego_f3,US,correo,jsmith77@company.com,Dato fiscal o de contacto jsmith77@company.com
+ciego_f3,US,tarjeta,4686 5375 2113 5529,Confirmar 4686 5375 2113 5529 con el titular
+ciego_f3,CO,cedula,1.359.750.998,Confirmar 1.359.750.998 con el titular
+ciego_f3,CO,nit,900.970.268-6,Confirmar 900.970.268-6 con el titular
+ciego_f3,CO,telefono,+57 360 244 2133,Dato fiscal o de contacto +57 360 244 2133
+ciego_f3,CO,correo,cgomez16@empresa.co,Confirmar cgomez16@empresa.co con el titular
+ciego_f3,CO,tarjeta,5193 4334 9259 3230,Dato fiscal o de contacto 5193 4334 9259 3230
+ciego_f3,ES,dni,36326732A,Dato fiscal o de contacto 36326732A
+ciego_f3,ES,nie,X8492494C,Confirmar X8492494C con el titular
+ciego_f3,ES,iban,ES70 2051 1018 3936 3998 3572,Registro interno (ES70 2051 1018 3936 3998 3572)
+ciego_f3,ES,telefono,+34 637 916 750,Registro interno (+34 637 916 750)
+ciego_f3,ES,correo,mruiz60@empresa.es,Dato fiscal o de contacto mruiz60@empresa.es
+ciego_f3,ES,tarjeta,4056 7192 5453 0272,Registro interno (4056 7192 5453 0272)
+ciego_f3,AR,dni,27.990.030,Dato fiscal o de contacto 27.990.030
+ciego_f3,AR,cuit,20-39568564-4,Confirmar 20-39568564-4 con el titular
+ciego_f3,AR,cbu,5538010077155339744837,Confirmar 5538010077155339744837 con el titular
+ciego_f3,AR,telefono,+54 9 11 4972-8166,Registro interno (+54 9 11 4972-8166)
+ciego_f3,AR,correo,plopez83@empresa.com.ar,Dato fiscal o de contacto plopez83@empresa.com.ar
+ciego_f3,AR,tarjeta,5532 8059 0697 5584,Registro interno (5532 8059 0697 5584)
+ciego_f3,BR,cpf,980.221.077-35,Dato fiscal o de contacto 980.221.077-35
+ciego_f3,BR,telefono,+55 11 97986-8960,Alta de colaborador: +55 11 97986-8960
+ciego_f3,BR,correo,asilva39@empresa.com.br,Dato fiscal o de contacto asilva39@empresa.com.br
+ciego_f3,BR,tarjeta,5180 1237 8617 8328,Confirmar 5180 1237 8617 8328 con el titular

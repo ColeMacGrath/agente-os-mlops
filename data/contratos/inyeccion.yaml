@@ -1,0 +1,9 @@
+# Contrato de datos del corpus del clasificador de inyección.
+columnas: [texto, etiqueta, idioma, variante]
+etiquetas: [0, 1]
+idiomas_minimos: [es, en, pt, spanglish]
+min_filas: 2000
+min_por_etiqueta: 0.40
+max_por_etiqueta: 0.60
+min_por_idioma: 300
+largo_texto: [10, 400]

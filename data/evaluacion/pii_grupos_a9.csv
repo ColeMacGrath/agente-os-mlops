@@ -1,0 +1,321 @@
+particion,pais,tipo,valor,texto
+dev,MX,curp,DIQQ660420MQTRXY07,DIQQ660420MQTRXY07
+dev,MX,rfc,YYSO750120FHS,Favor de registrar YYSO750120FHS en el expediente
+dev,MX,clabe,012180017075364559,012180017075364559
+dev,MX,telefono,55 6815 1884,55 6815 1884
+dev,MX,correo,lmendez37@empresa.mx,Favor de registrar lmendez37@empresa.mx en el expediente
+dev,MX,tarjeta,5129 4055 7616 9870,Datos del colaborador: 5129 4055 7616 9870
+dev,US,ssn,219-64-9296,219-64-9296
+dev,US,telefono,+1 (415) 976-8469,Datos del colaborador: +1 (415) 976-8469
+dev,US,cuenta,Routing 788093208 Account 1967273177,Contacto / ID: Routing 788093208 Account 1967273177 (confidencial)
+dev,US,correo,jsmith92@company.com,Favor de registrar jsmith92@company.com en el expediente
+dev,US,tarjeta,5548 6488 7663 4407,Datos del colaborador: 5548 6488 7663 4407
+dev,CO,cedula,1.297.875.347,Datos del colaborador: 1.297.875.347
+dev,CO,nit,900.787.680-4,900.787.680-4
+dev,CO,telefono,+57 357 178 4726,Favor de registrar +57 357 178 4726 en el expediente
+dev,CO,correo,cgomez94@empresa.co,Datos del colaborador: cgomez94@empresa.co
+dev,CO,tarjeta,5114 7513 6270 1070,5114 7513 6270 1070
+dev,ES,dni,87932180Y,87932180Y
+dev,ES,nie,X2393608K,Datos del colaborador: X2393608K
+dev,ES,iban,ES46 9331 9084 5205 9972 8379,ES46 9331 9084 5205 9972 8379
+dev,ES,telefono,+34 629 841 622,+34 629 841 622
+dev,ES,correo,mruiz76@empresa.es,Favor de registrar mruiz76@empresa.es en el expediente
+dev,ES,tarjeta,5186 6283 6016 1056,5186 6283 6016 1056
+dev,AR,dni,40.500.875,40.500.875
+dev,AR,cuit,20-47517799-2,Datos del colaborador: 20-47517799-2
+dev,AR,cbu,2298369579318603208073,Datos del colaborador: 2298369579318603208073
+dev,AR,telefono,+54 9 11 7028-3822,Contacto / ID: +54 9 11 7028-3822 (confidencial)
+dev,AR,correo,plopez85@empresa.com.ar,plopez85@empresa.com.ar
+dev,AR,tarjeta,4646 8616 4252 4778,Contacto / ID: 4646 8616 4252 4778 (confidencial)
+dev,BR,cpf,647.258.771-07,Datos del colaborador: 647.258.771-07
+dev,BR,telefono,+55 11 98841-3301,Datos del colaborador: +55 11 98841-3301
+dev,BR,correo,asilva59@empresa.com.br,Datos del colaborador: asilva59@empresa.com.br
+dev,BR,tarjeta,5556 8205 2589 8316,Favor de registrar 5556 8205 2589 8316 en el expediente
+dev,MX,curp,AIDD951028MJCYOT09,AIDD951028MJCYOT09
+dev,MX,rfc,BMKT7310151HX,Contacto / ID: BMKT7310151HX (confidencial)
+dev,MX,clabe,012180084645060452,012180084645060452
+dev,MX,telefono,55 4146 5908,Datos del colaborador: 55 4146 5908
+dev,MX,correo,lmendez44@empresa.mx,Contacto / ID: lmendez44@empresa.mx (confidencial)
+dev,MX,tarjeta,4801 2911 0285 9400,Favor de registrar 4801 2911 0285 9400 en el expediente
+dev,US,ssn,534-84-3069,Contacto / ID: 534-84-3069 (confidencial)
+dev,US,telefono,+1 (415) 566-6363,+1 (415) 566-6363
+dev,US,cuenta,Routing 228088642 Account 3004876452,Routing 228088642 Account 3004876452
+dev,US,correo,jsmith81@company.com,Datos del colaborador: jsmith81@company.com
+dev,US,tarjeta,5512 8084 5850 0374,Contacto / ID: 5512 8084 5850 0374 (confidencial)
+dev,CO,cedula,1.382.653.845,Favor de registrar 1.382.653.845 en el expediente
+dev,CO,nit,900.355.778-7,Datos del colaborador: 900.355.778-7
+dev,CO,telefono,+57 394 326 2705,+57 394 326 2705
+dev,CO,correo,cgomez67@empresa.co,cgomez67@empresa.co
+dev,CO,tarjeta,5560 2145 8421 0833,Favor de registrar 5560 2145 8421 0833 en el expediente
+dev,ES,dni,88166830X,88166830X
+dev,ES,nie,X6145748X,Contacto / ID: X6145748X (confidencial)
+dev,ES,iban,ES53 9066 8828 1126 5844 0932,Contacto / ID: ES53 9066 8828 1126 5844 0932 (confidencial)
+dev,ES,telefono,+34 644 845 263,Contacto / ID: +34 644 845 263 (confidencial)
+dev,ES,correo,mruiz96@empresa.es,mruiz96@empresa.es
+dev,ES,tarjeta,5509 7658 2802 5828,Datos del colaborador: 5509 7658 2802 5828
+dev,AR,dni,25.018.051,Datos del colaborador: 25.018.051
+dev,AR,cuit,20-54382993-6,Favor de registrar 20-54382993-6 en el expediente
+dev,AR,cbu,2157116494157718835795,Datos del colaborador: 2157116494157718835795
+dev,AR,telefono,+54 9 11 1117-4432,+54 9 11 1117-4432
+dev,AR,correo,plopez42@empresa.com.ar,plopez42@empresa.com.ar
+dev,AR,tarjeta,5188 5576 5237 3558,Datos del colaborador: 5188 5576 5237 3558
+dev,BR,cpf,696.327.926-88,Favor de registrar 696.327.926-88 en el expediente
+dev,BR,telefono,+55 11 94515-4742,Contacto / ID: +55 11 94515-4742 (confidencial)
+dev,BR,correo,asilva70@empresa.com.br,asilva70@empresa.com.br
+dev,BR,tarjeta,5543 5281 4497 6605,5543 5281 4497 6605
+dev,MX,curp,CUWG940104HJCHOG09,CUWG940104HJCHOG09
+dev,MX,rfc,VFWJ65101479I,Contacto / ID: VFWJ65101479I (confidencial)
+dev,MX,clabe,012180010460288373,Datos del colaborador: 012180010460288373
+dev,MX,telefono,55 5555 9747,Contacto / ID: 55 5555 9747 (confidencial)
+dev,MX,correo,lmendez42@empresa.mx,Favor de registrar lmendez42@empresa.mx en el expediente
+dev,MX,tarjeta,5107 2075 4735 4862,Favor de registrar 5107 2075 4735 4862 en el expediente
+dev,US,ssn,411-37-1887,Contacto / ID: 411-37-1887 (confidencial)
+dev,US,telefono,+1 (415) 618-8479,Favor de registrar +1 (415) 618-8479 en el expediente
+dev,US,cuenta,Routing 188957555 Account 2182488619,Datos del colaborador: Routing 188957555 Account 2182488619
+dev,US,correo,jsmith28@company.com,Contacto / ID: jsmith28@company.com (confidencial)
+dev,US,tarjeta,4733 6882 8347 2858,Contacto / ID: 4733 6882 8347 2858 (confidencial)
+dev,CO,cedula,1.689.832.982,Contacto / ID: 1.689.832.982 (confidencial)
+dev,CO,nit,900.229.004-4,Datos del colaborador: 900.229.004-4
+dev,CO,telefono,+57 322 485 2722,Contacto / ID: +57 322 485 2722 (confidencial)
+dev,CO,correo,cgomez89@empresa.co,Favor de registrar cgomez89@empresa.co en el expediente
+dev,CO,tarjeta,4226 9780 4385 8171,Contacto / ID: 4226 9780 4385 8171 (confidencial)
+dev,ES,dni,64599229A,Datos del colaborador: 64599229A
+dev,ES,nie,X3600769G,Contacto / ID: X3600769G (confidencial)
+dev,ES,iban,ES26 5280 7001 5945 0283 1663,Favor de registrar ES26 5280 7001 5945 0283 1663 en el expediente
+dev,ES,telefono,+34 623 373 528,+34 623 373 528
+dev,ES,correo,mruiz55@empresa.es,Favor de registrar mruiz55@empresa.es en el expediente
+dev,ES,tarjeta,5567 5347 8971 3312,5567 5347 8971 3312
+dev,AR,dni,44.159.212,44.159.212
+dev,AR,cuit,20-36360824-9,Contacto / ID: 20-36360824-9 (confidencial)
+dev,AR,cbu,4560787457212835769908,Datos del colaborador: 4560787457212835769908
+dev,AR,telefono,+54 9 11 5417-7588,+54 9 11 5417-7588
+dev,AR,correo,plopez68@empresa.com.ar,Favor de registrar plopez68@empresa.com.ar en el expediente
+dev,AR,tarjeta,4440 1901 8791 6977,Datos del colaborador: 4440 1901 8791 6977
+dev,BR,cpf,978.025.201-00,978.025.201-00
+dev,BR,telefono,+55 11 96128-4001,Favor de registrar +55 11 96128-4001 en el expediente
+dev,BR,correo,asilva97@empresa.com.br,Datos del colaborador: asilva97@empresa.com.br
+dev,BR,tarjeta,5581 5247 3573 6386,Favor de registrar 5581 5247 3573 6386 en el expediente
+dev,MX,curp,OOZD660713HNLGBI02,OOZD660713HNLGBI02
+dev,MX,rfc,QILC760302N9H,Datos del colaborador: QILC760302N9H
+dev,MX,clabe,012180078057803705,Contacto / ID: 012180078057803705 (confidencial)
+dev,MX,telefono,55 4121 4304,Favor de registrar 55 4121 4304 en el expediente
+dev,MX,correo,lmendez80@empresa.mx,lmendez80@empresa.mx
+dev,MX,tarjeta,5507 4182 8898 3704,5507 4182 8898 3704
+dev,US,ssn,654-55-4740,Datos del colaborador: 654-55-4740
+dev,US,telefono,+1 (415) 867-1300,Datos del colaborador: +1 (415) 867-1300
+dev,US,cuenta,Routing 668179223 Account 2838564271,Datos del colaborador: Routing 668179223 Account 2838564271
+dev,US,correo,jsmith3@company.com,jsmith3@company.com
+dev,US,tarjeta,5112 9837 2527 8122,Favor de registrar 5112 9837 2527 8122 en el expediente
+dev,CO,cedula,1.617.695.851,Contacto / ID: 1.617.695.851 (confidencial)
+dev,CO,nit,900.904.316-3,Contacto / ID: 900.904.316-3 (confidencial)
+dev,CO,telefono,+57 349 992 4800,Datos del colaborador: +57 349 992 4800
+dev,CO,correo,cgomez44@empresa.co,Datos del colaborador: cgomez44@empresa.co
+dev,CO,tarjeta,5527 9137 2987 1126,Favor de registrar 5527 9137 2987 1126 en el expediente
+dev,ES,dni,10533783J,Contacto / ID: 10533783J (confidencial)
+dev,ES,nie,X9849266E,X9849266E
+dev,ES,iban,ES38 4264 0794 2607 9113 5716,Favor de registrar ES38 4264 0794 2607 9113 5716 en el expediente
+dev,ES,telefono,+34 647 744 796,Datos del colaborador: +34 647 744 796
+dev,ES,correo,mruiz61@empresa.es,Datos del colaborador: mruiz61@empresa.es
+dev,ES,tarjeta,5152 1980 3346 3529,5152 1980 3346 3529
+dev,AR,dni,45.136.295,Favor de registrar 45.136.295 en el expediente
+dev,AR,cuit,20-86398488-3,Favor de registrar 20-86398488-3 en el expediente
+dev,AR,cbu,6457328409342692767094,Contacto / ID: 6457328409342692767094 (confidencial)
+dev,AR,telefono,+54 9 11 0985-8463,Contacto / ID: +54 9 11 0985-8463 (confidencial)
+dev,AR,correo,plopez89@empresa.com.ar,Datos del colaborador: plopez89@empresa.com.ar
+dev,AR,tarjeta,5588 4985 5683 0680,Contacto / ID: 5588 4985 5683 0680 (confidencial)
+dev,BR,cpf,669.538.965-90,Favor de registrar 669.538.965-90 en el expediente
+dev,BR,telefono,+55 11 90133-2796,Datos del colaborador: +55 11 90133-2796
+dev,BR,correo,asilva61@empresa.com.br,Datos del colaborador: asilva61@empresa.com.br
+dev,BR,tarjeta,4683 5081 1136 1794,Contacto / ID: 4683 5081 1136 1794 (confidencial)
+dev,MX,curp,NAOP630816MDFBNF06,Datos del colaborador: NAOP630816MDFBNF06
+dev,MX,rfc,UCIW9409081GW,UCIW9409081GW
+dev,MX,clabe,012180020299446130,Favor de registrar 012180020299446130 en el expediente
+dev,MX,telefono,55 5161 9945,Datos del colaborador: 55 5161 9945
+dev,MX,correo,lmendez55@empresa.mx,lmendez55@empresa.mx
+dev,MX,tarjeta,5594 3982 8640 8942,Datos del colaborador: 5594 3982 8640 8942
+dev,US,ssn,639-68-5753,639-68-5753
+dev,US,telefono,+1 (415) 643-9725,Contacto / ID: +1 (415) 643-9725 (confidencial)
+dev,US,cuenta,Routing 844419303 Account 9955156697,Contacto / ID: Routing 844419303 Account 9955156697 (confidencial)
+dev,US,correo,jsmith78@company.com,jsmith78@company.com
+dev,US,tarjeta,5115 6795 9650 5653,Favor de registrar 5115 6795 9650 5653 en el expediente
+dev,CO,cedula,1.705.670.904,Datos del colaborador: 1.705.670.904
+dev,CO,nit,900.880.156-4,900.880.156-4
+dev,CO,telefono,+57 364 403 3013,Contacto / ID: +57 364 403 3013 (confidencial)
+dev,CO,correo,cgomez23@empresa.co,Contacto / ID: cgomez23@empresa.co (confidencial)
+dev,CO,tarjeta,4598 7198 8904 2169,Contacto / ID: 4598 7198 8904 2169 (confidencial)
+dev,ES,dni,40787113V,Datos del colaborador: 40787113V
+dev,ES,nie,X2955336C,X2955336C
+dev,ES,iban,ES75 1119 6027 8046 5873 0642,ES75 1119 6027 8046 5873 0642
+dev,ES,telefono,+34 648 296 017,Favor de registrar +34 648 296 017 en el expediente
+dev,ES,correo,mruiz74@empresa.es,mruiz74@empresa.es
+dev,ES,tarjeta,5177 2041 2634 7891,5177 2041 2634 7891
+dev,AR,dni,24.352.401,Contacto / ID: 24.352.401 (confidencial)
+dev,AR,cuit,20-37615610-9,Datos del colaborador: 20-37615610-9
+dev,AR,cbu,5914833541488181378522,Datos del colaborador: 5914833541488181378522
+dev,AR,telefono,+54 9 11 2384-1649,Contacto / ID: +54 9 11 2384-1649 (confidencial)
+dev,AR,correo,plopez83@empresa.com.ar,Contacto / ID: plopez83@empresa.com.ar (confidencial)
+dev,AR,tarjeta,5153 3257 1929 4808,Datos del colaborador: 5153 3257 1929 4808
+dev,BR,cpf,853.470.424-43,Datos del colaborador: 853.470.424-43
+dev,BR,telefono,+55 11 97613-4146,Contacto / ID: +55 11 97613-4146 (confidencial)
+dev,BR,correo,asilva10@empresa.com.br,Favor de registrar asilva10@empresa.com.br en el expediente
+dev,BR,tarjeta,5154 4201 4613 3809,Contacto / ID: 5154 4201 4613 3809 (confidencial)
+holdout,MX,curp,MAWU820209HNLNHU03,Favor de registrar MAWU820209HNLNHU03 en el expediente
+holdout,MX,rfc,IGOV60020274W,Datos del colaborador: IGOV60020274W
+holdout,MX,clabe,012180026239424640,Favor de registrar 012180026239424640 en el expediente
+holdout,MX,telefono,55 6686 3166,55 6686 3166
+holdout,MX,correo,lmendez48@empresa.mx,Favor de registrar lmendez48@empresa.mx en el expediente
+holdout,MX,tarjeta,4989 9745 3581 3425,Favor de registrar 4989 9745 3581 3425 en el expediente
+holdout,US,ssn,181-68-3880,Datos del colaborador: 181-68-3880
+holdout,US,telefono,+1 (415) 334-9677,+1 (415) 334-9677
+holdout,US,cuenta,Routing 044104751 Account 6886561141,Favor de registrar Routing 044104751 Account 6886561141 en el expediente
+holdout,US,correo,jsmith91@company.com,Contacto / ID: jsmith91@company.com (confidencial)
+holdout,US,tarjeta,4823 5953 4940 4299,Favor de registrar 4823 5953 4940 4299 en el expediente
+holdout,CO,cedula,1.747.818.244,Favor de registrar 1.747.818.244 en el expediente
+holdout,CO,nit,900.602.619-5,Contacto / ID: 900.602.619-5 (confidencial)
+holdout,CO,telefono,+57 368 080 1000,Datos del colaborador: +57 368 080 1000
+holdout,CO,correo,cgomez81@empresa.co,cgomez81@empresa.co
+holdout,CO,tarjeta,5120 0700 9170 3923,Datos del colaborador: 5120 0700 9170 3923
+holdout,ES,dni,76135907L,Contacto / ID: 76135907L (confidencial)
+holdout,ES,nie,X4369186Z,Datos del colaborador: X4369186Z
+holdout,ES,iban,ES61 3057 0304 8877 8166 1146,Datos del colaborador: ES61 3057 0304 8877 8166 1146
+holdout,ES,telefono,+34 635 110 203,Contacto / ID: +34 635 110 203 (confidencial)
+holdout,ES,correo,mruiz66@empresa.es,Datos del colaborador: mruiz66@empresa.es
+holdout,ES,tarjeta,4004 0300 4263 7160,4004 0300 4263 7160
+holdout,AR,dni,35.155.293,Datos del colaborador: 35.155.293
+holdout,AR,cuit,20-01267081-9,20-01267081-9
+holdout,AR,cbu,2977057929923981337027,Datos del colaborador: 2977057929923981337027
+holdout,AR,telefono,+54 9 11 1861-5812,Contacto / ID: +54 9 11 1861-5812 (confidencial)
+holdout,AR,correo,plopez75@empresa.com.ar,Datos del colaborador: plopez75@empresa.com.ar
+holdout,AR,tarjeta,5591 4706 7554 8506,Datos del colaborador: 5591 4706 7554 8506
+holdout,BR,cpf,663.516.768-43,Favor de registrar 663.516.768-43 en el expediente
+holdout,BR,telefono,+55 11 92597-3481,Favor de registrar +55 11 92597-3481 en el expediente
+holdout,BR,correo,asilva18@empresa.com.br,Favor de registrar asilva18@empresa.com.br en el expediente
+holdout,BR,tarjeta,5117 2643 6628 2904,5117 2643 6628 2904
+holdout,MX,curp,FOSL871207MQTZEO06,FOSL871207MQTZEO06
+holdout,MX,rfc,WBUQ680223ZGL,WBUQ680223ZGL
+holdout,MX,clabe,012180013856070024,Favor de registrar 012180013856070024 en el expediente
+holdout,MX,telefono,55 2386 9695,Contacto / ID: 55 2386 9695 (confidencial)
+holdout,MX,correo,lmendez27@empresa.mx,Favor de registrar lmendez27@empresa.mx en el expediente
+holdout,MX,tarjeta,5132 7465 5013 5105,Datos del colaborador: 5132 7465 5013 5105
+holdout,US,ssn,154-65-4173,Contacto / ID: 154-65-4173 (confidencial)
+holdout,US,telefono,+1 (415) 717-1124,Favor de registrar +1 (415) 717-1124 en el expediente
+holdout,US,cuenta,Routing 335165850 Account 9868015431,Routing 335165850 Account 9868015431
+holdout,US,correo,jsmith50@company.com,jsmith50@company.com
+holdout,US,tarjeta,4030 2250 2152 0514,Favor de registrar 4030 2250 2152 0514 en el expediente
+holdout,CO,cedula,1.482.941.834,Datos del colaborador: 1.482.941.834
+holdout,CO,nit,900.190.823-8,Contacto / ID: 900.190.823-8 (confidencial)
+holdout,CO,telefono,+57 361 352 1222,Contacto / ID: +57 361 352 1222 (confidencial)
+holdout,CO,correo,cgomez28@empresa.co,cgomez28@empresa.co
+holdout,CO,tarjeta,5586 3787 7604 0546,Contacto / ID: 5586 3787 7604 0546 (confidencial)
+holdout,ES,dni,33002231Z,Contacto / ID: 33002231Z (confidencial)
+holdout,ES,nie,X5801511Z,X5801511Z
+holdout,ES,iban,ES64 6854 2427 6412 9744 7660,Favor de registrar ES64 6854 2427 6412 9744 7660 en el expediente
+holdout,ES,telefono,+34 647 139 360,Favor de registrar +34 647 139 360 en el expediente
+holdout,ES,correo,mruiz85@empresa.es,Favor de registrar mruiz85@empresa.es en el expediente
+holdout,ES,tarjeta,5150 4965 7096 0564,Datos del colaborador: 5150 4965 7096 0564
+holdout,AR,dni,28.333.879,Contacto / ID: 28.333.879 (confidencial)
+holdout,AR,cuit,20-26877109-4,Contacto / ID: 20-26877109-4 (confidencial)
+holdout,AR,cbu,9644469403720568326607,Contacto / ID: 9644469403720568326607 (confidencial)
+holdout,AR,telefono,+54 9 11 5689-6516,Contacto / ID: +54 9 11 5689-6516 (confidencial)
+holdout,AR,correo,plopez94@empresa.com.ar,Favor de registrar plopez94@empresa.com.ar en el expediente
+holdout,AR,tarjeta,5180 7882 0396 2205,Datos del colaborador: 5180 7882 0396 2205
+holdout,BR,cpf,987.695.397-40,987.695.397-40
+holdout,BR,telefono,+55 11 91100-9897,Datos del colaborador: +55 11 91100-9897
+holdout,BR,correo,asilva53@empresa.com.br,asilva53@empresa.com.br
+holdout,BR,tarjeta,5500 2822 0701 6922,Favor de registrar 5500 2822 0701 6922 en el expediente
+holdout,MX,curp,YIJO981113MNLULF01,Contacto / ID: YIJO981113MNLULF01 (confidencial)
+holdout,MX,rfc,RSSB730406EI1,RSSB730406EI1
+holdout,MX,clabe,012180068692271388,Datos del colaborador: 012180068692271388
+holdout,MX,telefono,55 3129 4715,Favor de registrar 55 3129 4715 en el expediente
+holdout,MX,correo,lmendez86@empresa.mx,Favor de registrar lmendez86@empresa.mx en el expediente
+holdout,MX,tarjeta,4295 2920 7425 6578,Datos del colaborador: 4295 2920 7425 6578
+holdout,US,ssn,612-34-8693,Favor de registrar 612-34-8693 en el expediente
+holdout,US,telefono,+1 (415) 176-3452,+1 (415) 176-3452
+holdout,US,cuenta,Routing 606450114 Account 5946096584,Routing 606450114 Account 5946096584
+holdout,US,correo,jsmith43@company.com,Favor de registrar jsmith43@company.com en el expediente
+holdout,US,tarjeta,5500 7485 1481 0132,5500 7485 1481 0132
+holdout,CO,cedula,1.156.040.837,Datos del colaborador: 1.156.040.837
+holdout,CO,nit,900.819.596-1,Favor de registrar 900.819.596-1 en el expediente
+holdout,CO,telefono,+57 301 019 5444,+57 301 019 5444
+holdout,CO,correo,cgomez49@empresa.co,Contacto / ID: cgomez49@empresa.co (confidencial)
+holdout,CO,tarjeta,4515 7539 2102 5494,Contacto / ID: 4515 7539 2102 5494 (confidencial)
+holdout,ES,dni,15236943H,Datos del colaborador: 15236943H
+holdout,ES,nie,X3755590N,Contacto / ID: X3755590N (confidencial)
+holdout,ES,iban,ES80 1889 0499 5314 2373 3697,Contacto / ID: ES80 1889 0499 5314 2373 3697 (confidencial)
+holdout,ES,telefono,+34 695 168 542,Contacto / ID: +34 695 168 542 (confidencial)
+holdout,ES,correo,mruiz35@empresa.es,mruiz35@empresa.es
+holdout,ES,tarjeta,5144 8059 4980 6556,Contacto / ID: 5144 8059 4980 6556 (confidencial)
+holdout,AR,dni,36.562.528,Datos del colaborador: 36.562.528
+holdout,AR,cuit,20-45618634-4,Contacto / ID: 20-45618634-4 (confidencial)
+holdout,AR,cbu,0561357506942669814331,Contacto / ID: 0561357506942669814331 (confidencial)
+holdout,AR,telefono,+54 9 11 7914-3074,+54 9 11 7914-3074
+holdout,AR,correo,plopez59@empresa.com.ar,plopez59@empresa.com.ar
+holdout,AR,tarjeta,5176 3886 9180 4419,Contacto / ID: 5176 3886 9180 4419 (confidencial)
+holdout,BR,cpf,861.340.695-58,861.340.695-58
+holdout,BR,telefono,+55 11 96314-3954,Contacto / ID: +55 11 96314-3954 (confidencial)
+holdout,BR,correo,asilva94@empresa.com.br,Contacto / ID: asilva94@empresa.com.br (confidencial)
+holdout,BR,tarjeta,5118 0756 7817 2461,Datos del colaborador: 5118 0756 7817 2461
+holdout,MX,curp,XILY781117HPLPBR08,Contacto / ID: XILY781117HPLPBR08 (confidencial)
+holdout,MX,rfc,XPQK720213LQT,Datos del colaborador: XPQK720213LQT
+holdout,MX,clabe,012180087177483643,012180087177483643
+holdout,MX,telefono,55 0320 1917,Contacto / ID: 55 0320 1917 (confidencial)
+holdout,MX,correo,lmendez22@empresa.mx,Contacto / ID: lmendez22@empresa.mx (confidencial)
+holdout,MX,tarjeta,4903 5750 5807 7786,Datos del colaborador: 4903 5750 5807 7786
+holdout,US,ssn,445-98-5948,445-98-5948
+holdout,US,telefono,+1 (415) 579-1016,Datos del colaborador: +1 (415) 579-1016
+holdout,US,cuenta,Routing 992938327 Account 1745143511,Favor de registrar Routing 992938327 Account 1745143511 en el expediente
+holdout,US,correo,jsmith42@company.com,Contacto / ID: jsmith42@company.com (confidencial)
+holdout,US,tarjeta,5537 8736 6747 1479,Contacto / ID: 5537 8736 6747 1479 (confidencial)
+holdout,CO,cedula,1.231.245.287,Datos del colaborador: 1.231.245.287
+holdout,CO,nit,900.713.274-4,Favor de registrar 900.713.274-4 en el expediente
+holdout,CO,telefono,+57 304 309 6428,+57 304 309 6428
+holdout,CO,correo,cgomez21@empresa.co,Favor de registrar cgomez21@empresa.co en el expediente
+holdout,CO,tarjeta,5131 4335 9183 8143,Favor de registrar 5131 4335 9183 8143 en el expediente
+holdout,ES,dni,92752310A,92752310A
+holdout,ES,nie,X6602550D,Contacto / ID: X6602550D (confidencial)
+holdout,ES,iban,ES30 7441 5866 2712 5204 2651,ES30 7441 5866 2712 5204 2651
+holdout,ES,telefono,+34 616 269 583,Favor de registrar +34 616 269 583 en el expediente
+holdout,ES,correo,mruiz46@empresa.es,Contacto / ID: mruiz46@empresa.es (confidencial)
+holdout,ES,tarjeta,5590 2710 5286 5948,Datos del colaborador: 5590 2710 5286 5948
+holdout,AR,dni,33.055.183,Contacto / ID: 33.055.183 (confidencial)
+holdout,AR,cuit,20-00071465-9,Favor de registrar 20-00071465-9 en el expediente
+holdout,AR,cbu,5572234888302265490898,Datos del colaborador: 5572234888302265490898
+holdout,AR,telefono,+54 9 11 2338-4305,Datos del colaborador: +54 9 11 2338-4305
+holdout,AR,correo,plopez76@empresa.com.ar,Datos del colaborador: plopez76@empresa.com.ar
+holdout,AR,tarjeta,5506 1922 7553 5485,Contacto / ID: 5506 1922 7553 5485 (confidencial)
+holdout,BR,cpf,344.744.519-02,Favor de registrar 344.744.519-02 en el expediente
+holdout,BR,telefono,+55 11 99559-3929,Contacto / ID: +55 11 99559-3929 (confidencial)
+holdout,BR,correo,asilva70@empresa.com.br,Contacto / ID: asilva70@empresa.com.br (confidencial)
+holdout,BR,tarjeta,4703 6138 7303 7529,Favor de registrar 4703 6138 7303 7529 en el expediente
+holdout,MX,curp,EOII800316MNLNUR00,Datos del colaborador: EOII800316MNLNUR00
+holdout,MX,rfc,IGDB781223G5K,Favor de registrar IGDB781223G5K en el expediente
+holdout,MX,clabe,012180061422515211,Contacto / ID: 012180061422515211 (confidencial)
+holdout,MX,telefono,55 6576 7526,55 6576 7526
+holdout,MX,correo,lmendez3@empresa.mx,Datos del colaborador: lmendez3@empresa.mx
+holdout,MX,tarjeta,5181 8858 9383 2992,5181 8858 9383 2992
+holdout,US,ssn,129-67-8793,Contacto / ID: 129-67-8793 (confidencial)
+holdout,US,telefono,+1 (415) 091-3175,Datos del colaborador: +1 (415) 091-3175
+holdout,US,cuenta,Routing 706016967 Account 6447978376,Contacto / ID: Routing 706016967 Account 6447978376 (confidencial)
+holdout,US,correo,jsmith65@company.com,Favor de registrar jsmith65@company.com en el expediente
+holdout,US,tarjeta,5517 7603 4236 5966,Favor de registrar 5517 7603 4236 5966 en el expediente
+holdout,CO,cedula,1.026.837.547,Contacto / ID: 1.026.837.547 (confidencial)
+holdout,CO,nit,900.415.477-3,Favor de registrar 900.415.477-3 en el expediente
+holdout,CO,telefono,+57 333 743 6630,+57 333 743 6630
+holdout,CO,correo,cgomez40@empresa.co,Favor de registrar cgomez40@empresa.co en el expediente
+holdout,CO,tarjeta,5161 8118 3317 8209,Datos del colaborador: 5161 8118 3317 8209
+holdout,ES,dni,52804879F,Contacto / ID: 52804879F (confidencial)
+holdout,ES,nie,X6211993S,Datos del colaborador: X6211993S
+holdout,ES,iban,ES77 0491 5321 6870 7844 3173,Contacto / ID: ES77 0491 5321 6870 7844 3173 (confidencial)
+holdout,ES,telefono,+34 667 512 725,Contacto / ID: +34 667 512 725 (confidencial)
+holdout,ES,correo,mruiz45@empresa.es,mruiz45@empresa.es
+holdout,ES,tarjeta,5556 5174 7260 0121,5556 5174 7260 0121
+holdout,AR,dni,21.266.279,21.266.279
+holdout,AR,cuit,20-73676669-9,Favor de registrar 20-73676669-9 en el expediente
+holdout,AR,cbu,7169731648919840993797,7169731648919840993797
+holdout,AR,telefono,+54 9 11 4962-2459,+54 9 11 4962-2459
+holdout,AR,correo,plopez2@empresa.com.ar,Favor de registrar plopez2@empresa.com.ar en el expediente
+holdout,AR,tarjeta,4471 8480 7826 9556,Favor de registrar 4471 8480 7826 9556 en el expediente
+holdout,BR,cpf,043.974.402-47,Favor de registrar 043.974.402-47 en el expediente
+holdout,BR,telefono,+55 11 95219-6076,+55 11 95219-6076
+holdout,BR,correo,asilva32@empresa.com.br,Datos del colaborador: asilva32@empresa.com.br
+holdout,BR,tarjeta,5565 3519 0470 8768,5565 3519 0470 8768

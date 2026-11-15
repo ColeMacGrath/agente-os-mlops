@@ -1,0 +1,161 @@
+particion,pais,tipo,valor,texto
+ciego_f4,MX,curp,QOIF750312HDFGTW02,Contacto de emergencia QOIF750312HDFGTW02
+ciego_f4,MX,rfc,DXYR7705053VL,Ficha del empleado: DXYR7705053VL
+ciego_f4,MX,clabe,012180065457330140,Contacto de emergencia 012180065457330140
+ciego_f4,MX,telefono,55 1214 0472,Contacto de emergencia 55 1214 0472
+ciego_f4,MX,correo,lmendez52@empresa.mx,Ficha del empleado: lmendez52@empresa.mx
+ciego_f4,MX,tarjeta,5129 6950 8836 1722,Validar con nómina: 5129 6950 8836 1722
+ciego_f4,US,ssn,206-88-6149,Contacto de emergencia 206-88-6149
+ciego_f4,US,telefono,+1 (415) 452-9998,Identificación presentada: +1 (415) 452-9998
+ciego_f4,US,cuenta,Routing 218152160 Account 9157036448,Contacto de emergencia Routing 218152160 Account 9157036448
+ciego_f4,US,correo,jsmith41@company.com,Validar con nómina: jsmith41@company.com
+ciego_f4,US,tarjeta,5139 4745 2179 7407,Ficha del empleado: 5139 4745 2179 7407
+ciego_f4,CO,cedula,1.311.298.747,Ficha del empleado: 1.311.298.747
+ciego_f4,CO,nit,900.700.031-7,Contacto de emergencia 900.700.031-7
+ciego_f4,CO,telefono,+57 348 569 7104,Validar con nómina: +57 348 569 7104
+ciego_f4,CO,correo,cgomez73@empresa.co,Identificación presentada: cgomez73@empresa.co
+ciego_f4,CO,tarjeta,5130 1877 8929 2478,Validar con nómina: 5130 1877 8929 2478
+ciego_f4,ES,dni,23151539S,Identificación presentada: 23151539S
+ciego_f4,ES,nie,X9541862J,Identificación presentada: X9541862J
+ciego_f4,ES,iban,ES25 2591 7223 9147 0058 2394,Contacto de emergencia ES25 2591 7223 9147 0058 2394
+ciego_f4,ES,telefono,+34 623 655 801,Identificación presentada: +34 623 655 801
+ciego_f4,ES,correo,mruiz31@empresa.es,Ficha del empleado: mruiz31@empresa.es
+ciego_f4,ES,tarjeta,4690 0626 5528 2116,Contacto de emergencia 4690 0626 5528 2116
+ciego_f4,AR,dni,39.535.186,Validar con nómina: 39.535.186
+ciego_f4,AR,cuit,20-60322393-5,Identificación presentada: 20-60322393-5
+ciego_f4,AR,cbu,8950399784335737642504,Contacto de emergencia 8950399784335737642504
+ciego_f4,AR,telefono,+54 9 11 0584-7726,Validar con nómina: +54 9 11 0584-7726
+ciego_f4,AR,correo,plopez75@empresa.com.ar,Identificación presentada: plopez75@empresa.com.ar
+ciego_f4,AR,tarjeta,5519 7604 7393 3879,Identificación presentada: 5519 7604 7393 3879
+ciego_f4,BR,cpf,836.494.669-29,Contacto de emergencia 836.494.669-29
+ciego_f4,BR,telefono,+55 11 92297-9279,Contacto de emergencia +55 11 92297-9279
+ciego_f4,BR,correo,asilva75@empresa.com.br,Ficha del empleado: asilva75@empresa.com.br
+ciego_f4,BR,tarjeta,4649 4149 7062 6141,Ficha del empleado: 4649 4149 7062 6141
+ciego_f4,MX,curp,WUZL741103HDFMYC01,Identificación presentada: WUZL741103HDFMYC01
+ciego_f4,MX,rfc,BIVW780527UCW,Validar con nómina: BIVW780527UCW
+ciego_f4,MX,clabe,012180020995433735,Contacto de emergencia 012180020995433735
+ciego_f4,MX,telefono,55 9515 8499,Identificación presentada: 55 9515 8499
+ciego_f4,MX,correo,lmendez54@empresa.mx,Identificación presentada: lmendez54@empresa.mx
+ciego_f4,MX,tarjeta,4800 6354 7247 8434,Ficha del empleado: 4800 6354 7247 8434
+ciego_f4,US,ssn,480-48-5511,Validar con nómina: 480-48-5511
+ciego_f4,US,telefono,+1 (415) 673-8288,Contacto de emergencia +1 (415) 673-8288
+ciego_f4,US,cuenta,Routing 422244144 Account 2708586157,Identificación presentada: Routing 422244144 Account 2708586157
+ciego_f4,US,correo,jsmith2@company.com,Contacto de emergencia jsmith2@company.com
+ciego_f4,US,tarjeta,4613 5363 4041 7892,Ficha del empleado: 4613 5363 4041 7892
+ciego_f4,CO,cedula,1.630.519.426,Contacto de emergencia 1.630.519.426
+ciego_f4,CO,nit,900.672.026-5,Ficha del empleado: 900.672.026-5
+ciego_f4,CO,telefono,+57 316 110 4913,Identificación presentada: +57 316 110 4913
+ciego_f4,CO,correo,cgomez39@empresa.co,Identificación presentada: cgomez39@empresa.co
+ciego_f4,CO,tarjeta,5560 5717 2638 3723,Validar con nómina: 5560 5717 2638 3723
+ciego_f4,ES,dni,47221684Q,Validar con nómina: 47221684Q
+ciego_f4,ES,nie,X2152725V,Validar con nómina: X2152725V
+ciego_f4,ES,iban,ES24 5994 4565 2789 6975 8665,Validar con nómina: ES24 5994 4565 2789 6975 8665
+ciego_f4,ES,telefono,+34 626 229 865,Validar con nómina: +34 626 229 865
+ciego_f4,ES,correo,mruiz62@empresa.es,Validar con nómina: mruiz62@empresa.es
+ciego_f4,ES,tarjeta,5564 5689 1472 6503,Contacto de emergencia 5564 5689 1472 6503
+ciego_f4,AR,dni,45.579.484,Ficha del empleado: 45.579.484
+ciego_f4,AR,cuit,20-23047067-8,Validar con nómina: 20-23047067-8
+ciego_f4,AR,cbu,8820816296695606295369,Validar con nómina: 8820816296695606295369
+ciego_f4,AR,telefono,+54 9 11 6383-7198,Validar con nómina: +54 9 11 6383-7198
+ciego_f4,AR,correo,plopez63@empresa.com.ar,Ficha del empleado: plopez63@empresa.com.ar
+ciego_f4,AR,tarjeta,5596 0863 7802 1289,Ficha del empleado: 5596 0863 7802 1289
+ciego_f4,BR,cpf,776.973.694-35,Contacto de emergencia 776.973.694-35
+ciego_f4,BR,telefono,+55 11 95528-3736,Validar con nómina: +55 11 95528-3736
+ciego_f4,BR,correo,asilva45@empresa.com.br,Identificación presentada: asilva45@empresa.com.br
+ciego_f4,BR,tarjeta,5595 2124 7668 1185,Contacto de emergencia 5595 2124 7668 1185
+ciego_f4,MX,curp,TIKG871019MQTXZQ08,Ficha del empleado: TIKG871019MQTXZQ08
+ciego_f4,MX,rfc,OCXM630705FIS,Identificación presentada: OCXM630705FIS
+ciego_f4,MX,clabe,012180030081293044,Contacto de emergencia 012180030081293044
+ciego_f4,MX,telefono,55 6809 5638,Identificación presentada: 55 6809 5638
+ciego_f4,MX,correo,lmendez83@empresa.mx,Identificación presentada: lmendez83@empresa.mx
+ciego_f4,MX,tarjeta,5521 6169 6637 3864,Validar con nómina: 5521 6169 6637 3864
+ciego_f4,US,ssn,465-37-9979,Identificación presentada: 465-37-9979
+ciego_f4,US,telefono,+1 (415) 621-0005,Ficha del empleado: +1 (415) 621-0005
+ciego_f4,US,cuenta,Routing 677704174 Account 5774905484,Contacto de emergencia Routing 677704174 Account 5774905484
+ciego_f4,US,correo,jsmith14@company.com,Validar con nómina: jsmith14@company.com
+ciego_f4,US,tarjeta,5134 7078 8937 1991,Validar con nómina: 5134 7078 8937 1991
+ciego_f4,CO,cedula,1.218.653.265,Contacto de emergencia 1.218.653.265
+ciego_f4,CO,nit,900.846.510-6,Ficha del empleado: 900.846.510-6
+ciego_f4,CO,telefono,+57 314 811 1020,Identificación presentada: +57 314 811 1020
+ciego_f4,CO,correo,cgomez55@empresa.co,Identificación presentada: cgomez55@empresa.co
+ciego_f4,CO,tarjeta,4319 5293 7666 1209,Ficha del empleado: 4319 5293 7666 1209
+ciego_f4,ES,dni,48021016Y,Validar con nómina: 48021016Y
+ciego_f4,ES,nie,X8261407Z,Identificación presentada: X8261407Z
+ciego_f4,ES,iban,ES16 3918 3573 3802 8326 5318,Contacto de emergencia ES16 3918 3573 3802 8326 5318
+ciego_f4,ES,telefono,+34 609 700 150,Ficha del empleado: +34 609 700 150
+ciego_f4,ES,correo,mruiz48@empresa.es,Identificación presentada: mruiz48@empresa.es
+ciego_f4,ES,tarjeta,5138 9567 0044 4364,Ficha del empleado: 5138 9567 0044 4364
+ciego_f4,AR,dni,34.720.188,Contacto de emergencia 34.720.188
+ciego_f4,AR,cuit,20-44501627-7,Ficha del empleado: 20-44501627-7
+ciego_f4,AR,cbu,1481735580582875500175,Contacto de emergencia 1481735580582875500175
+ciego_f4,AR,telefono,+54 9 11 9522-1510,Identificación presentada: +54 9 11 9522-1510
+ciego_f4,AR,correo,plopez81@empresa.com.ar,Contacto de emergencia plopez81@empresa.com.ar
+ciego_f4,AR,tarjeta,5108 0590 4527 6512,Ficha del empleado: 5108 0590 4527 6512
+ciego_f4,BR,cpf,268.621.590-97,Identificación presentada: 268.621.590-97
+ciego_f4,BR,telefono,+55 11 93139-1710,Identificación presentada: +55 11 93139-1710
+ciego_f4,BR,correo,asilva68@empresa.com.br,Contacto de emergencia asilva68@empresa.com.br
+ciego_f4,BR,tarjeta,4848 0680 8086 2761,Validar con nómina: 4848 0680 8086 2761
+ciego_f4,MX,curp,MEEN660326HJCTZM06,Identificación presentada: MEEN660326HJCTZM06
+ciego_f4,MX,rfc,EZYX9304248SR,Validar con nómina: EZYX9304248SR
+ciego_f4,MX,clabe,012180040875858384,Identificación presentada: 012180040875858384
+ciego_f4,MX,telefono,55 1608 3238,Identificación presentada: 55 1608 3238
+ciego_f4,MX,correo,lmendez78@empresa.mx,Ficha del empleado: lmendez78@empresa.mx
+ciego_f4,MX,tarjeta,5181 7154 3380 5283,Contacto de emergencia 5181 7154 3380 5283
+ciego_f4,US,ssn,155-36-1054,Validar con nómina: 155-36-1054
+ciego_f4,US,telefono,+1 (415) 890-2929,Ficha del empleado: +1 (415) 890-2929
+ciego_f4,US,cuenta,Routing 630379574 Account 0226526828,Ficha del empleado: Routing 630379574 Account 0226526828
+ciego_f4,US,correo,jsmith58@company.com,Identificación presentada: jsmith58@company.com
+ciego_f4,US,tarjeta,5577 7634 7497 0303,Contacto de emergencia 5577 7634 7497 0303
+ciego_f4,CO,cedula,1.079.529.460,Ficha del empleado: 1.079.529.460
+ciego_f4,CO,nit,900.065.384-4,Ficha del empleado: 900.065.384-4
+ciego_f4,CO,telefono,+57 317 874 0639,Identificación presentada: +57 317 874 0639
+ciego_f4,CO,correo,cgomez64@empresa.co,Ficha del empleado: cgomez64@empresa.co
+ciego_f4,CO,tarjeta,4757 9072 4586 9964,Identificación presentada: 4757 9072 4586 9964
+ciego_f4,ES,dni,46615410E,Ficha del empleado: 46615410E
+ciego_f4,ES,nie,X7768835X,Contacto de emergencia X7768835X
+ciego_f4,ES,iban,ES40 5536 3010 0179 4500 5216,Identificación presentada: ES40 5536 3010 0179 4500 5216
+ciego_f4,ES,telefono,+34 697 596 612,Ficha del empleado: +34 697 596 612
+ciego_f4,ES,correo,mruiz36@empresa.es,Contacto de emergencia mruiz36@empresa.es
+ciego_f4,ES,tarjeta,4562 7758 4709 1336,Validar con nómina: 4562 7758 4709 1336
+ciego_f4,AR,dni,44.186.657,Validar con nómina: 44.186.657
+ciego_f4,AR,cuit,20-40485133-1,Ficha del empleado: 20-40485133-1
+ciego_f4,AR,cbu,7558424390748794682317,Identificación presentada: 7558424390748794682317
+ciego_f4,AR,telefono,+54 9 11 6064-2430,Validar con nómina: +54 9 11 6064-2430
+ciego_f4,AR,correo,plopez99@empresa.com.ar,Validar con nómina: plopez99@empresa.com.ar
+ciego_f4,AR,tarjeta,5539 2111 7898 8269,Identificación presentada: 5539 2111 7898 8269
+ciego_f4,BR,cpf,450.554.389-75,Identificación presentada: 450.554.389-75
+ciego_f4,BR,telefono,+55 11 95813-8790,Validar con nómina: +55 11 95813-8790
+ciego_f4,BR,correo,asilva15@empresa.com.br,Validar con nómina: asilva15@empresa.com.br
+ciego_f4,BR,tarjeta,5504 4698 1660 8548,Validar con nómina: 5504 4698 1660 8548
+ciego_f4,MX,curp,BANO661026HNLCMB05,Contacto de emergencia BANO661026HNLCMB05
+ciego_f4,MX,rfc,TCRD920407JUY,Contacto de emergencia TCRD920407JUY
+ciego_f4,MX,clabe,012180055861388358,Ficha del empleado: 012180055861388358
+ciego_f4,MX,telefono,55 5529 2957,Ficha del empleado: 55 5529 2957
+ciego_f4,MX,correo,lmendez79@empresa.mx,Validar con nómina: lmendez79@empresa.mx
+ciego_f4,MX,tarjeta,4718 0850 5865 1312,Identificación presentada: 4718 0850 5865 1312
+ciego_f4,US,ssn,611-21-2416,Identificación presentada: 611-21-2416
+ciego_f4,US,telefono,+1 (415) 524-0834,Validar con nómina: +1 (415) 524-0834
+ciego_f4,US,cuenta,Routing 619488239 Account 0419653165,Identificación presentada: Routing 619488239 Account 0419653165
+ciego_f4,US,correo,jsmith59@company.com,Identificación presentada: jsmith59@company.com
+ciego_f4,US,tarjeta,5541 1036 4465 6339,Validar con nómina: 5541 1036 4465 6339
+ciego_f4,CO,cedula,1.260.313.947,Ficha del empleado: 1.260.313.947
+ciego_f4,CO,nit,900.089.924-5,Ficha del empleado: 900.089.924-5
+ciego_f4,CO,telefono,+57 328 212 3356,Ficha del empleado: +57 328 212 3356
+ciego_f4,CO,correo,cgomez42@empresa.co,Contacto de emergencia cgomez42@empresa.co
+ciego_f4,CO,tarjeta,5148 5276 0945 8553,Validar con nómina: 5148 5276 0945 8553
+ciego_f4,ES,dni,97042534Z,Identificación presentada: 97042534Z
+ciego_f4,ES,nie,X5123868C,Ficha del empleado: X5123868C
+ciego_f4,ES,iban,ES31 7203 0832 7974 2802 9597,Identificación presentada: ES31 7203 0832 7974 2802 9597
+ciego_f4,ES,telefono,+34 604 537 990,Identificación presentada: +34 604 537 990
+ciego_f4,ES,correo,mruiz22@empresa.es,Contacto de emergencia mruiz22@empresa.es
+ciego_f4,ES,tarjeta,5533 3447 6993 6144,Ficha del empleado: 5533 3447 6993 6144
+ciego_f4,AR,dni,24.363.766,Ficha del empleado: 24.363.766
+ciego_f4,AR,cuit,20-33446848-9,Ficha del empleado: 20-33446848-9
+ciego_f4,AR,cbu,9816783489930632342065,Validar con nómina: 9816783489930632342065
+ciego_f4,AR,telefono,+54 9 11 4452-1067,Contacto de emergencia +54 9 11 4452-1067
+ciego_f4,AR,correo,plopez54@empresa.com.ar,Ficha del empleado: plopez54@empresa.com.ar
+ciego_f4,AR,tarjeta,5542 3068 3695 1512,Identificación presentada: 5542 3068 3695 1512
+ciego_f4,BR,cpf,204.501.449-50,Validar con nómina: 204.501.449-50
+ciego_f4,BR,telefono,+55 11 95085-6948,Identificación presentada: +55 11 95085-6948
+ciego_f4,BR,correo,asilva40@empresa.com.br,Contacto de emergencia asilva40@empresa.com.br
+ciego_f4,BR,tarjeta,5599 6553 9431 2489,Validar con nómina: 5599 6553 9431 2489

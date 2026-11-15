@@ -1,0 +1,9 @@
+# Contrato de datos del corpus del semáforo de riesgo.
+columnas: [texto, etiqueta, idioma, marco]
+etiquetas: [bajo, medio, alto]
+idiomas_minimos: [es, en, pt, es_mx, spanglish]
+min_filas: 2000
+min_por_etiqueta: 0.20      # proporción mínima de cada etiqueta
+max_por_etiqueta: 0.45
+min_por_idioma: 150
+largo_texto: [3, 300]
