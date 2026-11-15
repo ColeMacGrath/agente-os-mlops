@@ -1,0 +1,40 @@
+# Monitoreo programado del modelo: reevalúa calidad y equidad por grupo y, si una compuerta
+# falla o hay regresión frente al campeón, abre un issue para el equipo (auditoría continua).
+name: Monitoreo semanal · calidad y fairness
+
+on:
+  schedule:
+    - cron: "0 13 * * 1"   # lunes 07:00 hora del centro de México
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  evaluar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.13", cache: pip}
+      - run: pip install -r requirements-dev.txt
+      - run: dvc repro evaluar
+      - id: compuerta
+        run: python pipelines/compuerta.py | tee salida.txt
+        continue-on-error: true
+      - name: Abrir issue si hay componentes rechazados
+        if: always()
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            const c = JSON.parse(fs.readFileSync('reports/compuerta.json'));
+            const rechazados = Object.entries(c.componentes).filter(([, v]) => !v.aprobado);
+            if (rechazados.length === 0) return;
+            const cuerpo = rechazados.map(([k, v]) => `- **${k}** (${v.modo}): ${v.fallas.join('; ')}`).join('\n');
+            await github.rest.issues.create({...context.repo, title: `Monitoreo: ${rechazados.length} componente(s) fuera de compuerta`,
+              body: `Resultado del monitoreo semanal.\n\n${cuerpo}\n\nVer artefactos del workflow para el detalle por grupo.`,
+              labels: ['monitoreo', 'fairness']});
+      - uses: actions/upload-artifact@v4
+        with: {name: monitoreo-semanal, path: reports/}

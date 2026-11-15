@@ -1,0 +1,122 @@
+# Integración continua: calidad de código -> pipeline de datos y modelos (DVC) -> pruebas completas
+# -> registro en MLflow -> imagen de contenedor y prueba de humo. En main publica la imagen y
+# abre el pull request GitOps que actualiza el release de staging.
+name: CI · pipeline MLOps
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  packages: write
+  pull-requests: write
+
+env:
+  PYTHONDONTWRITEBYTECODE: "1"
+  MLFLOW_DISABLE_AGENT_HINT: "1"
+
+jobs:
+  calidad:
+    name: Lint y pruebas unitarias y de datos
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.13", cache: pip}
+      - run: pip install -r requirements-dev.txt
+      - name: Lint
+        run: ruff check src pipelines tests gitops operacion
+      - name: Pruebas unitarias y de datos
+        run: python -m pytest -q tests/unit tests/datos
+
+  modelo:
+    name: Pipeline de datos y modelos (DVC + compuertas)
+    needs: calidad
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.13", cache: pip}
+      - run: pip install -r requirements-dev.txt
+      - name: dvc repro (preparar, validar, entrenar, evaluar, compuerta)
+        run: dvc repro
+      - name: Métricas frente a la última versión en main
+        run: dvc metrics show --md >> "$GITHUB_STEP_SUMMARY"
+      - name: Pruebas de modelo y de API
+        run: python -m pytest -q tests/modelo tests/api
+      - name: Registro en MLflow
+        run: python pipelines/registrar.py
+      - name: Resumen de la compuerta
+        run: |
+          python - <<'PY' >> "$GITHUB_STEP_SUMMARY"
+          import json
+          c = json.load(open("reports/compuerta.json"))
+          print("### Compuerta por componente\n\n| Componente | Resultado | Modo |\n|---|---|---|")
+          for k, v in c["componentes"].items():
+              print(f"| {k} | {'aprobado' if v['aprobado'] else 'rechazado'} | {v['modo']} |")
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: modelos-y-reportes
+          path: |
+            models/
+            reports/
+            mlflow.db
+            mlruns/
+            dvc.lock
+
+  contenedor:
+    name: Imagen y prueba de humo
+    needs: modelo
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with: {name: modelos-y-reportes}
+      - name: Nombre de la imagen (ghcr exige minúsculas)
+        run: echo "IMAGEN=ghcr.io/${GITHUB_REPOSITORY_OWNER,,}/agente-os-cloud" >> "$GITHUB_ENV"
+      - name: Construir imagen
+        run: docker build -t "$IMAGEN:${GITHUB_SHA::7}" .
+      - name: Prueba de humo
+        run: |
+          docker run -d --name agente -p 8000:8000 -e PLANNER_MODE=simulado -e SIM_TIME_FACTOR=0 "$IMAGEN:${GITHUB_SHA::7}"
+          for i in $(seq 1 30); do curl -fsS http://localhost:8000/health && break; sleep 1; done
+          curl -fsS -X POST http://localhost:8000/v1/analyze -H 'content-type: application/json' \
+            -d '{"task":"Copia el total pendiente","screen_text":"Total: $29,370.00"}' | tee respuesta.json
+          python -c "import json;r=json.load(open('respuesta.json'));assert not r['blocked'] and r['model']"
+          curl -fsS http://localhost:8000/metrics | grep agente_build_info
+          docker logs agente
+      - name: Publicar imagen
+        if: github.ref == 'refs/heads/main'
+        run: |
+          echo "${{ secrets.GITHUB_TOKEN }}" | docker login ghcr.io -u "${{ github.actor }}" --password-stdin
+          docker push "$IMAGEN:${GITHUB_SHA::7}"
+
+  gitops-staging:
+    name: Pull request GitOps a staging
+    if: github.ref == 'refs/heads/main'
+    needs: contenedor
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with: {name: modelos-y-reportes}
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.13"}
+      - run: pip install PyYAML
+      - name: Nombre de la imagen (ghcr exige minúsculas)
+        run: echo "IMAGEN=ghcr.io/${GITHUB_REPOSITORY_OWNER,,}/agente-os-cloud" >> "$GITHUB_ENV"
+      - name: Actualizar el estado deseado de staging
+        run: python gitops/actualizar_release.py --entorno staging --imagen "$IMAGEN:${GITHUB_SHA::7}" --revision "r-${GITHUB_SHA::7}"
+      - uses: peter-evans/create-pull-request@v7
+        with:
+          branch: gitops/staging-${{ github.sha }}
+          title: "deploy(staging): r-${{ github.sha }}"
+          commit-message: "deploy(staging): actualizar release a ${{ github.sha }}"
+          body: |
+            Release generado por CI. Compuerta y modos por componente en el artefacto `modelos-y-reportes`.
+            Al fusionar, el workflow de despliegue aplica este estado deseado.
+          add-paths: deploy/entornos/staging/release.yaml

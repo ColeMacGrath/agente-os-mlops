@@ -1,0 +1,75 @@
+# Despliegue continuo GitOps: cuando cambia el estado deseado de un entorno (merge del PR),
+# se aplica. Con credenciales de Google Cloud despliega en Cloud Run con traffic split;
+# sin ellas ejecuta el reconciliador y el análisis de canary en el runner (entorno simulado).
+name: CD · despliegue GitOps
+
+on:
+  push:
+    branches: [main]
+    paths: ["deploy/entornos/**"]
+  workflow_dispatch:
+    inputs:
+      entorno:
+        description: Entorno a desplegar
+        type: choice
+        options: [staging, produccion]
+        default: staging
+
+permissions:
+  contents: write
+  pull-requests: write
+  id-token: write
+
+jobs:
+  desplegar:
+    runs-on: ubuntu-latest
+    environment: ${{ inputs.entorno || 'staging' }}   # producción exige aprobación manual (regla del entorno en GitHub)
+    env:
+      ENTORNO: ${{ inputs.entorno || 'staging' }}
+      PYTHONDONTWRITEBYTECODE: "1"
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.13", cache: pip}
+      - run: pip install -r requirements-dev.txt
+      - name: Reconstruir modelos del commit (DVC)
+        run: dvc repro
+      - name: Autenticar en Google Cloud
+        if: vars.GCP_PROJECT != ''
+        uses: google-github-actions/auth@v2
+        with:
+          workload_identity_provider: ${{ vars.GCP_WIF_PROVIDER }}
+          service_account: ${{ vars.GCP_DEPLOY_SA }}
+      - name: Desplegar en Cloud Run (2 regiones, traffic split del release)
+        if: vars.GCP_PROJECT != ''
+        run: python gitops/desplegar_cloudrun.py --entorno "$ENTORNO" --proyecto "${{ vars.GCP_PROJECT }}" --regiones us-central1,us-east1
+      - name: Entorno simulado - reconciliador y análisis de canary
+        if: vars.GCP_PROJECT == ''
+        run: python gitops/analisis_canary.py --entorno "$ENTORNO"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: despliegue-${{ env.ENTORNO }}
+          path: |
+            reports/canary_*.json
+            gitops/historial.md
+            gitops/estado/bitacora_despliegues.jsonl
+
+  promover-a-produccion:
+    name: PR de promoción a producción
+    needs: desplegar
+    if: (inputs.entorno || 'staging') == 'staging'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.13"}
+      - run: pip install PyYAML
+      - name: Proponer el release de staging como canary de producción al 10%
+        run: python gitops/actualizar_release.py --entorno produccion --desde staging --canary 10
+      - uses: peter-evans/create-pull-request@v7
+        with:
+          branch: gitops/produccion-${{ github.sha }}
+          title: "deploy(produccion): canary al 10%"
+          commit-message: "deploy(produccion): canary al 10% desde staging"
+          body: Requiere aprobación del dueño del producto y de Seguridad. El análisis de canary decide los pasos 50% y 100%.
+          add-paths: deploy/entornos/produccion/release.yaml

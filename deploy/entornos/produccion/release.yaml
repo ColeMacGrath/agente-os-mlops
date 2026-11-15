@@ -1,0 +1,16 @@
+# Estado deseado del entorno. Fuente de verdad del despliegue (GitOps):
+# solo se modifica mediante pull request y el reconciliador lo aplica.
+entorno: produccion
+servicio: agente-os-cloud
+revisiones:
+- nombre: r-3-1-0
+  descripcion: Release de la Fase III (riesgo 3.1.0 aplicado, inyección 3.1.0 en sombra)
+    · router ajustado (ADR-0004)
+  imagen: ghcr.io/colemacgrath/agente-os-cloud:3.1.0
+  modelos:
+    riesgo: agente-os-riesgo@1
+    inyeccion: agente-os-inyeccion@1 (sombra)
+  entorno:
+    ROUTER_TASK_LEN_MEDIUM: '120'
+    ROUTER_IGNORE_PARTICIPLES: '1'
+  trafico: 100

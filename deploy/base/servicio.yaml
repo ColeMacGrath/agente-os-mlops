@@ -1,0 +1,35 @@
+# Servicio de Cloud Run (Knative) de la Capa Nube. El workflow de despliegue
+# sustituye IMAGEN, REVISION y los pesos de tráfico desde deploy/entornos/<entorno>/release.yaml.
+apiVersion: serving.knative.dev/v1
+kind: Service
+metadata:
+  name: agente-os-cloud
+  labels: {proyecto: agente-os, fase: "3"}
+spec:
+  template:
+    metadata:
+      name: agente-os-cloud-REVISION
+      annotations:
+        autoscaling.knative.dev/minScale: "1"      # sin arranque en frío en horario laboral (D3)
+        autoscaling.knative.dev/maxScale: "20"     # por región (D2)
+        run.googleapis.com/cpu-throttling: "true"
+    spec:
+      serviceAccountName: agente-os-run@PROJECT_ID.iam.gserviceaccount.com   # Workload Identity, sin llaves en la imagen
+      containerConcurrency: 80                                                # endpoint asíncrono (D1)
+      timeoutSeconds: 120
+      containers:
+        - image: IMAGEN
+          ports: [{containerPort: 8000}]
+          env:
+            - {name: PLANNER_MODE, value: claude}
+            - {name: REVISION, value: REVISION}
+            - {name: LEDGER_PATH, value: /var/log/agente/bitacora.jsonl}
+            - name: ANTHROPIC_API_KEY
+              valueFrom: {secretKeyRef: {name: anthropic-api-key, key: latest}}
+            - name: AGENT_TOKEN
+              valueFrom: {secretKeyRef: {name: agent-token, key: latest}}
+          resources:
+            limits: {cpu: "1", memory: 512Mi}                                 # right-sizing (RSS medido ~215 MiB)
+          startupProbe: {httpGet: {path: /health}, periodSeconds: 5, failureThreshold: 6}
+          livenessProbe: {httpGet: {path: /health}, periodSeconds: 30}
+  traffic: []   # lo llena el workflow con los pesos del release

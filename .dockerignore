@@ -1,0 +1,11 @@
+.git
+.dvc/cache
+data/procesados
+mlruns
+mlflow.db
+reports
+docs
+tests
+operacion/salida
+gitops/estado
+**/__pycache__
