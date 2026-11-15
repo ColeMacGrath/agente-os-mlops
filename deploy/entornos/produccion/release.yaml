@@ -13,4 +13,15 @@ revisiones:
   entorno:
     ROUTER_TASK_LEN_MEDIUM: '120'
     ROUTER_IGNORE_PARTICIPLES: '1'
-  trafico: 100
+  trafico: 90
+- nombre: r-9c4fe36
+  descripcion: Release generado por CI
+  imagen: ghcr.io/colemacgrath/agente-os-cloud:9c4fe36
+  modelos:
+    riesgo: riesgo-3.1.0 (aplicar)
+    inyeccion: inyeccion-3.1.0 (sombra)
+  entorno:
+    ROUTER_TASK_LEN_MEDIUM: '120'
+    ROUTER_IGNORE_PARTICIPLES: '1'
+  trafico: 10
+  canary: true
