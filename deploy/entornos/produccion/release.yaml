@@ -20,6 +20,8 @@ revisiones:
   modelos:
     riesgo: riesgo-3.1.0 (aplicar)
     inyeccion: inyeccion-3.1.0 (sombra)
-  entorno: {}
+  entorno:
+    ROUTER_TASK_LEN_MEDIUM: '120'
+    ROUTER_IGNORE_PARTICIPLES: '1'
   trafico: 10
   canary: true
