@@ -21,11 +21,29 @@ permissions:
   id-token: write
 
 jobs:
-  desplegar:
+  detectar:
+    name: Entorno que cambió
     runs-on: ubuntu-latest
-    environment: ${{ inputs.entorno || 'staging' }}   # producción exige aprobación manual (regla del entorno en GitHub)
+    outputs:
+      entorno: ${{ steps.d.outputs.entorno }}
+    steps:
+      - uses: actions/checkout@v5
+        with: {fetch-depth: 2}
+      - id: d
+        run: |
+          if [ -n "${{ inputs.entorno }}" ]; then e="${{ inputs.entorno }}"
+          elif git diff --name-only HEAD~1 HEAD | grep -q '^deploy/entornos/produccion/'; then e=produccion
+          else e=staging; fi
+          echo "entorno=$e" >> "$GITHUB_OUTPUT"
+          echo "Entorno a desplegar: **$e**" >> "$GITHUB_STEP_SUMMARY"
+
+  desplegar:
+    name: Desplegar
+    needs: detectar
+    runs-on: ubuntu-latest
+    environment: ${{ needs.detectar.outputs.entorno }}   # producción exige aprobación manual (regla del entorno en GitHub)
     env:
-      ENTORNO: ${{ inputs.entorno || 'staging' }}
+      ENTORNO: ${{ needs.detectar.outputs.entorno }}
       PYTHONDONTWRITEBYTECODE: "1"
     steps:
       - uses: actions/checkout@v5
@@ -56,8 +74,8 @@ jobs:
 
   promover-a-produccion:
     name: PR de promoción a producción
-    needs: desplegar
-    if: (inputs.entorno || 'staging') == 'staging'
+    needs: [detectar, desplegar]
+    if: needs.detectar.outputs.entorno == 'staging'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v5

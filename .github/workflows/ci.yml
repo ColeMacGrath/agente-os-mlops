@@ -7,6 +7,7 @@ on:
   pull_request:
   push:
     branches: [main]
+    paths-ignore: ["deploy/entornos/**"]   # los merges de GitOps los atiende el CD
   workflow_dispatch:
 
 permissions:
