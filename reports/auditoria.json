@@ -1,0 +1,121 @@
+{
+  "bitacoras": {
+    "operacion": {
+      "integra": true,
+      "entradas": 12029,
+      "rota_en_linea": null,
+      "hash_final": "6e3ce3f124acaacb3329aa00d8ccfbe13eb838c266daac2affc0efa15adeaa7e",
+      "prueba_alteracion": {
+        "linea_alterada": 6015,
+        "detectada": true,
+        "rota_en_linea": 6015
+      }
+    },
+    "despliegues": {
+      "integra": true,
+      "entradas": 12,
+      "rota_en_linea": null,
+      "hash_final": "1b0e6e2aa3bdba4a9341bcdc1cce509c5289f7d458f3e06050e9cf17b062be66",
+      "prueba_alteracion": {
+        "linea_alterada": 7,
+        "detectada": true,
+        "rota_en_linea": 7
+      }
+    }
+  },
+  "invariantes": {
+    "eventos": {
+      "analyze": 12000,
+      "alerta": 23,
+      "accion_optimizacion": 6
+    },
+    "decisiones": 12000,
+    "acciones_alto_riesgo": 1060,
+    "acciones_alto_riesgo_sin_touch_id": 0,
+    "bloqueos": 205,
+    "bloqueos_que_llamaron_al_modelo": 0,
+    "respuestas_degradadas": 11,
+    "decisiones_sin_linaje": 0,
+    "contenido_de_usuario_en_bitacora": false,
+    "riesgo": {
+      "alto": 1615,
+      "medio": 4107,
+      "bajo": 6278
+    }
+  },
+  "linaje": [
+    {
+      "modelo": "agente-os-riesgo",
+      "version_registro": 1,
+      "version": "riesgo-3.1.0",
+      "modo": "aplicar",
+      "compuerta": "aprobada",
+      "alias": [
+        "campeon",
+        "candidato"
+      ],
+      "run_id": "e162095bfa2842fea27438f2e15d8d00"
+    },
+    {
+      "modelo": "agente-os-inyeccion",
+      "version_registro": 1,
+      "version": "inyeccion-3.1.0",
+      "modo": "sombra",
+      "compuerta": "rechazada",
+      "alias": [
+        "sombra"
+      ],
+      "run_id": "e162095bfa2842fea27438f2e15d8d00"
+    }
+  ],
+  "compuertas": [
+    {
+      "registro": "02_compuerta_rechazada_v3a.json",
+      "versiones": {
+        "riesgo": "riesgo-3.0.0",
+        "inyeccion": "inyeccion-3.0.0"
+      },
+      "fallas": 4,
+      "ejemplos": [
+        "[a9] inyección · FPR global",
+        "[ciego_f3] riesgo · recall de riesgo alto",
+        "[ciego_f3] riesgo · FPR máximo por grupo"
+      ]
+    },
+    {
+      "registro": "03_compuerta_rechazada_v3_0.json",
+      "versiones": {
+        "riesgo": "riesgo-3.0.0",
+        "inyeccion": "inyeccion-3.0.0"
+      },
+      "fallas": 2,
+      "ejemplos": [
+        "[ciego_f3] inyección · TPR global",
+        "[ciego_f3] inyección · FPR global"
+      ]
+    },
+    {
+      "registro": "04_compuerta_v3_1_inyeccion_rechazada.json",
+      "versiones": {
+        "riesgo": "riesgo-3.1.0",
+        "inyeccion": "inyeccion-3.1.0"
+      },
+      "fallas": 1,
+      "ejemplos": [
+        "[ciego_f4] inyección · FPR global"
+      ]
+    },
+    {
+      "registro": "reports/compuerta.json (vigente)",
+      "versiones": {
+        "riesgo": "riesgo-3.1.0",
+        "inyeccion": "inyeccion-3.1.0"
+      },
+      "componentes": {
+        "riesgo": "aplicar",
+        "inyeccion": "sombra",
+        "pii": "aplicar"
+      }
+    }
+  ]
+}

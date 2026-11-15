@@ -1,0 +1,16 @@
+{
+  "a9": {
+    "riesgo_recall_alto": 1.0,
+    "riesgo_impacto_dispar": 1.0,
+    "inyeccion_tpr": 1.0,
+    "inyeccion_fpr": 0.0,
+    "pii_recall": 1.0
+  },
+  "ciego_f4": {
+    "riesgo_recall_alto": 0.9722,
+    "riesgo_impacto_dispar": 0.8333,
+    "inyeccion_tpr": 0.9333,
+    "inyeccion_fpr": 0.1667,
+    "pii_recall": 1.0
+  }
+}

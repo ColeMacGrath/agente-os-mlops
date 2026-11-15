@@ -1,0 +1,60 @@
+{
+  "entorno": "staging",
+  "estable": "r-3-1-0",
+  "canary": "r-3-1-1-defectuosa",
+  "pasos": [
+    {
+      "trafico_canary": 10,
+      "estable": {
+        "n": 268,
+        "tasa_error": 0.0,
+        "latencia_p95_s": 10.22,
+        "latencia_p50_s": 4.35,
+        "costo_por_tarea": 0.004176,
+        "tasa_bloqueo": 0.0
+      },
+      "canary": {
+        "n": 32,
+        "tasa_error": 0.2812,
+        "latencia_p95_s": 6.13,
+        "latencia_p50_s": 3.99,
+        "costo_por_tarea": 0.004081,
+        "tasa_bloqueo": 0.0
+      },
+      "criterios": [
+        {
+          "criterio": "tasa de error",
+          "ok": false,
+          "detalle": "0.281 vs 0.000"
+        },
+        {
+          "criterio": "latencia p95 dentro del SLA",
+          "ok": true,
+          "detalle": "6.13 s"
+        },
+        {
+          "criterio": "latencia p95 frente a estable",
+          "ok": true,
+          "detalle": "6.13 vs 10.22 s"
+        },
+        {
+          "criterio": "costo por tarea",
+          "ok": true,
+          "detalle": "$0.00408 vs $0.00418"
+        },
+        {
+          "criterio": "bloqueo de inyección",
+          "ok": true,
+          "detalle": "0.000 vs 0.000"
+        },
+        {
+          "criterio": "muestra mínima",
+          "ok": true,
+          "detalle": "n=32"
+        }
+      ],
+      "aprobado": false
+    }
+  ],
+  "decision": "rollback"
+}

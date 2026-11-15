@@ -1,0 +1,119 @@
+{
+  "aprobado": true,
+  "chequeos": [
+    {
+      "corpus": "riesgo",
+      "chequeo": "columnas del contrato",
+      "ok": true,
+      "detalle": "['texto', 'etiqueta', 'idioma', 'marco']"
+    },
+    {
+      "corpus": "riesgo",
+      "chequeo": "sin nulos",
+      "ok": true,
+      "detalle": "0"
+    },
+    {
+      "corpus": "riesgo",
+      "chequeo": "sin duplicados exactos",
+      "ok": true,
+      "detalle": "0"
+    },
+    {
+      "corpus": "riesgo",
+      "chequeo": "mínimo 2000 filas",
+      "ok": true,
+      "detalle": "2543"
+    },
+    {
+      "corpus": "riesgo",
+      "chequeo": "etiquetas válidas",
+      "ok": true,
+      "detalle": "['alto', 'bajo', 'medio']"
+    },
+    {
+      "corpus": "riesgo",
+      "chequeo": "balance de etiquetas",
+      "ok": true,
+      "detalle": "{'alto': 0.352, 'bajo': 0.332, 'medio': 0.315}"
+    },
+    {
+      "corpus": "riesgo",
+      "chequeo": "cobertura mínima por idioma",
+      "ok": true,
+      "detalle": "{'es': 842, 'en': 533, 'pt': 483, 'es_mx': 438, 'spanglish': 247}"
+    },
+    {
+      "corpus": "riesgo",
+      "chequeo": "largo de texto en rango",
+      "ok": true,
+      "detalle": "min 16, max 82"
+    },
+    {
+      "corpus": "riesgo",
+      "chequeo": "sin fuga hacia los conjuntos de evaluación",
+      "ok": true,
+      "detalle": "0 textos compartidos"
+    },
+    {
+      "corpus": "riesgo",
+      "chequeo": "corpus sin datos personales",
+      "ok": true,
+      "detalle": "0"
+    },
+    {
+      "corpus": "inyeccion",
+      "chequeo": "columnas del contrato",
+      "ok": true,
+      "detalle": "['texto', 'etiqueta', 'idioma', 'variante']"
+    },
+    {
+      "corpus": "inyeccion",
+      "chequeo": "sin nulos",
+      "ok": true,
+      "detalle": "0"
+    },
+    {
+      "corpus": "inyeccion",
+      "chequeo": "sin duplicados exactos",
+      "ok": true,
+      "detalle": "0"
+    },
+    {
+      "corpus": "inyeccion",
+      "chequeo": "mínimo 2000 filas",
+      "ok": true,
+      "detalle": "5600"
+    },
+    {
+      "corpus": "inyeccion",
+      "chequeo": "etiquetas válidas",
+      "ok": true,
+      "detalle": "['0', '1']"
+    },
+    {
+      "corpus": "inyeccion",
+      "chequeo": "balance de etiquetas",
+      "ok": true,
+      "detalle": "{'0': 0.5, '1': 0.5}"
+    },
+    {
+      "corpus": "inyeccion",
+      "chequeo": "cobertura mínima por idioma",
+      "ok": true,
+      "detalle": "{'en': 1400, 'es': 1400, 'spanglish': 1400, 'pt': 1400}"
+    },
+    {
+      "corpus": "inyeccion",
+      "chequeo": "largo de texto en rango",
+      "ok": true,
+      "detalle": "min 33, max 175"
+    },
+    {
+      "corpus": "inyeccion",
+      "chequeo": "sin fuga hacia los conjuntos de evaluación",
+      "ok": true,
+      "detalle": "0 textos compartidos"
+    }
+  ]
+}

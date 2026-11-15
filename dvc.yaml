@@ -1,0 +1,71 @@
+# Pipeline reproducible. `dvc repro` ejecuta solo las etapas cuyas dependencias cambiaron
+# y registra en dvc.lock el hash de cada dato, modelo y reporte (versionado de artefactos).
+stages:
+  preparar_datos:
+    cmd: python pipelines/preparar_datos.py
+    deps:
+      - pipelines/preparar_datos.py
+      - src/agente_os/datos
+    params:
+      - datos
+    outs:
+      - data/procesados
+
+  validar_datos:
+    cmd: python pipelines/validar_datos.py
+    deps:
+      - pipelines/validar_datos.py
+      - data/procesados
+      - data/contratos
+      - data/evaluacion
+    outs:
+      - reports/validacion_datos.json:
+          cache: false
+
+  entrenar:
+    cmd: python pipelines/entrenar.py
+    deps:
+      - pipelines/entrenar.py
+      - data/procesados
+      - reports/validacion_datos.json
+      - src/agente_os/riesgo
+      - src/agente_os/guardrails/inyeccion.py
+    params:
+      - riesgo
+      - inyeccion
+    outs:
+      - models/riesgo
+      - models/inyeccion
+      - models/manifest.json:
+          cache: false
+
+  evaluar:
+    cmd: python pipelines/evaluar.py
+    deps:
+      - pipelines/evaluar.py
+      - models/riesgo
+      - models/inyeccion
+      - data/evaluacion
+      - src/agente_os/evaluacion.py
+      - src/agente_os/guardrails
+      - src/agente_os/riesgo
+    outs:
+      - reports/evaluacion.json:
+          cache: false
+    metrics:
+      - reports/metricas.json:
+          cache: false
+
+  compuerta:
+    cmd: python pipelines/compuerta.py
+    deps:
+      - pipelines/compuerta.py
+      - reports/evaluacion.json
+      - reports/campeon.json
+    params:
+      - compuertas
+    outs:
+      - reports/compuerta.json:
+          cache: false
+      - models/release.json:
+          cache: false

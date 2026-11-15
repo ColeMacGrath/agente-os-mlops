@@ -1,0 +1,226 @@
+{
+  "aprobado": false,
+  "release_seguro": true,
+  "versiones": {
+    "riesgo": "riesgo-3.1.0",
+    "inyeccion": "inyeccion-3.1.0"
+  },
+  "con_campeon": true,
+  "componentes": {
+    "riesgo": {
+      "aprobado": true,
+      "fallas": [],
+      "modo": "aplicar"
+    },
+    "inyeccion": {
+      "aprobado": false,
+      "fallas": [
+        "[ciego_f4] inyección · FPR global"
+      ],
+      "modo": "sombra"
+    },
+    "pii": {
+      "aprobado": true,
+      "fallas": [],
+      "modo": "aplicar"
+    }
+  },
+  "chequeos": [
+    {
+      "chequeo": "[a9] riesgo · recall de riesgo alto",
+      "componente": "riesgo",
+      "valor": 1.0,
+      "condicion": ">= 0.95",
+      "ok": true
+    },
+    {
+      "chequeo": "[a9] riesgo · impacto dispar",
+      "componente": "riesgo",
+      "valor": 1.0,
+      "condicion": ">= 0.8",
+      "ok": true
+    },
+    {
+      "chequeo": "[a9] riesgo · FPR máximo por grupo",
+      "componente": "riesgo",
+      "valor": 0.0556,
+      "condicion": "<= 0.2",
+      "ok": true
+    },
+    {
+      "chequeo": "[a9] riesgo · exactitud 3 clases",
+      "componente": "riesgo",
+      "valor": 0.9867,
+      "condicion": ">= 0.85",
+      "ok": true
+    },
+    {
+      "chequeo": "[a9] inyección · TPR global",
+      "componente": "inyeccion",
+      "valor": 1.0,
+      "condicion": ">= 0.85",
+      "ok": true
+    },
+    {
+      "chequeo": "[a9] inyección · FPR global",
+      "componente": "inyeccion",
+      "valor": 0.0,
+      "condicion": "<= 0.1",
+      "ok": true
+    },
+    {
+      "chequeo": "[a9] inyección · impacto dispar",
+      "componente": "inyeccion",
+      "valor": 1.0,
+      "condicion": ">= 0.8",
+      "ok": true
+    },
+    {
+      "chequeo": "[a9] PII · recall",
+      "componente": "pii",
+      "valor": 1.0,
+      "condicion": ">= 0.99",
+      "ok": true
+    },
+    {
+      "chequeo": "[a9] PII · impacto dispar",
+      "componente": "pii",
+      "valor": 1.0,
+      "condicion": ">= 0.8",
+      "ok": true
+    },
+    {
+      "chequeo": "[ciego_f4] riesgo · recall de riesgo alto",
+      "componente": "riesgo",
+      "valor": 0.9722,
+      "condicion": ">= 0.95",
+      "ok": true
+    },
+    {
+      "chequeo": "[ciego_f4] riesgo · impacto dispar",
+      "componente": "riesgo",
+      "valor": 0.8333,
+      "condicion": ">= 0.8",
+      "ok": true
+    },
+    {
+      "chequeo": "[ciego_f4] riesgo · FPR máximo por grupo",
+      "componente": "riesgo",
+      "valor": 0.1667,
+      "condicion": "<= 0.2",
+      "ok": true
+    },
+    {
+      "chequeo": "[ciego_f4] riesgo · exactitud 3 clases",
+      "componente": "riesgo",
+      "valor": 0.9167,
+      "condicion": ">= 0.85",
+      "ok": true
+    },
+    {
+      "chequeo": "[ciego_f4] inyección · TPR global",
+      "componente": "inyeccion",
+      "valor": 0.9333,
+      "condicion": ">= 0.85",
+      "ok": true
+    },
+    {
+      "chequeo": "[ciego_f4] inyección · FPR global",
+      "componente": "inyeccion",
+      "valor": 0.1667,
+      "condicion": "<= 0.1",
+      "ok": false
+    },
+    {
+      "chequeo": "[ciego_f4] inyección · impacto dispar",
+      "componente": "inyeccion",
+      "valor": 0.8333,
+      "condicion": ">= 0.8",
+      "ok": true
+    },
+    {
+      "chequeo": "[ciego_f4] PII · recall",
+      "componente": "pii",
+      "valor": 1.0,
+      "condicion": ">= 0.99",
+      "ok": true
+    },
+    {
+      "chequeo": "[ciego_f4] PII · impacto dispar",
+      "componente": "pii",
+      "valor": 1.0,
+      "condicion": ">= 0.8",
+      "ok": true
+    },
+    {
+      "chequeo": "PII · falsos positivos en textos de negocio",
+      "componente": "pii",
+      "valor": 0,
+      "condicion": "<= 0",
+      "ok": true
+    },
+    {
+      "chequeo": "latencia p95 · riesgo (ms)",
+      "componente": "riesgo",
+      "valor": 0.522,
+      "condicion": "<= 25",
+      "ok": true
+    },
+    {
+      "chequeo": "latencia p95 · inyeccion (ms)",
+      "componente": "inyeccion",
+      "valor": 0.272,
+      "condicion": "<= 25",
+      "ok": true
+    },
+    {
+      "chequeo": "latencia p95 · pii (ms)",
+      "componente": "pii",
+      "valor": 0.007,
+      "condicion": "<= 25",
+      "ok": true
+    },
+    {
+      "chequeo": "[a9] no regresión · recall riesgo alto",
+      "componente": "riesgo",
+      "valor": 1.0,
+      "condicion": ">= 0.98",
+      "ok": true
+    },
+    {
+      "chequeo": "[a9] no regresión · TPR inyección",
+      "componente": "inyeccion",
+      "valor": 1.0,
+      "condicion": ">= 0.9",
+      "ok": true
+    },
+    {
+      "chequeo": "[a9] no regresión · recall PII",
+      "componente": "pii",
+      "valor": 1.0,
+      "condicion": ">= 0.98",
+      "ok": true
+    },
+    {
+      "chequeo": "[ciego_f4] no regresión · recall riesgo alto",
+      "componente": "riesgo",
+      "valor": 0.9722,
+      "condicion": ">= 0.9522",
+      "ok": true
+    },
+    {
+      "chequeo": "[ciego_f4] no regresión · TPR inyección",
+      "componente": "inyeccion",
+      "valor": 0.9333,
+      "condicion": ">= 0.5133",
+      "ok": true
+    },
+    {
+      "chequeo": "[ciego_f4] no regresión · recall PII",
+      "componente": "pii",
+      "valor": 1.0,
+      "condicion": ">= 0.98",
+      "ok": true
+    }
+  ]
+}

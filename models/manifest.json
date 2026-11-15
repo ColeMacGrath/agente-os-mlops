@@ -1,0 +1,45 @@
+{
+  "entrenado": "2026-11-14T20:34:21+00:00",
+  "git": "sin-git",
+  "sklearn": "1.9.1",
+  "riesgo": {
+    "version": "riesgo-3.1.0",
+    "metricas_validacion": {
+      "accuracy": 0.9969,
+      "f1_macro": 0.9969,
+      "recall_alto": 1.0
+    },
+    "sha256": "5be58297f9a766fc452902cde68a64b4d5dbb6d253652107ee2b4c6c7010e771",
+    "filas": 2543,
+    "datos_sha256": "6c0c5432c656afb12103996510676bfdcd9d63a304129224fbb490a7d1c2efd5",
+    "hiperparametros": {
+      "C": 10.0
+    }
+  },
+  "inyeccion": {
+    "version": "inyeccion-3.1.0",
+    "umbral": 0.45,
+    "umbral_contexto_humano": 0.95,
+    "umbral_corroboracion": 0.3,
+    "calibracion": {
+      "tpr_dev": 0.95,
+      "fpr_dev": 0.0469,
+      "n_dev": 144,
+      "conjuntos": [
+        "inyeccion_grupos_a9.csv",
+        "inyeccion_ciego_f3.csv"
+      ]
+    },
+    "metricas_validacion": {
+      "accuracy": 1.0,
+      "f1": 1.0,
+      "recall": 1.0
+    },
+    "sha256": "c204157c4840490c9b2178554af1430b7c4b874f69c66aabd8fb3f26519b8620",
+    "filas": 5600,
+    "datos_sha256": "ee3ba9662672c0ff22218253341146db0f4702ae65eae9005f5a90e62a37e97c",
+    "hiperparametros": {
+      "C": 4.0
+    }
+  }
+}

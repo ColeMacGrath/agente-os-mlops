@@ -1,0 +1,195 @@
+schema: '2.0'
+stages:
+  preparar_datos:
+    cmd: python pipelines/preparar_datos.py
+    deps:
+    - path: pipelines/preparar_datos.py
+      hash: md5
+      md5: b876c26815aaad15f4613d60815e362b
+      size: 1213
+    - path: src/agente_os/datos
+      hash: md5
+      md5: dfb65ca8727ff21444b88bd4909756c4.dir
+      size: 36727
+      nfiles: 4
+    params:
+      params.yaml:
+        datos:
+          semilla_riesgo: 42
+          semilla_inyeccion: 7
+          proporcion_errores: 0.2
+          inyeccion_por_idioma: 700
+          inyeccion_prop_ofuscado: 0.15
+    outs:
+    - path: data/procesados
+      hash: md5
+      md5: 27a010fed690efabb39609161ef47250.dir
+      size: 790267
+      nfiles: 3
+  validar_datos:
+    cmd: python pipelines/validar_datos.py
+    deps:
+    - path: data/contratos
+      hash: md5
+      md5: 8512528c9721955535bdecd48b2ff8ca.dir
+      size: 599
+      nfiles: 2
+    - path: data/evaluacion
+      hash: md5
+      md5: 058a39d295239c22b8d662f04c28bddd.dir
+      size: 122382
+      nfiles: 15
+    - path: data/procesados
+      hash: md5
+      md5: 27a010fed690efabb39609161ef47250.dir
+      size: 790267
+      nfiles: 3
+    - path: pipelines/validar_datos.py
+      hash: md5
+      md5: 9e7b3be3b436a75d3230e2776bd1f524
+      size: 3230
+    outs:
+    - path: reports/validacion_datos.json
+      hash: md5
+      md5: 57743095634369a12301783fe0cfde4a
+      size: 2748
+  entrenar:
+    cmd: python pipelines/entrenar.py
+    deps:
+    - path: data/procesados
+      hash: md5
+      md5: 27a010fed690efabb39609161ef47250.dir
+      size: 790267
+      nfiles: 3
+    - path: pipelines/entrenar.py
+      hash: md5
+      md5: ef8df305b241312ca4ef94fb5f50dc17
+      size: 6057
+    - path: reports/validacion_datos.json
+      hash: md5
+      md5: 57743095634369a12301783fe0cfde4a
+      size: 2748
+    - path: src/agente_os/guardrails/inyeccion.py
+      hash: md5
+      md5: c051c6b7f21e6266a4a3aceb0b57cd92
+      size: 11411
+    - path: src/agente_os/riesgo
+      hash: md5
+      md5: b10ec05d7868c207b6f8844fa500fbca.dir
+      size: 6832
+      nfiles: 2
+    params:
+      params.yaml:
+        inyeccion:
+          version: inyeccion-3.1.0
+          C: 4.0
+          umbral: 0.5
+          fpr_objetivo: 0.05
+          conjuntos_calibracion:
+          - inyeccion_grupos_a9.csv
+          - inyeccion_ciego_f3.csv
+        riesgo:
+          version: riesgo-3.1.0
+          C: 10.0
+    outs:
+    - path: models/inyeccion
+      hash: md5
+      md5: 610895f7e5169de53bc85a82e3ea1818.dir
+      size: 203066
+      nfiles: 1
+    - path: models/manifest.json
+      hash: md5
+      md5: cbbf82cd3857c4f17441ffc047e1378e
+      size: 1156
+    - path: models/riesgo
+      hash: md5
+      md5: f91f64df69c62267aa44be2341f63754.dir
+      size: 458745
+      nfiles: 1
+  evaluar:
+    cmd: python pipelines/evaluar.py
+    deps:
+    - path: data/evaluacion
+      hash: md5
+      md5: 058a39d295239c22b8d662f04c28bddd.dir
+      size: 122382
+      nfiles: 15
+    - path: models/inyeccion
+      hash: md5
+      md5: 610895f7e5169de53bc85a82e3ea1818.dir
+      size: 203066
+      nfiles: 1
+    - path: models/riesgo
+      hash: md5
+      md5: f91f64df69c62267aa44be2341f63754.dir
+      size: 458745
+      nfiles: 1
+    - path: pipelines/evaluar.py
+      hash: md5
+      md5: 67ce55c3de5b7aee663726d9a8308091
+      size: 2239
+    - path: src/agente_os/evaluacion.py
+      hash: md5
+      md5: 867048ba919de6afed54e6048097cfc7
+      size: 5628
+    - path: src/agente_os/guardrails
+      hash: md5
+      md5: b8c1d47793ea724e73969d65bd2e8cbb.dir
+      size: 15981
+      nfiles: 3
+    - path: src/agente_os/riesgo
+      hash: md5
+      md5: b10ec05d7868c207b6f8844fa500fbca.dir
+      size: 6832
+      nfiles: 2
+    outs:
+    - path: reports/evaluacion.json
+      hash: md5
+      md5: 8cf041038d6a8f55aba072b1a7c7294c
+      size: 13748
+    - path: reports/metricas.json
+      hash: md5
+      md5: 95828c04afe7b67ab6514dd5d3f3c2b9
+      size: 328
+  compuerta:
+    cmd: python pipelines/compuerta.py
+    deps:
+    - path: pipelines/compuerta.py
+      hash: md5
+      md5: e728d31863035eac59ac47ad9b7e4621
+      size: 4760
+    - path: reports/campeon.json
+      hash: md5
+      md5: 6ace20c93fc0c1b0686dfc2e3b688a3d
+      size: 21739
+    - path: reports/evaluacion.json
+      hash: md5
+      md5: 8cf041038d6a8f55aba072b1a7c7294c
+      size: 13748
+    params:
+      params.yaml:
+        compuertas:
+          absolutas:
+          - a9
+          - ciego_f4
+          riesgo_recall_alto_min: 0.95
+          riesgo_impacto_dispar_min: 0.8
+          riesgo_fpr_alto_max: 0.2
+          riesgo_exactitud_min: 0.85
+          inyeccion_tpr_min: 0.85
+          inyeccion_fpr_max: 0.1
+          inyeccion_impacto_dispar_min: 0.8
+          pii_recall_min: 0.99
+          pii_impacto_dispar_min: 0.8
+          pii_falsos_positivos_max: 0
+          latencia_p95_ms_max: 25
+          tolerancia_regresion: 0.02
+    outs:
+    - path: models/release.json
+      hash: md5
+      md5: c32360e0350aad9bfabf95f34112834d
+      size: 70
+    - path: reports/compuerta.json
+      hash: md5
+      md5: 05ddc7afbcd01885c429a06d053df3f8
+      size: 5172

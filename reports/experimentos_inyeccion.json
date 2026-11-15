@@ -1,0 +1,29 @@
+{
+  "experimentos": {
+    "A_char_C4": {
+      "exactitud_por_familias": 1.0,
+      "umbral": 0.8,
+      "umbral_humano": 0.95,
+      "tpr_dev": 1.0,
+      "fpr_dev": 0.1,
+      "n_dev": 45
+    },
+    "B_word+char_C1": {
+      "exactitud_por_familias": 1.0,
+      "umbral": 0.75,
+      "umbral_humano": 0.95,
+      "tpr_dev": 1.0,
+      "fpr_dev": 0.1,
+      "n_dev": 45
+    },
+    "C_word+char_C0.3_maxdf": {
+      "exactitud_por_familias": 1.0,
+      "umbral": 0.65,
+      "umbral_humano": 0.95,
+      "tpr_dev": 1.0,
+      "fpr_dev": 0.1,
+      "n_dev": 45
+    }
+  },
+  "seleccionado": "A_char_C4"
+}

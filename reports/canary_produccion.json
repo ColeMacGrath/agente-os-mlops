@@ -1,0 +1,164 @@
+{
+  "entorno": "produccion",
+  "estable": "r-2-0",
+  "canary": "r-3-1-0",
+  "pasos": [
+    {
+      "trafico_canary": 10,
+      "estable": {
+        "n": 273,
+        "tasa_error": 0.0,
+        "latencia_p95_s": 14.96,
+        "latencia_p50_s": 10.22,
+        "costo_por_tarea": 0.01469,
+        "tasa_bloqueo": 0.0
+      },
+      "canary": {
+        "n": 27,
+        "tasa_error": 0.0,
+        "latencia_p95_s": 9.24,
+        "latencia_p50_s": 4.49,
+        "costo_por_tarea": 0.005313,
+        "tasa_bloqueo": 0.0
+      },
+      "criterios": [
+        {
+          "criterio": "tasa de error",
+          "ok": true,
+          "detalle": "0.000 vs 0.000"
+        },
+        {
+          "criterio": "latencia p95 dentro del SLA",
+          "ok": true,
+          "detalle": "9.24 s"
+        },
+        {
+          "criterio": "latencia p95 frente a estable",
+          "ok": true,
+          "detalle": "9.24 vs 14.96 s"
+        },
+        {
+          "criterio": "costo por tarea",
+          "ok": true,
+          "detalle": "$0.00531 vs $0.01469"
+        },
+        {
+          "criterio": "bloqueo de inyección",
+          "ok": true,
+          "detalle": "0.000 vs 0.000"
+        },
+        {
+          "criterio": "muestra mínima",
+          "ok": true,
+          "detalle": "n=27"
+        }
+      ],
+      "aprobado": true
+    },
+    {
+      "trafico_canary": 50,
+      "estable": {
+        "n": 147,
+        "tasa_error": 0.0,
+        "latencia_p95_s": 14.75,
+        "latencia_p50_s": 9.61,
+        "costo_por_tarea": 0.014915,
+        "tasa_bloqueo": 0.0
+      },
+      "canary": {
+        "n": 153,
+        "tasa_error": 0.0,
+        "latencia_p95_s": 10.43,
+        "latencia_p50_s": 4.42,
+        "costo_por_tarea": 0.004538,
+        "tasa_bloqueo": 0.0
+      },
+      "criterios": [
+        {
+          "criterio": "tasa de error",
+          "ok": true,
+          "detalle": "0.000 vs 0.000"
+        },
+        {
+          "criterio": "latencia p95 dentro del SLA",
+          "ok": true,
+          "detalle": "10.43 s"
+        },
+        {
+          "criterio": "latencia p95 frente a estable",
+          "ok": true,
+          "detalle": "10.43 vs 14.75 s"
+        },
+        {
+          "criterio": "costo por tarea",
+          "ok": true,
+          "detalle": "$0.00454 vs $0.01491"
+        },
+        {
+          "criterio": "bloqueo de inyección",
+          "ok": true,
+          "detalle": "0.000 vs 0.000"
+        },
+        {
+          "criterio": "muestra mínima",
+          "ok": true,
+          "detalle": "n=153"
+        }
+      ],
+      "aprobado": true
+    },
+    {
+      "trafico_canary": 100,
+      "estable": {
+        "n": 147,
+        "tasa_error": 0.0,
+        "latencia_p95_s": 14.75,
+        "latencia_p50_s": 9.61,
+        "costo_por_tarea": 0.014915,
+        "tasa_bloqueo": 0.0
+      },
+      "canary": {
+        "n": 300,
+        "tasa_error": 0.0,
+        "latencia_p95_s": 10.19,
+        "latencia_p50_s": 3.9,
+        "costo_por_tarea": 0.003962,
+        "tasa_bloqueo": 0.0
+      },
+      "criterios": [
+        {
+          "criterio": "tasa de error",
+          "ok": true,
+          "detalle": "0.000 vs 0.000"
+        },
+        {
+          "criterio": "latencia p95 dentro del SLA",
+          "ok": true,
+          "detalle": "10.19 s"
+        },
+        {
+          "criterio": "latencia p95 frente a estable",
+          "ok": true,
+          "detalle": "10.19 vs 14.75 s"
+        },
+        {
+          "criterio": "costo por tarea",
+          "ok": true,
+          "detalle": "$0.00396 vs $0.01491"
+        },
+        {
+          "criterio": "bloqueo de inyección",
+          "ok": true,
+          "detalle": "0.000 vs 0.000"
+        },
+        {
+          "criterio": "muestra mínima",
+          "ok": true,
+          "detalle": "n=300"
+        }
+      ],
+      "aprobado": true
+    }
+  ],
+  "decision": "promovido"
+}
