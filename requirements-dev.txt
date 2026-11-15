@@ -1,0 +1,8 @@
+# Dependencias del pipeline, pruebas y registro de modelos
+-r requirements.txt
+-e .   # el paquete agente_os en modo editable
+pytest==9.2.0
+httpx==0.28.1
+ruff==0.17.5
+dvc==3.67.1
+mlflow==3.18.0

@@ -1,0 +1,3 @@
+# Los conjuntos de evaluación están sellados con SHA-256: Git no debe tocar sus saltos de línea
+data/**/*.csv -text
+*.csv -text

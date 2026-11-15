@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "agente-os-mlops"
+version = "3.1.0"
+description = "Capa Nube del Agente OS: pipeline MLOps/GitOps, servicio y operación"
+requires-python = ">=3.12"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.ruff]
+line-length = 160
+target-version = "py312"
+src = ["src", "pipelines", "tests"]
+extend-exclude = ["src/agente_os/legado"]   # código histórico de la Fase II y la Actividad 9, sin cambios
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "B", "UP"]
+ignore = [
+  "B008",   # Depends() en firmas es el patrón de FastAPI
+  "B905",   # zip() sin strict: en los dígitos verificadores las longitudes difieren a propósito
+  "E501",   # expresiones regulares y textos de prueba largos
+  "UP042",  # RiskLevel(str, Enum) se conserva por compatibilidad con el contrato de la Fase II
+]
+
+[tool.ruff.lint.isort]
+known-first-party = ["agente_os", "comun", "conftest", "registrar", "evaluar"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src", "tests", "pipelines"]
+addopts = "-p no:cacheprovider"

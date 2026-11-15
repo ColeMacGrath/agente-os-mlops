@@ -1,0 +1,20 @@
+# Artefactos versionados con DVC (su hash queda en dvc.lock)
+/data/procesados
+/models/riesgo
+/models/inyeccion
+
+# Registro local de MLflow y estado de la simulación
+/mlflow.db
+/mlruns
+/gitops/estado
+/operacion/salida/*.jsonl
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+.pytest_cache/
+.ruff_cache/
+
+# macOS
+.DS_Store
